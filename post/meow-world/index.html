@@ -27,10 +27,10 @@
   
     
   
-  <meta name="description" content="First Year Undergraduate Student">
+  <meta name="description" content="My first attempt at writing a blog post.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://dryairship.github.io/authors/">
+  <link rel="alternate" hreflang="en-us" href="https://dryairship.github.io/post/meow-world/">
 
   
 
@@ -111,15 +111,12 @@
   
 
   
-  <link rel="alternate" href="/authors/index.xml" type="application/rss+xml" title="Priydarshi Singh">
-  <link rel="feed" href="/authors/index.xml" type="application/rss+xml" title="Priydarshi Singh">
-  
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://dryairship.github.io/authors/">
+  <link rel="canonical" href="https://dryairship.github.io/post/meow-world/">
 
   
   
@@ -131,19 +128,21 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Priydarshi Singh">
-  <meta property="og:url" content="https://dryairship.github.io/authors/">
-  <meta property="og:title" content="Authors | Priydarshi Singh">
-  <meta property="og:description" content="First Year Undergraduate Student"><meta property="og:image" content="https://dryairship.github.io/img/icon-192.png">
+  <meta property="og:url" content="https://dryairship.github.io/post/meow-world/">
+  <meta property="og:title" content="Meow, World! | Priydarshi Singh">
+  <meta property="og:description" content="My first attempt at writing a blog post."><meta property="og:image" content="https://dryairship.github.io/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2019-04-27T23:33:17&#43;05:30">
+  <meta property="article:published_time" content="2019-04-27T23:33:17&#43;05:30">
+  
+  <meta property="article:modified_time" content="2019-04-27T23:33:17&#43;05:30">
   
 
   
 
   
 
-  <title>Authors | Priydarshi Singh</title>
+  <title>Meow, World! | Priydarshi Singh</title>
   
   
 <script type="application/javascript">
@@ -332,7 +331,9 @@ if (!doNotTrack) {
 </nav>
 
 
+<article class="article" itemscope itemtype="http://schema.org/Article">
 
+  
 
 
 
@@ -349,39 +350,262 @@ if (!doNotTrack) {
 
   
   
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Meow, World!</h1>
+
+  
+
   
     
-  
-<div class="universal-wrapper pt-3">
-  <h1 itemprop="name">Authors</h1>
+
+
+
+<meta content="2019-04-27 23:33:17 &#43;0530 IST" itemprop="datePublished">
+<meta content="2019-04-27 23:33:17 &#43;0530 IST" itemprop="dateModified">
+
+<div class="article-metadata">
 
   
+  
+  
+  
+  <div>
+    
+
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Sat, Apr 27, 2019</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 min read
+  </span>
+  
+
+  
+  
+
+  
+
+  
+    
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
 
   
 </div>
 
 
 
-<div class="universal-wrapper">
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      <p>Hey there, everyone! I am Priydarshi and this is my blog. Here I would be writing mostly programming related stuff, in addition to my experiences at IITK and in general life.</p>
+
+<p>What was the motivation for me to start this blog?<br />
+1. Almost all of the cool seniors I know have their own blogs.<br />
+2. I believe I have stories to tell and knowledge to share.<br />
+3. I wanted to do tick off another item from my bucket list.</p>
+
+<p>The final examinations for the second semester ended yesterday and so now I finally have the time to try my hand at maintaining a blog.</p>
+
+<p>I have currently hosted this blog on GitHub Pages (<em>though I might later shift it to a personal domain</em>). I am using the <a href="https://themes.gohugo.io/academic/" target="_blank">Academic</a> theme and the <a href="https://gohugo.io/" target="_blank">Hugo</a> framework for maintaining this blog.</p>
+
+<p>Although Hugo claims to be user-friendly, my experience with setting up this blog wasn&rsquo;t as smooth as I expected it to be. So I find <code>apt</code> to be easiest way to install any package. But apparently, <code>sudo apt install hugo</code> installs an older version of Hugo, and I ended up with an error message telling me that the Academic theme isn&rsquo;t compatible with my current Hugo version.</p>
+
+<pre><code>Current theme does not support Hugo version 0.40.1. Minimum version required is 0.54
+</code></pre>
+
+<p>So I purged the <code>apt</code> version. What, then, is the next easiest way to install a package? <code>snap</code>! So I did <code>sudo snap install hugo</code>. Trying to build the site with this gave me another scary error message :</p>
+
+<pre><code>failed to transform resource: TOCSS: failed to transform &quot;scss/main.scss&quot; (text/x-scss): this feature is not available in your current Hugo version, see https://goo.gl/YMrWcn for more information.
+</code></pre>
+
+<p>For some unknown reason, I chose to ignore the link in the error message and decided to Google the error. Found the same error on StackOverflow (<em>The real happiness? +_+</em>) and the accepted answer recommended me to install the tarball version of Hugo. So I did that, but ended up with the same error message. (<em>What can be more sad than an accepted SO answer not helping you out? ;-;</em>)</p>
+
+<p>Finally I decided to follow the link in the error message, and found a very easy <a href="https://gohugo.io/troubleshooting/faq/#i-get-tocss-this-feature-is-not-available-in-your-current-hugo-version" target="_blank">solution</a> to this error - apparently I installed the normal version, whereas I needed the <code>extended</code> version. (<em>*facepalm*</em>)</p>
+
+<p>Lesson learnt : <strong>An error message doesn&rsquo;t always come with a link to its solution. So when it does, follow the link blindly.</strong></p>
+
+<p>That was my first blog post. Hope you stick around to read my future posts!</p>
+
+    </div>
+
+    
+
+
+
+
+
+    
+      
+
+
+
+
+
+
+  
+  
+    
+  
   
 
-  <ul>
-    
-    
+
+
+
+
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
+  
+  
+  <img class="portrait mr-3" src="/author/dryairship/avatar_hu62cc97398271f53f903402cc5339b2e8_45029_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+  
+
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/authors/dryairship">Priydarshi Singh</a></h5>
+    <h6 class="card-subtitle">First Year Undergraduate Student</h6>
+    <p class="card-text" itemprop="description">Programmer. Grey Hat. Ailurophile.</p>
+    <ul class="network-icon" aria-hidden="true">
       
       
       
       
         
+      
+      
+      
+      
+      
+      <li>
+        <a itemprop="sameAs" href="mailto:darshi@iitk.ac.in" >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      
+      
+      
+      
         
       
-    <li><a href="https://dryairship.github.io/authors/dryairship/">Priydarshi Singh</a></li>
-    
-  </ul>
-
-  
-
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://github.com/dryairship" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://stackoverflow.com/users/4121347/dryairship?tab=profile" target="_blank" rel="noopener">
+          <i class="fab fa-stack-overflow"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://www.linkedin.com/in/dryairship/" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://facebook.com/dryairship" target="_blank" rel="noopener">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
 </div>
+
+
+
+      
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
 <div class="container">
   <footer class="site-footer">
   
