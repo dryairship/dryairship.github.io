@@ -18,18 +18,18 @@
       <pubDate>Sat, 27 Apr 2019 23:33:17 +0530</pubDate>
       
       <guid>https://dryairship.github.io/post/meow-world/</guid>
-      <description>&lt;p&gt;Hey there, everyone! I am Priydarshi and this is my blog. Here I would be writing mostly programming related stuff, in addition to my experiences at IITK and in general life.&lt;/p&gt;
+      <description>&lt;p&gt;Hey there, everyone! I am Priydarshi and this is my blog. Here I would be posting primarily programming related stuff, in addition to my experiences at IITK and in general life.&lt;/p&gt;
 
 &lt;p&gt;What was the motivation for me to start this blog?&lt;br /&gt;
 1. Almost all of the cool seniors I know have their own blogs.&lt;br /&gt;
-2. I believe I have stories to tell and knowledge to share.&lt;br /&gt;
-3. I wanted to do tick off another item from my bucket list.&lt;/p&gt;
+2. I believe I have stories to tell, and knowledge to share.&lt;br /&gt;
+3. I wanted to tick off another item from my bucket list.&lt;/p&gt;
 
 &lt;p&gt;The final examinations for the second semester ended yesterday and so now I finally have the time to try my hand at maintaining a blog.&lt;/p&gt;
 
-&lt;p&gt;I have currently hosted this blog on GitHub Pages (&lt;em&gt;though I might later shift it to a personal domain&lt;/em&gt;). I am using the &lt;a href=&#34;https://themes.gohugo.io/academic/&#34; target=&#34;_blank&#34;&gt;Academic&lt;/a&gt; theme and the &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt; framework for maintaining this blog.&lt;/p&gt;
+&lt;p&gt;Currently this blog is hosted on GitHub Pages (&lt;em&gt;though I might later shift it to a personal domain&lt;/em&gt;). I am using the &lt;a href=&#34;https://themes.gohugo.io/academic/&#34; target=&#34;_blank&#34;&gt;Academic&lt;/a&gt; theme and the &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt; framework for maintaining this blog.&lt;/p&gt;
 
-&lt;p&gt;Although Hugo claims to be user-friendly, my experience with setting up this blog wasn&amp;rsquo;t as smooth as I expected it to be. So I find &lt;code&gt;apt&lt;/code&gt; to be easiest way to install any package. But apparently, &lt;code&gt;sudo apt install hugo&lt;/code&gt; installs an older version of Hugo, and I ended up with an error message telling me that the Academic theme isn&amp;rsquo;t compatible with my current Hugo version.&lt;/p&gt;
+&lt;p&gt;Although Hugo claims to be user-friendly, my experience with setting up this blog wasn&amp;rsquo;t as smooth as I expected it to be. So I find &lt;code&gt;apt&lt;/code&gt; to be easiest way to install any package. But apparently, &lt;code&gt;sudo apt install hugo&lt;/code&gt; installs an older version of Hugo, and on trying to build this site with that version, I ended up with an error message telling me that the Academic theme isn&amp;rsquo;t compatible with my current Hugo version.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;Current theme does not support Hugo version 0.40.1. Minimum version required is 0.54
 &lt;/code&gt;&lt;/pre&gt;
@@ -39,9 +39,9 @@
 &lt;pre&gt;&lt;code&gt;failed to transform resource: TOCSS: failed to transform &amp;quot;scss/main.scss&amp;quot; (text/x-scss): this feature is not available in your current Hugo version, see https://goo.gl/YMrWcn for more information.
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;For some unknown reason, I chose to ignore the link in the error message and decided to Google the error. Found the same error on StackOverflow (&lt;em&gt;The real happiness? +_+&lt;/em&gt;) and the accepted answer recommended me to install the tarball version of Hugo. So I did that, but ended up with the same error message. (&lt;em&gt;What can be more sad than an accepted SO answer not helping you out? ;-;&lt;/em&gt;)&lt;/p&gt;
+&lt;p&gt;For some unknown reason, I chose to ignore the link in the error message and decided to Google the error. I found the same error on StackOverflow (&lt;em&gt;The real happiness? +_+&lt;/em&gt;) and the accepted answer recommended me to install the tarball version of Hugo. So I did that, but ended up with the same error message. (&lt;em&gt;What can be more sad than an accepted SO answer not helping you out?&lt;/em&gt; ;_; )&lt;/p&gt;
 
-&lt;p&gt;Finally I decided to follow the link in the error message, and found a very easy &lt;a href=&#34;https://gohugo.io/troubleshooting/faq/#i-get-tocss-this-feature-is-not-available-in-your-current-hugo-version&#34; target=&#34;_blank&#34;&gt;solution&lt;/a&gt; to this error - apparently I installed the normal version, whereas I needed the &lt;code&gt;extended&lt;/code&gt; version. (&lt;em&gt;*facepalm*&lt;/em&gt;)&lt;/p&gt;
+&lt;p&gt;Finally I decided to follow the link in the error message, and found a very easy &lt;a href=&#34;https://gohugo.io/troubleshooting/faq/#i-get-tocss-this-feature-is-not-available-in-your-current-hugo-version&#34; target=&#34;_blank&#34;&gt;solution&lt;/a&gt; to this error - apparently I had installed the normal version, whereas I needed the &lt;code&gt;extended&lt;/code&gt; version. (&lt;em&gt;*facepalm*&lt;/em&gt;)&lt;/p&gt;
 
 &lt;p&gt;Lesson learnt : &lt;strong&gt;An error message doesn&amp;rsquo;t always come with a link to its solution. So when it does, follow the link blindly.&lt;/strong&gt;&lt;/p&gt;
 
