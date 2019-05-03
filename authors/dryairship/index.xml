@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Fri, 26 Apr 2019 23:33:17 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 03 May 2019 23:00:48 +0530</lastBuildDate>
     
 	<atom:link href="https://dryairship.github.io/authors/dryairship/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My Google FooBar Experience</title>
+      <link>https://dryairship.github.io/post/my-google-foobar-experience/</link>
+      <pubDate>Fri, 03 May 2019 23:00:48 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/post/my-google-foobar-experience/</guid>
+      <description>About Google FooBar, the invitation, the problems and the results.</description>
+    </item>
     
     <item>
       <title>Meow, World!</title>
