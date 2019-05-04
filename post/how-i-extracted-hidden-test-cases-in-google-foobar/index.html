@@ -627,7 +627,7 @@ I tried hard to find a bug or an edge case that I hadn&rsquo;t considered, but I
 <p>The fact that the JVM was the same across evaluations implied that I could share data among different runs of the program. So I did two things :</p>
 
 <ul>
-<li>Create a static variable named <code>testCase</code> that is incremented every time the <code>answer</code> function is called. This will contain the number the test case that is being currently evaluated.</li>
+<li>Create a static variable named <code>testCase</code> that is incremented every time the <code>answer</code> function is called. This will contain the serial number of the test case that is being currently evaluated.</li>
 <li>Store the data of the current test case into other static variables. This could be :
 
 <ul>
