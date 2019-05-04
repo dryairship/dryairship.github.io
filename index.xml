@@ -174,7 +174,7 @@ I tried hard to find a bug or an edge case that I hadn&amp;rsquo;t considered, b
 &lt;li&gt;Level 5 supposedly had only 1 problem.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;I was able to sail through the first four levels easily (except problem 2 of level 3 - to be explained in a later blog post), but I couldn&amp;rsquo;t complete the challenge as I failed to solve the only problem of the 5&lt;sup&gt;th&lt;/sup&gt; level.&lt;/p&gt;
+&lt;p&gt;I was able to sail through the first four levels easily (except problem 2 of level 3 - explained in &lt;a href=&#34;https://dryairship.github.io/post/how-i-extracted-hidden-test-cases-in-google-foobar/&#34; target=&#34;_blank&#34;&gt;this blog post&lt;/a&gt;), but I couldn&amp;rsquo;t complete the challenge as I failed to solve the only problem of the 5&lt;sup&gt;th&lt;/sup&gt; level.&lt;/p&gt;
 
 &lt;p&gt;I had 25 days to solve the last problem, and I spent the first 10 days without much worry - I was doltishly expecting this one to be of the same difficulty level as the previous ones, which were surprisingly quite simple. As it turned out, I was very wrong. I came up with a few different ways to solve the problem, but all my solutions were essentially brute-force (with a time complexity  of O(2&lt;sup&gt;mn&lt;/sup&gt;)) and were naturally taking a lot of time.&lt;/p&gt;
 
@@ -186,7 +186,7 @@ I tried hard to find a bug or an edge case that I hadn&amp;rsquo;t considered, b
 &lt;img src=&#34;status.png&#34; alt=&#34;Google FooBar Status&#34; /&gt;
 When I cleared the third level, Google gave me an option to use the &lt;code&gt;recruitme&lt;/code&gt; command, which supposedly shared my progress with a Google recruiter. I decided to use it at the end of the challenge. Later, since I couldn&amp;rsquo;t solve the last problem, I didn&amp;rsquo;t really expect anyone from Google to contact me. Still, hoping for the best, I used the command, and entered the information it asked - like name, contact details, education etc.&lt;/p&gt;
 
-&lt;p&gt;Unfortunately, I haven&amp;rsquo;t heard from any Google recruiter. Perhaps because I was still in school then - they asked this when I entered the details. Or maybe because I cheated on the 2&lt;sup&gt;nd&lt;/sup&gt; problem of the 3&lt;sup&gt;rd&lt;/sup&gt; level (read the next blog post for details). Or perhaps because I couldn&amp;rsquo;t solve the last problem. Or maybe because Google stopped hiring through FooBar.&lt;/p&gt;
+&lt;p&gt;Unfortunately, I haven&amp;rsquo;t heard from any Google recruiter. Perhaps because I was still in school then - they asked this when I entered the details. Or maybe because I cheated on the 2&lt;sup&gt;nd&lt;/sup&gt; problem of the 3&lt;sup&gt;rd&lt;/sup&gt; level (read &lt;a href=&#34;https://dryairship.github.io/post/how-i-extracted-hidden-test-cases-in-google-foobar/&#34; target=&#34;_blank&#34;&gt;this blog post&lt;/a&gt; for details). Or perhaps because I couldn&amp;rsquo;t solve the last problem. Or maybe because Google stopped hiring through FooBar.&lt;/p&gt;
 
 &lt;p&gt;Whatever the reason may be, I wasn&amp;rsquo;t really disappointed. Solving those problems gave me immense confidence and the inspiration to perform better at the next opportunity I get. And of course, the invitation for Google FooBar is in itself a procurement to cherish!&lt;/p&gt;
 </description>
