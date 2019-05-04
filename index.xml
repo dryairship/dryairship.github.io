@@ -7,10 +7,125 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Fri, 03 May 2019 23:00:48 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 04 May 2019 12:30:23 +0530</lastBuildDate>
     
 	    <atom:link href="https://dryairship.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How I Extracted Hidden Test Cases In Google FooBar</title>
+      <link>https://dryairship.github.io/post/how-i-extracted-hidden-test-cases-in-google-foobar/</link>
+      <pubDate>Sat, 04 May 2019 12:30:23 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/post/how-i-extracted-hidden-test-cases-in-google-foobar/</guid>
+      <description>
+
+&lt;p&gt;Hey there! In my &lt;a href=&#34;https://dryairship.github.io/post/my-google-foobar-experience/&#34; target=&#34;_blank&#34;&gt;previous post&lt;/a&gt; I wrote about my Google FooBar experience. I recommend you to read that post before you continue with this one.&lt;/p&gt;
+
+&lt;p&gt;This post will explain how I managed to extract hidden test cases from Google FooBar. Note that I had reported the bug through the &lt;code&gt;feedback&lt;/code&gt; command via the &lt;em&gt;FooBar terminal&lt;/em&gt;. Although I did not receive any response from Google for that report, this flaw has now been fixed.&lt;/p&gt;
+
+&lt;h2 id=&#34;a-mild-confusion&#34;&gt;A mild confusion&lt;/h2&gt;
+
+&lt;p&gt;I discovered an important fact about FooBar&amp;rsquo;s test case evaluations when I was solving the 2&lt;sup&gt;nd&lt;/sup&gt; problem of the 2&lt;sup&gt;nd&lt;/sup&gt; level. Upon finally completing the code for the solution, I used the &lt;code&gt;verify&lt;/code&gt; command to check it. To my dismay, only the first test case passed. I went through my solution again to find any logical errors, but couldn&amp;rsquo;t find any. In my opinion, the program should have worked.&lt;/p&gt;
+
+&lt;p&gt;I had already discovered that the first two test cases on which my solution was evaluated were the same as the ones given in the examples. And I had verified that my solution worked for the two example cases before I submitted the code. That was weird. At least the first two cases should have passed! Nevertheless, I decided to test the program on the example cases once again.&lt;/p&gt;
+
+&lt;h2 id=&#34;bluej-3&#34;&gt;BlueJ &amp;lt;3&lt;/h2&gt;
+
+&lt;p&gt;I think that fact that I used &lt;a href=&#34;https://www.bluej.org/&#34; target=&#34;_blank&#34;&gt;BlueJ&lt;/a&gt; (it&amp;rsquo;s an awesome Java IDE, BTW) was instrumental in helping me unravel the mystery. BlueJ has the option of calling static functions of a class through a popup menu obtained by right clicking the name of the class. This opens a dialog box that asks for the parameters to be passed to the function.
+&lt;img src=&#34;bluej_call.png&#34; alt=&#34;BlueJ Method Call&#34; /&gt;
+When the function completes its execution, another dialog box pops up which contains the return value of the function.
+&lt;img src=&#34;bluej_return.png&#34; alt=&#34;BlueJ Method Return&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;the-same-mild-confusion-now-17-extra-for-free&#34;&gt;The same mild confusion, now 17% extra for free&lt;/h2&gt;
+
+&lt;p&gt;So I recompiled the &lt;strong&gt;same&lt;/strong&gt; program (&lt;em&gt;not a very sane idea, I know, but wait&lt;/em&gt;) and called the &lt;code&gt;answer&lt;/code&gt; function directly from BlueJ&amp;rsquo;s fantastic UI, with the input being the first example test case (&lt;em&gt;yes, the one that was already giving me the correct answer on FooBar&amp;rsquo;s evaluation - not a very sane idea again, but wait&lt;/em&gt;).&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I tell you, in this world, being a little crazy helps to keep you sane.  - Zsa Zsa Gabor&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I got &lt;code&gt;1&lt;/code&gt; as the output, which was the correct answer. Then, I again called the &lt;code&gt;answer&lt;/code&gt; function with the input being the second example test case. (&lt;em&gt;Note: No recompiling. I just closed the output window of the first example, and called the function again.&lt;/em&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Boom!&lt;/strong&gt; This time, I got &lt;code&gt;7&lt;/code&gt; as the output. The correct answer was supposed to be &lt;code&gt;6&lt;/code&gt;. That was funny. I remember I got &lt;code&gt;6&lt;/code&gt; as the output the last time I passed the &lt;em&gt;same&lt;/em&gt; parameters to the &lt;em&gt;same&lt;/em&gt; code. Just to confirm it, I recompiled the code, called the function with the second example case, and found the output to be &lt;code&gt;6&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;puzzle-solved&#34;&gt;Puzzle solved!&lt;/h2&gt;
+
+&lt;p&gt;At this moment, I knew that my code was correct. It was Java that was acting weirdly, or so I tended to believe. I was almost ready to post this as a question on StackOverflow, when I decided to look at my code again.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;And here comes the big moment&lt;/em&gt;. I realized that the value that the &lt;code&gt;answer&lt;/code&gt; function was supposed to return, was stored in a &lt;code&gt;static&lt;/code&gt; variable. (&lt;em&gt;Don&amp;rsquo;t judge me. I have now learnt that it is a bad practice.&lt;/em&gt;) Thus, the variable was conserved across multiple calls of the &lt;code&gt;answer&lt;/code&gt; function on the same instance of the Java Virtual Machine. And I had never explicitly set the variable to 0. I just kept on increasing the value of the variable (in another static function - which did the calculations), and returned it when the calculations were over. Thus, when I called the function the second time, the variable still contained its previous value. Hence, I got &lt;code&gt;7&lt;/code&gt; = &lt;code&gt;1&lt;/code&gt;+&lt;code&gt;6&lt;/code&gt; as my answer for the second test case.&lt;/p&gt;
+
+&lt;p&gt;Recompiling a program in BlueJ resets the Java Virtual Machine. Hence, the static variables are restored to their initial values. This is why I got the correct answer when I ran the program after recompiling it.&lt;/p&gt;
+
+&lt;p&gt;Of course, I solved the issue by simply putting a statement to reset the variable to 0 before performing the calculations. With this modification, my program passed all the test cases.&lt;/p&gt;
+
+&lt;p&gt;The important fact that I learnt here is that Google was calling the &lt;code&gt;answer&lt;/code&gt; function on the same instance of JVM for all the test cases.&lt;br /&gt;
+&lt;center&gt;
+&lt;em&gt;So is this a flaw?&lt;/em&gt;&lt;br /&gt;
+&lt;strong&gt;Yes!&lt;/strong&gt;&lt;br /&gt;
+&lt;em&gt;Can we exploit it?&lt;/em&gt;&lt;br /&gt;
+&lt;strong&gt;It wouldn&amp;rsquo;t be a flaw if we couldn&amp;rsquo;t exploit it!&lt;/strong&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;lost-in-a-maze&#34;&gt;Lost in a maze&lt;/h2&gt;
+
+&lt;p&gt;For the 2&lt;sup&gt;nd&lt;/sup&gt; problem of level 3, I had to find the length of the shortest path from the bottom-right corner to the top-left corner of a boolean matrix. &lt;code&gt;false&lt;/code&gt; represented a block where we could move, and &lt;code&gt;true&lt;/code&gt; represented a piece of wall. Also, I was allowed to remove at most one wall from the maze.&lt;/p&gt;
+
+&lt;p&gt;I didn&amp;rsquo;t know about BFS/DFS back then. &lt;em&gt;(I didn&amp;rsquo;t know about any standard algorithms, in fact. :&amp;lsquo;( )&lt;/em&gt;  As a result, I coded up a very &lt;em&gt;dirty&lt;/em&gt; solution (must&amp;rsquo;ve been DFS, only I didn&amp;rsquo;t know it was called so). And it worked. Well, &lt;strong&gt;almost&lt;/strong&gt;! It passed &lt;sup&gt;4&lt;/sup&gt;&amp;frasl;&lt;sub&gt;5&lt;/sub&gt; test cases.
+&lt;img src=&#34;test4.png&#34; alt=&#34;Test Case 4&#34; /&gt;
+I tried hard to find a bug or an edge case that I hadn&amp;rsquo;t considered, but I couldn&amp;rsquo;t. So I decided to find an altogether different approach to solve the problem. While thinking of a better solution to the problem, an evil idea struck me.&lt;/p&gt;
+
+&lt;h2 id=&#34;i-want-to-hack-nasa-sup-google-sup-with-html-sup-binary-code-sup&#34;&gt;I want to hack &lt;del&gt;NASA&lt;/del&gt; &lt;sup&gt;Google&lt;/sup&gt; with &lt;del&gt;HTML&lt;/del&gt; &lt;sup&gt;Binary Code&lt;/sup&gt;&lt;/h2&gt;
+
+&lt;p&gt;The fact that the JVM was the same across evaluations implied that I could share data among different runs of the program. So I did two things :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Create a static variable named &lt;code&gt;testCase&lt;/code&gt; that is incremented every time the &lt;code&gt;answer&lt;/code&gt; function is called. This will contain the number the test case that is being currently evaluated.&lt;/li&gt;
+&lt;li&gt;Store the data of the current test case into other static variables. This could be :
+
+&lt;ul&gt;
+&lt;li&gt;a single variable - in which case the data of one test case will be available only to the next test case, or&lt;/li&gt;
+&lt;li&gt;an array - in which case the data of one test case will be available to all subsequent test cases.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Okay, so now I have the data of the previous test case stored in a static variable.
+&lt;center&gt;&lt;em&gt;How do I use it?&lt;/em&gt;&lt;br /&gt;
+&lt;strong&gt;By failing on purpose!&lt;/strong&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;If you want to succeed, double your failure rate. - Thomas Watson&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;idea&#34;&gt;Idea&lt;/h3&gt;
+
+&lt;p&gt;Convert the data of the previous test case into binary form. If the number at the &lt;code&gt;i&lt;/code&gt;th position is &lt;code&gt;1&lt;/code&gt;, run the program as it is supposed to. If it is &lt;code&gt;0&lt;/code&gt;, return a garbage value so that the current test case fails.&lt;/p&gt;
+
+&lt;h3 id=&#34;implementation&#34;&gt;Implementation&lt;/h3&gt;
+
+&lt;p&gt;I stored the matrix of the 4&lt;sup&gt;th&lt;/sup&gt; test case in a static variable. When inside the 5&lt;sup&gt;th&lt;/sup&gt; test case evaluation, I used the above mentioned idea to return the correct/incorrect output.&lt;/p&gt;
+
+&lt;p&gt;I first converted the length of the matrix to a binary string and checked for the character at index &lt;code&gt;i&lt;/code&gt; (I had to manually increment the value of &lt;code&gt;i&lt;/code&gt; after every submission). If this bit was &lt;code&gt;0&lt;/code&gt;, I returned &lt;code&gt;-1&lt;/code&gt;, otherwise I let the program run as it was supposed to. On observing the results, if only the 4&lt;sup&gt;th&lt;/sup&gt; test case failed, the inference drawn was that the bit at &lt;code&gt;i&lt;/code&gt;th index was 1. If both the 4&lt;sup&gt;th&lt;/sup&gt; and the 5&lt;sup&gt;th&lt;/sup&gt; test cases failed, the inference drawn was that the bit at &lt;code&gt;i&lt;/code&gt;th index was 0. When the index grew bigger than the length of the binary string, a Runtime Error was thrown instead of a Wrong Answer. This way, I found the binary representation of the length of the matrix.&lt;/p&gt;
+
+&lt;p&gt;I repeated the process for the breadth, and then for the entire matrix (&lt;em&gt;except, I didn&amp;rsquo;t&amp;hellip;&lt;/em&gt;).&lt;/p&gt;
+
+&lt;h2 id=&#34;a-far-more-unheroic-but-faster-way&#34;&gt;A far more unheroic, but faster way&lt;/h2&gt;
+
+&lt;p&gt;I had found out almost half the matrix when I realized that instead of obtaining the entire matrix, I could just guess the answer. Since I had to find the length of shortest path, the answer would satisfy:
+&lt;center&gt;
+&lt;code&gt;length+breadth-1 &amp;lt;= answer &amp;lt; length*breadth&lt;/code&gt;&lt;br /&gt;
+(much less than &lt;code&gt;length*breadth&lt;/code&gt; actually)
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;So for all the test cases, I would let the program run normally, while for the 4&lt;sup&gt;th&lt;/sup&gt; test case, I would return a custom value. I started with &lt;code&gt;length+breadth-1&lt;/code&gt;, and kept incrementing it until the 4&lt;sup&gt;th&lt;/sup&gt; test case passed too. (&lt;em&gt;Okay fine, a very despicable way to pass a test case, indeed. This is probably why I didn&amp;rsquo;t whine when I didn&amp;rsquo;t hear from Google - I hadn&amp;rsquo;t completely solved this problem.&lt;/em&gt;)&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;The binary conversion method, although a long procedure, could be successfully used to extract hidden test cases from Google FooBar - much more easily for problems which have a few &lt;code&gt;int&lt;/code&gt; values as the input. &lt;strong&gt;However, it requires that at least one test case succeeding the failing test case, must pass&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Although finding hidden test cases isn&amp;rsquo;t that much of a benefit (as it&amp;rsquo;ll only help if the program fails for some edge cases), they are &amp;ldquo;hidden&amp;rdquo; for a reason, and it would be better if they remain so! I&amp;rsquo;m glad that Google has now fixed the issue.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>My Google FooBar Experience</title>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>foobar on Priydarshi Singh</title>
-    <link>https://dryairship.github.io/tags/foobar/</link>
-    <description>Recent content in foobar on Priydarshi Singh</description>
+    <title>java on Priydarshi Singh</title>
+    <link>https://dryairship.github.io/tags/java/</link>
+    <description>Recent content in java on Priydarshi Singh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
     <lastBuildDate>Sat, 04 May 2019 12:30:23 +0530</lastBuildDate>
     
-	<atom:link href="https://dryairship.github.io/tags/foobar/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dryairship.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,15 +19,6 @@
       
       <guid>https://dryairship.github.io/post/how-i-extracted-hidden-test-cases-in-google-foobar/</guid>
       <description>Description of a now patched flaw that allowed extraction of hidden test cases in Google FooBar</description>
-    </item>
-    
-    <item>
-      <title>My Google FooBar Experience</title>
-      <link>https://dryairship.github.io/post/my-google-foobar-experience/</link>
-      <pubDate>Fri, 03 May 2019 23:00:48 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/my-google-foobar-experience/</guid>
-      <description>About Google FooBar, the invitation, the problems and the results.</description>
     </item>
     
   </channel>

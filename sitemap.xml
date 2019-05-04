@@ -4,7 +4,59 @@
   
   <url>
     <loc>https://dryairship.github.io/authors/</loc>
-    <lastmod>2019-05-03T23:00:48+05:30</lastmod>
+    <lastmod>2019-05-04T12:30:23+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/post/how-i-extracted-hidden-test-cases-in-google-foobar/</loc>
+    <lastmod>2019-05-04T12:30:23+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/post/</loc>
+    <lastmod>2019-05-04T12:30:23+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/</loc>
+    <lastmod>2019-05-04T12:30:23+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/tags/</loc>
+    <lastmod>2019-05-04T12:30:23+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/authors/dryairship/</loc>
+    <lastmod>2019-05-04T12:30:23+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/tags/foobar/</loc>
+    <lastmod>2019-05-04T12:30:23+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/tags/google/</loc>
+    <lastmod>2019-05-04T12:30:23+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/tags/hacking/</loc>
+    <lastmod>2019-05-04T12:30:23+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/tags/java/</loc>
+    <lastmod>2019-05-04T12:30:23+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -14,42 +66,7 @@
   </url>
   
   <url>
-    <loc>https://dryairship.github.io/post/</loc>
-    <lastmod>2019-05-03T23:00:48+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/</loc>
-    <lastmod>2019-05-03T23:00:48+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/tags/</loc>
-    <lastmod>2019-05-03T23:00:48+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://dryairship.github.io/tags/competitive-programming/</loc>
-    <lastmod>2019-05-03T23:00:48+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/authors/dryairship/</loc>
-    <lastmod>2019-05-03T23:00:48+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/tags/foobar/</loc>
-    <lastmod>2019-05-03T23:00:48+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/tags/google/</loc>
     <lastmod>2019-05-03T23:00:48+05:30</lastmod>
     <priority>0</priority>
   </url>

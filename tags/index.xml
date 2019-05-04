@@ -7,24 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Fri, 03 May 2019 23:00:48 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 04 May 2019 12:30:23 +0530</lastBuildDate>
     
 	<atom:link href="https://dryairship.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>competitive-programming</title>
-      <link>https://dryairship.github.io/tags/competitive-programming/</link>
-      <pubDate>Fri, 03 May 2019 23:00:48 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/competitive-programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>foobar</title>
       <link>https://dryairship.github.io/tags/foobar/</link>
-      <pubDate>Fri, 03 May 2019 23:00:48 +0530</pubDate>
+      <pubDate>Sat, 04 May 2019 12:30:23 +0530</pubDate>
       
       <guid>https://dryairship.github.io/tags/foobar/</guid>
       <description></description>
@@ -33,9 +24,36 @@
     <item>
       <title>google</title>
       <link>https://dryairship.github.io/tags/google/</link>
-      <pubDate>Fri, 03 May 2019 23:00:48 +0530</pubDate>
+      <pubDate>Sat, 04 May 2019 12:30:23 +0530</pubDate>
       
       <guid>https://dryairship.github.io/tags/google/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hacking</title>
+      <link>https://dryairship.github.io/tags/hacking/</link>
+      <pubDate>Sat, 04 May 2019 12:30:23 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/tags/hacking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>java</title>
+      <link>https://dryairship.github.io/tags/java/</link>
+      <pubDate>Sat, 04 May 2019 12:30:23 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>competitive-programming</title>
+      <link>https://dryairship.github.io/tags/competitive-programming/</link>
+      <pubDate>Fri, 03 May 2019 23:00:48 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/tags/competitive-programming/</guid>
       <description></description>
     </item>
     
