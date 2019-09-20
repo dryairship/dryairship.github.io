@@ -7,10 +7,52 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Sat, 04 May 2019 12:30:23 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 20 Sep 2019 03:44:44 +0530</lastBuildDate>
     
 	    <atom:link href="https://dryairship.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My First Flight Stalled</title>
+      <link>https://dryairship.github.io/post/my-first-flight-stalled/</link>
+      <pubDate>Fri, 20 Sep 2019 03:44:44 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/post/my-first-flight-stalled/</guid>
+      <description>
+
+&lt;h2 id=&#34;the-title-is-a-clickbait&#34;&gt;The title is a clickbait&lt;/h2&gt;
+
+&lt;p&gt;Not exactly, hehe.&lt;br /&gt;
+ ✔️   It was my first flight.&lt;br /&gt;
+ ✔️   The flight stalled.&lt;br /&gt;
+ ✔️   I was scared.&lt;br /&gt;
+ ❌   I thought I was going to die.&lt;br /&gt;
+The stall was a planned one, you see.&lt;/p&gt;
+
+&lt;h2 id=&#34;aerospace-is-the-coooooolest-department&#34;&gt;Aerospace is the coooooolest department&lt;/h2&gt;
+
+&lt;p&gt;In the 3rd semester, AE students have the course AE201 - Introduction to Aerospace Engineering. This course is aimed at introducing us to the basic principles of flight.&lt;br /&gt;
+As a part of the course, we had visits to the various labs of the department (wind tunnel, flight laboratory, etc) and a demo flight in our &lt;a href=&#34;http://www.iitk.ac.in/aero/fltlab/cessna.html&#34; target=&#34;_blank&#34;&gt;Cessna Skylane&lt;/a&gt;. The flight was supposed to be a demonstration of the various maneuvers that a pilot can perform to control the six degrees of freedom of an aircraft.&lt;/p&gt;
+
+&lt;h2 id=&#34;physics-of-stall&#34;&gt;Physics of stall&lt;/h2&gt;
+
+&lt;p&gt;An aircraft can stall in two ways :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;The &lt;a href=&#34;https://en.wikipedia.org/wiki/Angle_of_attack&#34; target=&#34;_blank&#34;&gt;angle of attack&lt;/a&gt; increases beyond the critical angle of attack.&lt;/strong&gt; So you have an aircraft in a steady-level flight, and you increase the angle between the wings and the incoming wind (eg: by pointing the aircraft upwards). You get more lift. You like it, so you increase the angle further. You get even more lift. You think this is good business, so you keep increasing the angle until you reach the angle where your lift suddenly starts decreasing. This is the critical angle of attack.
+&lt;a title=&#34;botag. [Public domain], via Wikimedia Commons&#34; href=&#34;https://commons.wikimedia.org/wiki/File:Lift_curve.svg&#34;&gt;&lt;img width=&#34;512&#34; alt=&#34;Lift curve&#34; style=&#34;background-color:white;&#34; src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Lift_curve.svg/512px-Lift_curve.svg.png&#34;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The speed of the aircraft falls below the stall speed.&lt;/strong&gt; At a given altitude, there is a minimum speed (stall speed) that the aircraft must have in order to generate enough lift to maintain that altitude. If the speed of the aircraft drops below the stall speed, the aircraft starts, well, &lt;em&gt;falling down&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In our case, the pilot probably paused or slowed down the engine so that the speed of the aircraft dropped below the stall speed. Of course, the pilot was able to regain control over the aircraft and the fall was immediately followed by a pull-up maneuver so we could feel the extra G-force. The pilot then performed various other maneuvers.&lt;/p&gt;
+
+&lt;h2 id=&#34;iitk-from-above&#34;&gt;IITK from above&lt;/h2&gt;
+
+&lt;p&gt;It was fun surveying the campus from the Skylane. I made a video of the entire ride. In the snapshot below you can see Halls 13,12,11,10,9&amp;hellip;, Hockey and Football ground, OAT, Swimming Pool, Pronite ground, RA/SBRA buildings, GHT, Main stadium, etc. Apologies for the blurry image.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;iitk-from-above.png&#34; alt=&#34;IITK From Above&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>How I Extracted Hidden Test Cases In Google FooBar</title>
