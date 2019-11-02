@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Priydarshi Singh</title>
-    <link>https://dryairship.github.io/project/</link>
-    <description>Recent content in Projects on Priydarshi Singh</description>
+    <title>javascript on Priydarshi Singh</title>
+    <link>https://dryairship.github.io/tags/javascript/</link>
+    <description>Recent content in javascript on Priydarshi Singh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
     <lastBuildDate>Sun, 03 Nov 2019 03:28:56 +0530</lastBuildDate>
     
-	<atom:link href="https://dryairship.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dryairship.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,15 +19,6 @@
       
       <guid>https://dryairship.github.io/project/centralized-inventory-and-purchasing/</guid>
       <description>Developed a web app for efficient inventory management across various departments of the NGO Vitraag Vigyaan</description>
-    </item>
-    
-    <item>
-      <title>Online Election Manager</title>
-      <link>https://dryairship.github.io/project/online-election-manager/</link>
-      <pubDate>Sun, 14 Apr 2019 19:32:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/project/online-election-manager/</guid>
-      <description>A cryptographically secure web portal to manage online elections.</description>
     </item>
     
   </channel>

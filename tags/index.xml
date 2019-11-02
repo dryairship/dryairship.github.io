@@ -7,10 +7,64 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Fri, 20 Sep 2019 03:44:44 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 03 Nov 2019 03:28:56 +0530</lastBuildDate>
     
 	<atom:link href="https://dryairship.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>development</title>
+      <link>https://dryairship.github.io/tags/development/</link>
+      <pubDate>Sun, 03 Nov 2019 03:28:56 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>express</title>
+      <link>https://dryairship.github.io/tags/express/</link>
+      <pubDate>Sun, 03 Nov 2019 03:28:56 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/tags/express/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>inventory management</title>
+      <link>https://dryairship.github.io/tags/inventory-management/</link>
+      <pubDate>Sun, 03 Nov 2019 03:28:56 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/tags/inventory-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>https://dryairship.github.io/tags/javascript/</link>
+      <pubDate>Sun, 03 Nov 2019 03:28:56 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nodejs</title>
+      <link>https://dryairship.github.io/tags/nodejs/</link>
+      <pubDate>Sun, 03 Nov 2019 03:28:56 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reactjs</title>
+      <link>https://dryairship.github.io/tags/reactjs/</link>
+      <pubDate>Sun, 03 Nov 2019 03:28:56 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/tags/reactjs/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>aerospace</title>
@@ -90,15 +144,6 @@
       <pubDate>Sun, 14 Apr 2019 19:32:10 +0530</pubDate>
       
       <guid>https://dryairship.github.io/tags/cryptography/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>development</title>
-      <link>https://dryairship.github.io/tags/development/</link>
-      <pubDate>Sun, 14 Apr 2019 19:32:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/development/</guid>
       <description></description>
     </item>
     
