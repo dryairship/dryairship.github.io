@@ -7,10 +7,54 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Mon, 02 Dec 2019 17:38:31 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 03 Dec 2019 01:53:04 +0530</lastBuildDate>
     
 	    <atom:link href="https://dryairship.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>dryairship : Origins</title>
+      <link>https://dryairship.github.io/post/dryairship-origins/</link>
+      <pubDate>Tue, 03 Dec 2019 01:53:04 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/post/dryairship-origins/</guid>
+      <description>
+
+&lt;p&gt;This post is a collection of the answers to the most frequent questions I am asked about my username.&lt;/p&gt;
+
+&lt;h2 id=&#34;what-does-dryairship-mean&#34;&gt;What does dryairship mean?&lt;/h2&gt;
+
+&lt;p&gt;It literally means &lt;a href=&#34;https://dictionary.cambridge.org/dictionary/english/dry&#34; target=&#34;_blank&#34;&gt;dry&lt;/a&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Airship&#34; target=&#34;_blank&#34;&gt;airship&lt;/a&gt;. You could always break it down as dry-airship or dry-air-ship as per your own will, and then iterate over the various meanings of the words &lt;strong&gt;dry&lt;/strong&gt;, &lt;strong&gt;air&lt;/strong&gt; and &lt;strong&gt;ship&lt;/strong&gt; to let it mean whatever pleases you. I, however, like to visualize it as a cute &lt;em&gt;non-moist&lt;/em&gt; airship floating in the sky.&lt;/p&gt;
+
+&lt;p&gt;&lt;a title=&#34;Source: https://myrealdomain.com&#34;&gt;&lt;img src=&#34;cartoon-blimp-original.jpg&#34; alt=&#34;drawing&#34; width=&#34;300&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The only other allusion that dryairship incorporates, is that it happens to be an anagram of my legal first name &lt;strong&gt;Priydarshi&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;how-did-i-think-of-dryairship&#34;&gt;How did I think of dryairship?&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;td;dr&lt;/strong&gt; : I didn&amp;rsquo;t. I wrote a program to find it.&lt;/p&gt;
+
+&lt;p&gt;Just before coming to IITK, I realized I needed a nice username for all my online accounts. Also somewhat around that time, I had finished the entire Harry Potter movie series. I was particularly impressed by the scene in which &amp;ldquo;Tom Marvolo Riddle&amp;rdquo; was permutated to &amp;ldquo;I am Lord Voldemort&amp;rdquo;. Further, I read about &lt;a href=&#34;https://www.quora.com/How-was-the-anagram-Tom-Marvolo-Riddle-to-I-am-Lord-Voldemort-translated-into-other-languages-in-Harry-Potter-versions-around-the-world&#34; target=&#34;_blank&#34;&gt;how this scene was performed in other languages&lt;/a&gt; and also found &lt;a href=&#34;https://www.reddit.com/r/harrypotter/comments/vm2d2/xpost_from_rfunny/&#34; target=&#34;_blank&#34;&gt;a reddit post that has other anagrams for Tom Marvolo Riddle&lt;/a&gt;. And then it was decided - I needed a username that was an anagram of my name.&lt;/p&gt;
+
+&lt;p&gt;Hence, I wrote a &lt;a href=&#34;https://github.com/dryairship/meaningful-anagrams&#34; target=&#34;_blank&#34;&gt;simple Java program&lt;/a&gt; to find meaningful anagrams of my name. (&lt;em&gt;Note: Although it seems as if the program would take factorial time, it runs in polynomial time.&lt;/em&gt;)&lt;/p&gt;
+
+&lt;p&gt;From the output of the program, I zeroed in on dryairship.&lt;/p&gt;
+
+&lt;h2 id=&#34;of-all-the-907200-permutations-why-dryairship&#34;&gt;Of all the 907200 permutations, why dryairship?&lt;/h2&gt;
+
+&lt;p&gt;Because dryairship is better than &lt;code&gt;hairy drips&lt;/code&gt; or &lt;code&gt;his dry pair&lt;/code&gt; or &lt;code&gt;air dry hips&lt;/code&gt; or any other anagram. I did linger over &lt;code&gt;sir hardy pi&lt;/code&gt; and &lt;code&gt;sir pi hydra&lt;/code&gt; for a few minutes but then decided against using the title &lt;code&gt;sir&lt;/code&gt; in my username.&lt;/p&gt;
+
+&lt;h2 id=&#34;is-dryairship-related-to-aerospace-engineering&#34;&gt;Is dryairship related to Aerospace Engineering?&lt;/h2&gt;
+
+&lt;p&gt;Not intentionally. Though the fact that I was about to join IITK to study Aerospace Engineering could have been an implicit factor in making me choose dryairship over other alternatives.&lt;/p&gt;
+
+&lt;h2 id=&#34;what-would-happen-if-the-airship-becomes-wet&#34;&gt;What would happen if the airship becomes wet?&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;ve only completed one course of Aerospace Engineering as of writing of this post and find myself incapable of describing what effects the wetness of the surface of the airship would have on the flight. The answer to this question would be updated as soon as I do a course which teaches me that.&lt;/p&gt;
+
+&lt;p&gt;More questions, as their frequency increases, would be added here.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Learning Machine Learning : Story #N</title>

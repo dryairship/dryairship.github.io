@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ml-stories on Priydarshi Singh</title>
+    <link>https://dryairship.github.io/tags/ml-stories/</link>
+    <description>Recent content in ml-stories on Priydarshi Singh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
+    <lastBuildDate>Mon, 02 Dec 2019 17:38:31 +0530</lastBuildDate>
+    
+	<atom:link href="https://dryairship.github.io/tags/ml-stories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Learning Machine Learning : Story #N</title>
+      <link>https://dryairship.github.io/post/learning-machine-learning-story-n/</link>
+      <pubDate>Mon, 02 Dec 2019 17:38:31 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/post/learning-machine-learning-story-n/</guid>
+      <description>The Orange Without The Pulp</description>
+    </item>
+    
+  </channel>
+</rss>

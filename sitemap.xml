@@ -3,17 +3,58 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dryairship.github.io/authors/</loc>
+    <lastmod>2019-12-03T01:53:04+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/post/</loc>
+    <lastmod>2019-12-03T01:53:04+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/</loc>
+    <lastmod>2019-12-03T01:53:04+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/tags/</loc>
+    <lastmod>2019-12-03T01:53:04+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/authors/dryairship/</loc>
+    <lastmod>2019-12-03T01:53:04+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/tags/dryairship/</loc>
+    <lastmod>2019-12-03T01:53:04+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/post/dryairship-origins/</loc>
+    <lastmod>2019-12-03T01:53:04+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dryairship.github.io/post/learning-machine-learning-story-n/</loc>
     <lastmod>2019-12-02T17:38:31+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://dryairship.github.io/post/</loc>
+    <loc>https://dryairship.github.io/tags/machine-learning/</loc>
     <lastmod>2019-12-02T17:38:31+05:30</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dryairship.github.io/</loc>
+    <loc>https://dryairship.github.io/tags/ml-stories/</loc>
     <lastmod>2019-12-02T17:38:31+05:30</lastmod>
     <priority>0</priority>
   </url>
@@ -25,12 +66,6 @@
   
   <url>
     <loc>https://dryairship.github.io/project/</loc>
-    <lastmod>2019-11-03T03:28:56+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/tags/</loc>
     <lastmod>2019-11-03T03:28:56+05:30</lastmod>
     <priority>0</priority>
   </url>
@@ -72,24 +107,12 @@
   </url>
   
   <url>
-    <loc>https://dryairship.github.io/authors/</loc>
-    <lastmod>2019-09-20T03:44:44+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://dryairship.github.io/post/my-first-flight-stalled/</loc>
     <lastmod>2019-09-20T03:44:44+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://dryairship.github.io/tags/aerospace/</loc>
-    <lastmod>2019-09-20T03:44:44+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/authors/dryairship/</loc>
     <lastmod>2019-09-20T03:44:44+05:30</lastmod>
     <priority>0</priority>
   </url>
