@@ -7,10 +7,52 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Sun, 03 Nov 2019 03:28:56 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 02 Dec 2019 17:38:31 +0530</lastBuildDate>
     
 	    <atom:link href="https://dryairship.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Learning Machine Learning : Story #N</title>
+      <link>https://dryairship.github.io/post/learning-machine-learning-story-n/</link>
+      <pubDate>Mon, 02 Dec 2019 17:38:31 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/post/learning-machine-learning-story-n/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This series is based on my attempts at exploring machine learning, and the final results of those attempts. It starts straightaway with part N because I do not remember how many times I have tried to do this before, only to leave it for the future. Just as a side note, I&amp;rsquo;m not completely illiterate at ML. However, my proficiency, as of writing this post, is limited to linear regression, which some of my friends do sometimes regard as complete illiteracy.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;So the endsems are over and my unremitting self is again motivated to proclaim &amp;ldquo;I&amp;rsquo;ll learn ML in these vacations&amp;rdquo;. Having tried my hands at all sorts of online resources, this time I decide to use a physical book as my guide. So I go to the library and pick up this book titled &lt;a href=&#34;https://www.amazon.com/Machine-Learning-Constraint-Based-Marco-Ph-D/dp/0081006594&#34; target=&#34;_blank&#34;&gt;Machine Learning: A constraint-based approach&lt;/a&gt; by Professor Marco Gori.&lt;/p&gt;
+
+&lt;p&gt;It is 2 AM, I&amp;rsquo;m on chapter one, and the current topic is why Euclidean distance is not a good metric in higher dimensions. So we&amp;rsquo;re working in the n-dimensional set \( \mathbb{X} \) and the author defines the set of neighbours of a point \(x_{0}\) as :
+$$ \mathcal{N}_R (x_{0}) = \{ x \in \mathbb{X}\,\, |\,\, ||x-x_{0}|| &amp;lt; R\}$$
+where \(R\) is the degree of neighbourhood of \(x_{0}\) (i.e., the radius). We call this the orange. He then brings up the formula for the &lt;a href=&#34;https://en.wikipedia.org/wiki/Volume_of_an_n-ball&#34; target=&#34;_blank&#34;&gt;volume of an n-ball&lt;/a&gt; (which I&amp;rsquo;ve never seen before) :
+&lt;a title=&#34;Volume of an n-ball&#34;&gt;&lt;img alt=&#34;Volume of an n-ball&#34; style=&#34;filter: invert(1); -webkit-filter: invert(1);&#34; src=&#34;https://wikimedia.org/api/rest_v1/media/math/render/svg/4247a3f5a3cc59a2dc1b08af20ec7a210db1ca06&#34;&gt;&lt;/a&gt;
+where \(n\) is the number of dimensions, \(R\) is the radius of the ball, and \(\Gamma\) is the &lt;a href=&#34;https://en.wikipedia.org/wiki/Gamma_function&#34; target=&#34;_blank&#34;&gt;Gamma function&lt;/a&gt;.
+Trusting the author without verifying the veracity of the formula (as I&amp;rsquo;ve always done), I move on to the definiton of the the peel of this orange. We define \(\epsilon &amp;gt; 0\) as the thickness of the peel, which we denote as \(\mathcal{P}_{\epsilon}\). The radius of the pulp, therefore, reduces to \(R-\epsilon\). The volume of the peel is then obtained by subtracting the volume of the pulp from the volume of the orange.
+$$
+\begin{align}
+vol(\mathcal{P}_{\epsilon}) &amp;amp;= vol(\mathcal{N}_R) - vol(\mathcal{N}_{R-\epsilon})\\\&lt;br /&gt;
+&amp;amp;= vol(\mathcal{N}_R) \left(1 - \frac{vol(\mathcal{N}_{R-\epsilon})}{vol(\mathcal{N}_R)}\right)\\\&lt;br /&gt;
+&amp;amp;= vol(\mathcal{N}_R) \left(1 - \left(\frac{R-\epsilon}{R}\right)^{n}\right)
+\end{align}
+$$
+Now we let the dimensions increase. Formally, we let \(n \to \infty\).
+$$
+\begin{align}
+vol(\mathcal{P}_{\epsilon}) &amp;amp;= vol(\mathcal{N}_R) \left(1 - \lim \limits_{n \to \infty} \left(\frac{R-\epsilon}{R}\right)^{n}\right)
+\end{align}
+$$
+Since \(R-\epsilon &amp;lt; R\), we have \(\frac{R-\epsilon}{R}&amp;lt;1\) which implies \( \lim \limits_{n \to \infty} \left(\frac{R-\epsilon}{R}\right)^{n}\ = 0\).
+Thus, we get
+$$
+vol(\mathcal{P}_{\epsilon}) = vol(\mathcal{N}_R)
+$$
+ and the orange becomes its peel. This is it. This blows my mind. I naively declare this as the pinnacle of mathematical beauty that has ever been unleashed to me, and go to bed, thinking about all the jokes I could make with this.&lt;/p&gt;
+
+&lt;p&gt;Did I even bother to check the proof of the formula for the volume of the n-ball? No. I merely verified that it holds for 1, 2 and 3 dimensions. But what if there is some catch in higher dimensions, I wonder as I lie down on my bed. I then lazily conclude that the author must have checked the proof before writing the formula in his book.&lt;/p&gt;
+
+&lt;p&gt;Were we discussing about how Euclidean metrics fail in higher dimensions? No. We were discussing about a greedy orange-loving alien who has invented a dimension-changinator and would be wanting to increase the number of dimensions of his orange, and how he would be disappointed to get only the peel if he increases the number of dimensions to very large values.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Centralized Inventory and Purchasing</title>

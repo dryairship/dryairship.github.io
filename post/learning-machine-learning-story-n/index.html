@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
@@ -29,10 +27,10 @@
   
     
   
-  <meta name="description" content="Second Year Undergraduate Student">
+  <meta name="description" content="This series is based on my attempts at exploring machine learning, and the final results of those attempts. It starts straightaway with part N because I do not remember how many times I have tried to do this before, only to leave it for the future. Just as a side note, I&rsquo;m not completely illiterate at ML. However, my proficiency, as of writing this post, is limited to linear regression, which some of my friends do sometimes regard as complete illiteracy.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://dryairship.github.io/tags/nodejs/">
+  <link rel="alternate" hreflang="en-us" href="https://dryairship.github.io/post/learning-machine-learning-story-n/">
 
   
 
@@ -113,9 +111,6 @@
   
 
   
-  <link rel="alternate" href="/tags/nodejs/index.xml" type="application/rss+xml" title="Priydarshi Singh">
-  <link rel="feed" href="/tags/nodejs/index.xml" type="application/rss+xml" title="Priydarshi Singh">
-  
   
   <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
   </script>
@@ -124,7 +119,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://dryairship.github.io/tags/nodejs/">
+  <link rel="canonical" href="https://dryairship.github.io/post/learning-machine-learning-story-n/">
 
   
   
@@ -136,19 +131,21 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Priydarshi Singh">
-  <meta property="og:url" content="https://dryairship.github.io/tags/nodejs/">
-  <meta property="og:title" content="nodejs | Priydarshi Singh">
-  <meta property="og:description" content="Second Year Undergraduate Student"><meta property="og:image" content="https://dryairship.github.io/img/icon-192.png">
+  <meta property="og:url" content="https://dryairship.github.io/post/learning-machine-learning-story-n/">
+  <meta property="og:title" content="Learning Machine Learning : Story #N | Priydarshi Singh">
+  <meta property="og:description" content="This series is based on my attempts at exploring machine learning, and the final results of those attempts. It starts straightaway with part N because I do not remember how many times I have tried to do this before, only to leave it for the future. Just as a side note, I&rsquo;m not completely illiterate at ML. However, my proficiency, as of writing this post, is limited to linear regression, which some of my friends do sometimes regard as complete illiteracy."><meta property="og:image" content="https://dryairship.github.io/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2019-11-03T03:28:56&#43;05:30">
+  <meta property="article:published_time" content="2019-12-02T17:38:31&#43;05:30">
+  
+  <meta property="article:modified_time" content="2019-12-02T17:38:31&#43;05:30">
   
 
   
 
   
 
-  <title>nodejs | Priydarshi Singh</title>
+  <title>Learning Machine Learning : Story #N | Priydarshi Singh</title>
   
   
 <script type="application/javascript">
@@ -337,7 +334,9 @@ if (!doNotTrack) {
 </nav>
 
 
+<article class="article" itemscope itemtype="http://schema.org/Article">
 
+  
 
 
 
@@ -354,37 +353,282 @@ if (!doNotTrack) {
 
   
   
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Learning Machine Learning : Story #N</h1>
+
+  
+  <p class="page-subtitle">The Orange Without The Pulp</p>
+  
+
   
     
-  
-<div class="universal-wrapper pt-3">
-  <h1 itemprop="name">nodejs</h1>
+
+
+
+<meta content="2019-12-02 17:38:31 &#43;0530 IST" itemprop="datePublished">
+<meta content="2019-12-02 17:38:31 &#43;0530 IST" itemprop="dateModified">
+
+<div class="article-metadata">
 
   
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Mon, Dec 2, 2019</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    3 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/learning-machine-learning-story-n/#disqus_thread"></a>
+  
+
+  
+
+  
+    
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
 
   
 </div>
 
 
 
-<div class="universal-wrapper">
-  
+  <div class="article-container">
 
-  
-  
-  <div>
-    <h2><a href="/project/centralized-inventory-and-purchasing/">Centralized Inventory and Purchasing</a></h2>
-    <div class="article-style">
-      
-      Developed a web app for efficient inventory management across various departments of the NGO Vitraag Vigyaan
-      
+    <div class="article-style" itemprop="articleBody">
+      <p><em>This series is based on my attempts at exploring machine learning, and the final results of those attempts. It starts straightaway with part N because I do not remember how many times I have tried to do this before, only to leave it for the future. Just as a side note, I&rsquo;m not completely illiterate at ML. However, my proficiency, as of writing this post, is limited to linear regression, which some of my friends do sometimes regard as complete illiteracy.</em></p>
+
+<p>So the endsems are over and my unremitting self is again motivated to proclaim &ldquo;I&rsquo;ll learn ML in these vacations&rdquo;. Having tried my hands at all sorts of online resources, this time I decide to use a physical book as my guide. So I go to the library and pick up this book titled <a href="https://www.amazon.com/Machine-Learning-Constraint-Based-Marco-Ph-D/dp/0081006594" target="_blank">Machine Learning: A constraint-based approach</a> by Professor Marco Gori.</p>
+
+<p>It is 2 AM, I&rsquo;m on chapter one, and the current topic is why Euclidean distance is not a good metric in higher dimensions. So we&rsquo;re working in the n-dimensional set \( \mathbb{X} \) and the author defines the set of neighbours of a point \(x_{0}\) as :
+$$ \mathcal{N}_R (x_{0}) = \{ x \in \mathbb{X}\,\, |\,\, ||x-x_{0}|| &lt; R\}$$
+where \(R\) is the degree of neighbourhood of \(x_{0}\) (i.e., the radius). We call this the orange. He then brings up the formula for the <a href="https://en.wikipedia.org/wiki/Volume_of_an_n-ball" target="_blank">volume of an n-ball</a> (which I&rsquo;ve never seen before) :
+<a title="Volume of an n-ball"><img alt="Volume of an n-ball" style="filter: invert(1); -webkit-filter: invert(1);" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4247a3f5a3cc59a2dc1b08af20ec7a210db1ca06"></a>
+where \(n\) is the number of dimensions, \(R\) is the radius of the ball, and \(\Gamma\) is the <a href="https://en.wikipedia.org/wiki/Gamma_function" target="_blank">Gamma function</a>.
+Trusting the author without verifying the veracity of the formula (as I&rsquo;ve always done), I move on to the definiton of the the peel of this orange. We define \(\epsilon &gt; 0\) as the thickness of the peel, which we denote as \(\mathcal{P}_{\epsilon}\). The radius of the pulp, therefore, reduces to \(R-\epsilon\). The volume of the peel is then obtained by subtracting the volume of the pulp from the volume of the orange.
+$$
+\begin{align}
+vol(\mathcal{P}_{\epsilon}) &amp;= vol(\mathcal{N}_R) - vol(\mathcal{N}_{R-\epsilon})\\\<br />
+&amp;= vol(\mathcal{N}_R) \left(1 - \frac{vol(\mathcal{N}_{R-\epsilon})}{vol(\mathcal{N}_R)}\right)\\\<br />
+&amp;= vol(\mathcal{N}_R) \left(1 - \left(\frac{R-\epsilon}{R}\right)^{n}\right)
+\end{align}
+$$
+Now we let the dimensions increase. Formally, we let \(n \to \infty\).
+$$
+\begin{align}
+vol(\mathcal{P}_{\epsilon}) &amp;= vol(\mathcal{N}_R) \left(1 - \lim \limits_{n \to \infty} \left(\frac{R-\epsilon}{R}\right)^{n}\right)
+\end{align}
+$$
+Since \(R-\epsilon &lt; R\), we have \(\frac{R-\epsilon}{R}&lt;1\) which implies \( \lim \limits_{n \to \infty} \left(\frac{R-\epsilon}{R}\right)^{n}\ = 0\).
+Thus, we get
+$$
+vol(\mathcal{P}_{\epsilon}) = vol(\mathcal{N}_R)
+$$
+ and the orange becomes its peel. This is it. This blows my mind. I naively declare this as the pinnacle of mathematical beauty that has ever been unleashed to me, and go to bed, thinking about all the jokes I could make with this.</p>
+
+<p>Did I even bother to check the proof of the formula for the volume of the n-ball? No. I merely verified that it holds for 1, 2 and 3 dimensions. But what if there is some catch in higher dimensions, I wonder as I lie down on my bed. I then lazily conclude that the author must have checked the proof before writing the formula in his book.</p>
+
+<p>Were we discussing about how Euclidean metrics fail in higher dimensions? No. We were discussing about a greedy orange-loving alien who has invented a dimension-changinator and would be wanting to increase the number of dimensions of his orange, and how he would be disappointed to get only the peel if he increases the number of dimensions to very large values.</p>
+
     </div>
+
+    
+
+
+
+
+
+    
+      
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
+  
+  
+  <img class="portrait mr-3" src="/author/dryairship/avatar_hu62cc97398271f53f903402cc5339b2e8_45029_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+  
+
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/authors/dryairship">Priydarshi Singh</a></h5>
+    <h6 class="card-subtitle">Second Year Undergraduate Student</h6>
+    <p class="card-text" itemprop="description">Programmer. Grey Hat. Ailurophile.</p>
+    <ul class="network-icon" aria-hidden="true">
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      <li>
+        <a itemprop="sameAs" href="mailto:darshi@iitk.ac.in" >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://github.com/dryairship" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://stackoverflow.com/users/4121347/dryairship?tab=profile" target="_blank" rel="noopener">
+          <i class="fab fa-stack-overflow"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://www.linkedin.com/in/dryairship/" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://facebook.com/dryairship" target="_blank" rel="noopener">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+      
+    </ul>
   </div>
-  
-
-  
-
 </div>
+
+
+
+      
+      
+    
+
+    
+
+    
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "dryairship" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+  </div>
+</article>
+
 <div class="container">
   <footer class="site-footer">
   
@@ -535,6 +779,4 @@ if (!doNotTrack) {
 
   </body>
 </html>
-
-
 
