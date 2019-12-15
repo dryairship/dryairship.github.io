@@ -7,10 +7,116 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Tue, 03 Dec 2019 01:53:04 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 15 Dec 2019 06:27:48 +0530</lastBuildDate>
     
 	    <atom:link href="https://dryairship.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Learning Machine Learning : Story #N&#43;1</title>
+      <link>https://dryairship.github.io/post/learning-machine-learning-story-n-1/</link>
+      <pubDate>Sun, 15 Dec 2019 06:27:48 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/post/learning-machine-learning-story-n-1/</guid>
+      <description>
+
+&lt;h2 id=&#34;the-m-achi-nist-dataset&#34;&gt;The M&lt;del&gt;ACHI&lt;/del&gt;NIST (dataset)&lt;/h2&gt;
+
+&lt;p&gt;In November 2018, I was reading about neural networks, and the first hands-on example that the website had was to build a neural network to recognize handwritten numbers using the &lt;a href=&#34;https://en.wikipedia.org/wiki/MNIST_database&#34; target=&#34;_blank&#34;&gt;MNIST dataset&lt;/a&gt;.&lt;br /&gt;
+One month later, we had a lecture series on &amp;ldquo;Introduction to Machine Learning&amp;rdquo; in the winter camp of &lt;a href=&#34;http://pclub.in&#34; target=&#34;_blank&#34;&gt;Programming Club, IITK&lt;/a&gt;. The MNIST dataset was again used to teach Neural Networks.&lt;br /&gt;
+Now, the book that I&amp;rsquo;m following also has a section called &amp;ldquo;Hands-on Experience&amp;rdquo; in the very first chapter, which uses the MNIST dataset for handwritten character recognition.&lt;/p&gt;
+
+&lt;h2 id=&#34;doing-the-same-thing-again-and-again&#34;&gt;Doing the same thing, again and again.&lt;/h2&gt;
+
+&lt;h4 id=&#34;the-first-time-it-felt-like-magic&#34;&gt;The first time, it felt like magic.&lt;/h4&gt;
+
+&lt;p&gt;I didn&amp;rsquo;t know what we were doing. I didn&amp;rsquo;t know why we were doing that. But it made my laptop start its fan, and apparently, the tests showed that the network had trained well.&lt;/p&gt;
+
+&lt;h4 id=&#34;the-second-time-i-was-still-clueless-though-a-little-bit-less-clueless&#34;&gt;The second time, I was still clueless. Though a little bit &lt;em&gt;less&lt;/em&gt; clueless.&lt;/h4&gt;
+
+&lt;p&gt;I understood how the chosen error function translated to the update equations for the weights and biases. I knew what gradient descent was doing. I understood most of the &amp;lsquo;&lt;em&gt;what&lt;/em&gt;&amp;rsquo;s and &amp;lsquo;&lt;em&gt;how&lt;/em&gt;&amp;rsquo;s, but the &amp;lsquo;&lt;em&gt;why&lt;/em&gt;&amp;rsquo; questions remained unanswered.&lt;/p&gt;
+
+&lt;h4 id=&#34;the-third-time-i-got-overconfident&#34;&gt;The third time, I got overconfident.&lt;/h4&gt;
+
+&lt;p&gt;I now (somewhat) understood the implications of the choice of the error function. I also (somewhat) understood why the network was pyramidal in shape. I understood the benefits of one-hot encoding over label encoding. Overall, it felt like I knew what I was doing and why I was doing that. So now it was time for my own theories.&lt;/p&gt;
+
+&lt;h2 id=&#34;network-structure&#34;&gt;Network Structure&lt;/h2&gt;
+
+&lt;p&gt;The network had 3 layers - the input layer, one hidden layer, and the output layer.&lt;br /&gt;
+The images in the MNIST dataset are of size 28 x 28. Thus the input layer was of size 784. The hidden layer was chosen to be of size 100. And since we were using one-hot encoding, our output layer was of size 10.&lt;/p&gt;
+
+&lt;p&gt;As such, there were supposed to be two pairs of weights and biases - one for the transition from the input layer to the hidden layer, and one for the transition from the hidden layer to the output layer. So the first set of weights was a matrix of size 784x100, and the second was a matrix of size 100x10. The biases were simply arrays of sizes 100 and 10.&lt;/p&gt;
+
+&lt;h2 id=&#34;working&#34;&gt;Working&lt;/h2&gt;
+
+&lt;h4 id=&#34;here-is-how-the-network-decides-the-digit-that-a-given-image-corresponds-to&#34;&gt;Here is how the network decides the digit that a given image corresponds to :&lt;/h4&gt;
+
+&lt;p&gt;After training, we have calculated the two pairs of weights and biases. We are given an image of size 28x28. This image corresponds to an array of 784 integers between 0 and 255. We take the product of this array (1 x 784) with the first weight matrix (784 x 100) to get an array of size 1 x 100. We add the values of the first bias array to this to get the intermediate answer array. We then take the product of the intermediate answer array (1 x 100) and the second weight matrix (100 x 10) to get an array of size 1 x 10.  Adding the second set of biases to this, we get the final answer array. Passing the values of this array to the softmax function, we obtain a &lt;strong&gt;&lt;em&gt;score&lt;/em&gt;&lt;/strong&gt; between 0 and 1 for each digit. We then say that the given image corresponds to the digit with the highest score.&lt;/p&gt;
+
+&lt;h4 id=&#34;the-above-could-be-restated-in-english-as-follows&#34;&gt;The above could be restated in English as follows :&lt;/h4&gt;
+
+&lt;p&gt;Through the training process, we have obtained a set of 100 &lt;em&gt;patterns&lt;/em&gt; (first weight matrix), and we know that a particular digit has some subset of these patterns (second weight matrix). When we are given an image, in the first step, we calculate &lt;strong&gt;&lt;em&gt;to what extent&lt;/em&gt;&lt;/strong&gt; this image contains each of our 100 patterns. We then find the digit which has these patterns to a similar extent as the given image.&lt;/p&gt;
+
+&lt;p&gt;For example, suppose we are given an image in which has one horizontal line in the upper part of the image and one vertical line in the right portion. We realize that these patterns most closely correspond to the digit 7 and declare that this image has 7 written in it.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-experiment&#34;&gt;The Experiment&lt;/h2&gt;
+
+&lt;p&gt;While the mathematical description of the model is explicit regarding the rules that determine the digit corresponding to an image, the English version has a rather mystical element to it, and this makes the latter more intriguing. As an attempt to demystify it, I tried to visualize the &lt;em&gt;patterns&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;The patterns are represented by the first weight matrix, which is of size 784 x 100. We could consider this matrix as 100 arrays of size 784 - with each array representing a pattern (a 28x28 image). I wrote a simple python program to convert an array of size 784 to a 28x28 image:&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/dryairship/f5ae3c76a679542d6981334faef98bb3.js&#34;&gt;&lt;/script&gt;
+
+&lt;h2 id=&#34;epic-fail&#34;&gt;Epic Fail&lt;/h2&gt;
+
+&lt;h4 id=&#34;this-is-what-i-expected-the-patterns-to-look-like&#34;&gt;This is what I expected the patterns to look like:&lt;/h4&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;img src=&#34;patterns-expected.png&#34; alt=&#34;Expected Patterns&#34; /&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Expected Patterns (shown 6 out of &amp;lt;indeterminate&amp;gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;A curve in the top right corner is a feature of the digits 2, 3, 8, 9 and 0. A horizontal line in the upper part is a feature of the digit 7. A curve in the bottom left corner is a feature of the digits 5, 6, 8 and 0. A vertical line is a feature of the digits 1, 4 and 7. I anticipated that the patterns obtained from the weight matrix would look somewhat like these, but was utterly disappointed.&lt;/p&gt;
+
+&lt;h4 id=&#34;this-is-what-the-patterns-actually-looked-like&#34;&gt;This is what the patterns actually looked like:&lt;/h4&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;img src=&#34;patterns-actual.png&#34; alt=&#34;Actual Patterns&#34; /&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Actual Patterns (shown 6 out of 100)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;Noise!&lt;/strong&gt; That&amp;rsquo;s noise! Those images do not seem to have any pattern at all! But believe it or not, this is how it works.&lt;/p&gt;
+
+&lt;h2 id=&#34;analysis&#34;&gt;Analysis&lt;/h2&gt;
+
+&lt;p&gt;The result of the experiment was completely contrary to what I was hoping for. However, a sober reconsideration of the idea of the experiment would drop hints that the experiment was destined to fail :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I had completely disregarded the importance of the bias array and the entire experiment was based solely on the first weight matrix.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;I had fallen prey to the fallacy that a computer would &lt;em&gt;think&lt;/em&gt; exactly the way humans do.&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And so with a failed experiment, I decided that I was done with ML for the day, or maybe for a few days.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>dryairship : Origins</title>

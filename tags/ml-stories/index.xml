@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Mon, 02 Dec 2019 17:38:31 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 15 Dec 2019 06:27:48 +0530</lastBuildDate>
     
 	<atom:link href="https://dryairship.github.io/tags/ml-stories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Learning Machine Learning : Story #N&#43;1</title>
+      <link>https://dryairship.github.io/post/learning-machine-learning-story-n-1/</link>
+      <pubDate>Sun, 15 Dec 2019 06:27:48 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/post/learning-machine-learning-story-n-1/</guid>
+      <description>Visualizing patterns in the MNIST dataset</description>
+    </item>
     
     <item>
       <title>Learning Machine Learning : Story #N</title>
