@@ -7,10 +7,61 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Sun, 15 Dec 2019 06:27:48 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2020 06:59:43 +0530</lastBuildDate>
     
 	    <atom:link href="https://dryairship.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Your Guess Might Not Be as Good as Mine!</title>
+      <link>https://dryairship.github.io/post/your-guess-might-not-be-as-good-as-mine/</link>
+      <pubDate>Thu, 26 Mar 2020 06:59:43 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/post/your-guess-might-not-be-as-good-as-mine/</guid>
+      <description>&lt;p&gt;I was in a discussion with my friend Avinandan Bose once. He had just returned from the mid-semester examination of an MTH course. The subject of our concern was the format of the examination - a rather unusual one for such a consequential test. The test had 5 True/False questions, with a +3 for a correct answer, a -2 for an incorrect answer, and a 0 for an unattempted question.&lt;/p&gt;
+
+&lt;p&gt;The curious marking scheme of this exam made one thing intuitively clear to both of us - if you don&amp;rsquo;t know the answer, making a guess &lt;em&gt;should be&lt;/em&gt; better than not attempting the question. And so Bose exclaimed, &lt;em&gt;&amp;ldquo;LMAO some students left the entire paper blank. They could have marked all the answers &amp;lsquo;True&amp;rsquo; and still have a fair chance of a positive score!&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&amp;ldquo;But why all &amp;lsquo;True&amp;rsquo;? You could just mark all the answers according to your intuition and that should effectively be at least as good as random guessing&amp;rdquo;&lt;/em&gt;, I argued. Bose then asserted that random guessing may get you all your answers wrong, and the &amp;ldquo;all True / all False&amp;rdquo; method should be preferred. While Bose may have stated that impetuously, it &lt;abbr title=&#34;Koi sense hai is baat ki? Hame bohot lag rahi thi uss time. :p&#34;&gt;did get both of us thinking.&lt;/abbr&gt;&lt;/p&gt;
+
+&lt;p&gt;My roommate Daljit gatecrashed the discussion and sided with Bose. However, after fiddling with pen and paper for some time, Bose yielded that &lt;em&gt;&amp;ldquo;mathematically both the methods appear to have the same effect&amp;rdquo;&lt;/em&gt;. Obviously, the probability of getting all 5 answers incorrect in both the cases remains \( (0.5)^5 \).&lt;/p&gt;
+
+&lt;p&gt;Now consider this: If you had to answer all the questions in a set of 5 True/False type questions, there are 32 possible ways you could do this. While calculating our probability of \( (0.5)^5 = 3.125\%\), we have assumed that all of these ways are equally likely to be the answer set that has all incorrect answers. Instinctively, this seems unrealistic.&lt;/p&gt;
+
+&lt;p&gt;If I were to set a question paper, I would try to maintain a balance between the number of True statements and the number of False statements. This idea is easier to visualize when there are more number of questions and more alternatives. Consider the JEE Main question paper : 90 questions, one correct option out of 4 alternatives (a), (b), (c) and (d). There is &lt;strong&gt;absolutely no way&lt;/strong&gt; (realistically) that the answer to all the questions be (a). In fact, it is expected that the number of questions with (a) as the correct answer would be roughly a quarter of the total number of questions.&lt;/p&gt;
+
+&lt;p&gt;So when it comes to 5 True/False questions, it is not expected that all the answers be the same. And hence, marking all True / all False should have a better chance at not getting all the answers wrong, than randomly marking the answers. This needs a better mathematical analysis, but Bose got AIR 104 in JEE Advanced and so his advice regarding examinations should not be taken lightly.&lt;/p&gt;
+
+&lt;p&gt;Nevertheless, the marking scheme of the examination was such that would promote guessing. And this can be proven with some quick mathematics. Consider any examination where you have to select one out of \(N\) options. You get \(x\) points when you correctly answer a question, \(-y\) points when you incorrectly answer a question, and zero for not attempting the the question.
+Thus, if you randonly guess an answer, the probabilty that you get it correct is \(\frac{1}{N}\). If you&amp;rsquo;re making a random guess for \(Q\) questions, then the total expected score due guessing would be :
+$$
+\begin{array}{r l}
+ &amp;amp; Q[\frac{1}{N}x + (1-\frac{1}{N})(-y)] \\\&lt;br /&gt;
+= &amp;amp; \frac{Q}{N}[x - (N-1)y]
+\end{array}
+$$
+For an examination where random guessing should not make any difference, the expected score due to guessing should be equal to zero. With this condition, we can solve for \(y\).&lt;/p&gt;
+
+&lt;p&gt;$$
+\begin{array}{r c l}
+\frac{Q}{N}[x - (N-1)y] &amp;amp; = &amp;amp; 0 \\\&lt;br /&gt;
+x - (N-1)y &amp;amp; = &amp;amp; 0 \\\&lt;br /&gt;
+\frac{x}{N-1} &amp;amp; = &amp;amp; y
+\end{array}
+$$
+Therefore, in an ideal 1-out-of-N examination, the penalty for an incorrect answer should be \(-\frac{x}{N-1}\).&lt;/p&gt;
+
+&lt;p&gt;To compare, Bose&amp;rsquo;s examination had a penatly of -2 instead of the ideal -3 (\(x=3, N=2\)), which implies that random guessing could leave one better off. JEE Main has a penalty of -1, but ideally it should have a penalty of -\(\frac{4}{3}\) (\(x=4, N=4\)). This is why I have always promoted guessing in JEE Main. I myself did that, and got a +7 in my score due to it.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve always been a proponent of guessing, wherever the situation promotes it. And this comes in handy during quizzes. Almost all the time, you don&amp;rsquo;t know the exact answer for a question. It is all about working over the hints that the quizmaster subtly drops and making an educated guess.&lt;/p&gt;
+
+&lt;p&gt;I remember when we went to participate in the Farida Abraham Memorial National Quiz in the La Martiniere Girls&amp;rsquo; College, I didn&amp;rsquo;t know the answer to any of the questions in the preliminary round. We still qualified for the finals just by making educated guesses. Ask any quizzer and they would recall a similar story.&lt;/p&gt;
+
+&lt;p&gt;Guesswork lies at the heart of quizzing. And it is the job of a good quizmaster to drop enough hints, and smart hints, such that the teams try to guess reasonable answers. Even if the answer is incorrect, a &amp;ldquo;good guess&amp;rdquo; from the quizmaster is a satisfactory consolation prize.&lt;/p&gt;
+
+&lt;p&gt;Oh, and we have made such progress on guessing that we have an entirely new field where computers are trained to guess &amp;ldquo;values&amp;rdquo;. Yes I&amp;rsquo;m talking about Machine Learning. This reminds me that I have to brush up my ML. Goodbye!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Learning Machine Learning : Story #N&#43;1</title>

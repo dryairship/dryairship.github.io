@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Sun, 15 Dec 2019 06:27:48 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2020 06:59:43 +0530</lastBuildDate>
     
 	<atom:link href="https://dryairship.github.io/authors/dryairship/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Your Guess Might Not Be as Good as Mine!</title>
+      <link>https://dryairship.github.io/post/your-guess-might-not-be-as-good-as-mine/</link>
+      <pubDate>Thu, 26 Mar 2020 06:59:43 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/post/your-guess-might-not-be-as-good-as-mine/</guid>
+      <description>A brief analysis of hazarding a guess.</description>
+    </item>
     
     <item>
       <title>Learning Machine Learning : Story #N&#43;1</title>
@@ -81,8 +90,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dryairship.github.io/author/dryairship/</guid>
-      <description>I am a second year undergraduate student at the Indian Institute Of Technology, Kanpur, majoring in Aerospace Engineering. My academic interests include cyber security and artificial intelligence. I am a learning developer.
-For recreation purposes I prefer mind sports like chess, competitive programming or puzzling. I am also an avid quizzer, a swimmer and a budding water-polo player.</description>
+      <description>I am a second year undergraduate student at the Indian Institute Of Technology, Kanpur, majoring in Aerospace Engineering. My academic interests include cyber security and artificial intelligence. I am a skilled developer and have recently started taking an interest in SysAdmin stuff.
+For recreation purposes I prefer mind sports like chess, competitive programming or puzzling. I am also an avid quizzer, a swimmer and a budding water-polo goalkeeper.</description>
     </item>
     
   </channel>
