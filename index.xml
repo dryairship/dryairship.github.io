@@ -223,9 +223,7 @@ The images in the MNIST dataset are of size 28 x 28. Thus the input layer was of
 
 &lt;p&gt;Just before coming to IITK, I realized I needed a nice username for all my online accounts. Also somewhat around that time, I had finished the entire Harry Potter movie series. I was particularly impressed by the scene in which &amp;ldquo;Tom Marvolo Riddle&amp;rdquo; was permutated to &amp;ldquo;I am Lord Voldemort&amp;rdquo;. Further, I read about &lt;a href=&#34;https://www.quora.com/How-was-the-anagram-Tom-Marvolo-Riddle-to-I-am-Lord-Voldemort-translated-into-other-languages-in-Harry-Potter-versions-around-the-world&#34; target=&#34;_blank&#34;&gt;how this scene was performed in other languages&lt;/a&gt; and also found &lt;a href=&#34;https://www.reddit.com/r/harrypotter/comments/vm2d2/xpost_from_rfunny/&#34; target=&#34;_blank&#34;&gt;a reddit post that has other anagrams for Tom Marvolo Riddle&lt;/a&gt;. And then it was decided - I needed a username that was an anagram of my name.&lt;/p&gt;
 
-&lt;p&gt;Hence, I wrote a &lt;a href=&#34;https://github.com/dryairship/meaningful-anagrams&#34; target=&#34;_blank&#34;&gt;simple Java program&lt;/a&gt; to find meaningful anagrams of my name. (&lt;em&gt;Note: Although it seems as if the program would take factorial time, it runs in polynomial time.&lt;/em&gt;)&lt;/p&gt;
-
-&lt;p&gt;From the output of the program, I zeroed in on dryairship.&lt;/p&gt;
+&lt;p&gt;Hence, I wrote a &lt;a href=&#34;https://github.com/dryairship/meaningful-anagrams&#34; target=&#34;_blank&#34;&gt;simple Java program&lt;/a&gt; to find meaningful anagrams of my name. From the output of this program, I zeroed in on dryairship.&lt;/p&gt;
 
 &lt;h2 id=&#34;of-all-the-907200-permutations-why-dryairship&#34;&gt;Of all the 907200 permutations, why dryairship?&lt;/h2&gt;
 
