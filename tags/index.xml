@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Thu, 26 Mar 2020 06:59:43 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 28 Mar 2020 04:27:10 +0530</lastBuildDate>
     
 	<atom:link href="https://dryairship.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>rust</title>
+      <link>https://dryairship.github.io/tags/rust/</link>
+      <pubDate>Sat, 28 Mar 2020 04:27:10 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/tags/rust/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>examinations</title>

@@ -7,10 +7,40 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Thu, 26 Mar 2020 06:59:43 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 28 Mar 2020 04:27:10 +0530</lastBuildDate>
     
 	    <atom:link href="https://dryairship.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My First Rust Program</title>
+      <link>https://dryairship.github.io/post/my-first-rust-program/</link>
+      <pubDate>Sat, 28 Mar 2020 04:27:10 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/post/my-first-rust-program/</guid>
+      <description>&lt;p&gt;Rust has been declared as the most loved programming language consecutively for the past four years in the &lt;a href=&#34;https://insights.stackoverflow.com/survey/2019#most-loved-dreaded-and-wanted&#34; target=&#34;_blank&#34;&gt;StackOverflow Developer Survey&lt;/a&gt;. I myself marked Rust as one of the languages I&amp;rsquo;d like to work with in the future, in the 2020 Survey. And due to the COVID-19 vacations, I finally got the time to try it out.&lt;/p&gt;
+
+&lt;p&gt;So I installed Rust and read a few pages of &lt;a href=&#34;https://doc.rust-lang.org/rust-by-example/index.html&#34; target=&#34;_blank&#34;&gt;Rust by Example&lt;/a&gt;. Then I came across this problem about &lt;a href=&#34;https://blog.tanyakhovanova.com/2020/03/a-game-with-the-devil/&#34; target=&#34;_blank&#34;&gt;a game of coins with the Devil&lt;/a&gt;, and decided to implement the game as my first project in Rust.&lt;/p&gt;
+
+&lt;p&gt;I believe in learning languages the hard way. I learnt Java by experimenting. I used to copy code that I didn&amp;rsquo;t understand, then modified small parts, observed the changes, and repeated this until I understood the entire code. And I learnt python and C++ by by using them to re-write the same programs that I wrote in Java. This also taught me how to use Google properly. I learnt Go by deciding that I&amp;rsquo;d use it to build my best self project yet (an &lt;a href=&#34;https://github.com/dryairship/online-election-manager&#34; target=&#34;_blank&#34;&gt;online election system&lt;/a&gt;), when I hardly knew how to write Hello World in it; and I learnt it not by following some guide, but by searching for &amp;ldquo;how to do X in Go&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;So why should Rust be an exception? I created a new cargo project and started modifying it. I really liked that creating a new project is as simple as doing &lt;code&gt;cargo new project-name&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The first thing that I had to do was to take an integer as an input. I was awfully disappointed that there is no direct way to take an integer input: we first have to input a string and then parse it into an integer.&lt;/p&gt;
+
+&lt;p&gt;Java, at one point, used to be my favourite language. And Java libraries use the camelCase/PascalCase for all naming purposes (except for CONSTANTS). Now Go is my favourite language. And Go too uses a similar convention. Therefore, all my life, I&amp;rsquo;ve preferred using the camelCase. And now I&amp;rsquo;m writing code in a language that gives me a warning, asking me to convert camelCase variable names to snake_case. First turn-off. :p&lt;/p&gt;
+
+&lt;p&gt;When the input part was ready, I ran it using &lt;code&gt;cargo run&lt;/code&gt;. It seemed to take infinity to compile - when I realized that it was in fact waiting for the input. However, I had &lt;code&gt;print!&lt;/code&gt;ed a string before asking for the input, which was not displayed. Flushing problem, I recognized. Changing &lt;code&gt;print!&lt;/code&gt; to &lt;code&gt;println!&lt;/code&gt; did the work, but I still wanted the input to be taken on the same line as the prompt. So I had to add another statement to flush - a rather scary looking statement that required a new Trait to be imported. I didn&amp;rsquo;t really like having to manually flush after &lt;code&gt;print!&lt;/code&gt;ing, but there has been a &lt;a href=&#34;https://github.com/rust-lang/rust/issues/23818&#34; target=&#34;_blank&#34;&gt;huge discussion over this&lt;/a&gt; and the community believes this is the way it should be. :(&lt;/p&gt;
+
+&lt;p&gt;For the next step, I had to create an array of the size that I had just inputted. The error messages told me that I could not use a variable for the size of the array - it had to be a constant. LoL what? I then found that the way to do it is by using a vector. Fair enough. Then I realized that an &lt;code&gt;i32&lt;/code&gt; value could not be used as an array/vector index; it had to be a &lt;code&gt;usize&lt;/code&gt;.  Reasonable, since array indices should be positive. However, I believe an automatic type conversion should have been implemented (again, the subject of &lt;a href=&#34;https://github.com/rust-lang/rust/issues/29010&#34; target=&#34;_blank&#34;&gt;a huge discussion&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;I then had to randomly initialize the vector. Turns out, I have to add an &lt;strong&gt;external crate&lt;/strong&gt; as a dependency to generate random numbers. Seriously? In my opinion, random number generation is something as fundamental as I/O and should have been present in the standard library of Rust.&lt;/p&gt;
+
+&lt;p&gt;At this point, I had a randomly initialized array. I now needed to update it using inputs from the user. I was about to face the most dreaded error any Rust beginner could face : &lt;code&gt;error[E0382]: use of moved value&lt;/code&gt;. The concept of this error doesn&amp;rsquo;t even exist in other languages. &lt;em&gt;So I modified the vector in an iteration of the while loop and now I can&amp;rsquo;t use the vector in the while condition? LMAO why?&lt;/em&gt; It took me an entire day to figure it out, and I have probably not yet properly understood it. I somehow managed to solve it, but I still don&amp;rsquo;t know if the way I did it is the way it was supposed to be done. I&amp;rsquo;ll need to understand the idea of ownership before I pick up any other project in Rust.&lt;/p&gt;
+
+&lt;p&gt;So that was it - an utterly disappointing experience. I once overheard &lt;a href=&#34;https://yashsriv.org/&#34; target=&#34;_blank&#34;&gt;yashsriv&lt;/a&gt; saying that anyone denigrating Rust online would be hurled abuses at. So perhaps I should brace for that. The program is available on GitHub at &lt;a href=&#34;https://github.com/dryairship/coins-and-the-devil&#34; target=&#34;_blank&#34;&gt;dryairship/coins-and-the-devil&lt;/a&gt;. Do point out any mistakes by creating a GitHub issue or in the comments here.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Your Guess Might Not Be as Good as Mine!</title>
