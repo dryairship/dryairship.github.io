@@ -7,10 +7,109 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Sat, 28 Mar 2020 04:27:10 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2020 01:18:22 +0530</lastBuildDate>
     
 	    <atom:link href="https://dryairship.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>When I Messed Up the Gymkhana Server</title>
+      <link>https://dryairship.github.io/post/when-i-messed-up-the-gymkhana-server/</link>
+      <pubDate>Fri, 10 Apr 2020 01:18:22 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/post/when-i-messed-up-the-gymkhana-server/</guid>
+      <description>
+
+&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
+
+&lt;p&gt;I am one of the new coordinators of the &lt;a href=&#34;http://pclub.in/&#34; target=&#34;_blank&#34;&gt;Programming Club&lt;/a&gt;, and I had been instructed by the outgoing coordinators to deploy a CTF.&lt;/p&gt;
+
+&lt;h3 id=&#34;what-i-had-to-do&#34;&gt;What I had to do&lt;/h3&gt;
+
+&lt;p&gt;For deploying any service we need to configure NGINX on two machines:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The Students&amp;rsquo; Gymkhana VM : The actual service runs here. Configuring NGINX on this machine will make it available to anyone connected to the IITK network.&lt;/li&gt;
+&lt;li&gt;The Reverse Proxy VM : This machine has a public facing IP. Configuring NGINX here will forward requests over the internet to our internal network.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;what-i-did&#34;&gt;What I did&lt;/h3&gt;
+
+&lt;p&gt;So I cloned &lt;a href=&#34;https://github.com/CTFd/CTFd&#34; target=&#34;_blank&#34;&gt;CTFd&lt;/a&gt;, made some config changes, and used docker-compose to start the service. CTFd was up and working. Now I only needed to configure the Reverse Proxy VM to make it publicly accessible. However, I had not yet been granted access to the Reverse Proxy VM. So I sent a message to the outgoing coordinators requesting for access.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-movie-starts-here&#34;&gt;The movie starts here&lt;/h2&gt;
+
+&lt;p&gt;The next morning, at 5:32 AM IST, I received a message from &lt;a href=&#34;https://yashsriv.org/&#34; target=&#34;_blank&#34;&gt;Yash&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Why is &lt;a href=&#34;https://search.pclub.in&#34; target=&#34;_blank&#34;&gt;search.pclub.in&lt;/a&gt; down?&lt;br /&gt;
+&amp;hellip;&lt;br /&gt;
+I have a monitor up which says this went down 8:30 hours ago.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Student Search is one of the most popular projects of PClub. And to think that it went down because I had been toying around on the VM was truly dreadful.&lt;/p&gt;
+
+&lt;h3 id=&#34;sherlocking-d&#34;&gt;Sherlocking :D&lt;/h3&gt;
+
+&lt;p&gt;So I tried to do some forensics:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I checked the docker containers. They were running. Good.&lt;/li&gt;
+&lt;li&gt;I checked if the service was accessible through the internal network using the IP of the Gymkahna VM. It was. Great.&lt;/li&gt;
+&lt;li&gt;I checked NGINX logs. They did not have anything fishy. In fact, new requests over the internet were not being logged. Sad.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Therefore, I concluded that everything was working upto the Gymkhana VM and that the Reverse Proxy VM was to blame. And since I didn&amp;rsquo;t even have access to that VM, it couldn&amp;rsquo;t have been my fault. I breathed a sigh of relief.&lt;/p&gt;
+
+&lt;p&gt;Later, &lt;a href=&#34;https://yugeshk.github.io/&#34; target=&#34;_blank&#34;&gt;Yugesh&lt;/a&gt; revealed that he could not ssh into the Reverse Proxy VM. This further substantiated the belief that the machine was down.&lt;/p&gt;
+
+&lt;h3 id=&#34;daedalian-mysteries-lie-ahead&#34;&gt;Daedalian mysteries lie ahead&lt;/h3&gt;
+
+&lt;p&gt;So I mailed &lt;a href=&#34;https://www.iitk.ac.in/ccnew/&#34; target=&#34;_blank&#34;&gt;CC&lt;/a&gt; authorities regarding the issue. The mail was forwarded through 4 nodes and finally the reply that I received was that the machine was working from inside IITK. Okay.&lt;/p&gt;
+
+&lt;p&gt;Then I tried &lt;code&gt;ping&lt;/code&gt;ing the the Reverse Proxy VM after connecting to IITK proxy. It worked. Great.&lt;/p&gt;
+
+&lt;p&gt;Then I &lt;code&gt;ssh&lt;/code&gt;ed into the Gymkhana VM and tried to ping the Reverse Proxy VM. It said &lt;code&gt;Destination Host Unreachable&lt;/code&gt;. Wait what?&lt;/p&gt;
+
+&lt;p&gt;Now this was going over my head (I&amp;rsquo;m just a noob SysAdmin :&amp;lsquo;◖ ). The fact that I was able to ping the Reverse Proxy VM meant that the VM was alive. So I just decided to wait until Yugesh somehow found a way to let me inside that VM.&lt;/p&gt;
+
+&lt;h3 id=&#34;and-it-happened&#34;&gt;And it happened&lt;/h3&gt;
+
+&lt;p&gt;2 weeks later, Yugesh found a machine that could ssh into the Reverse Proxy server, and created a user for me on the VM. Now the first task at hand for me was to get Student Search up again.&lt;/p&gt;
+
+&lt;h3 id=&#34;forensics-once-more&#34;&gt;Forensics once more&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;First Step: Checking NGINX logs. The error log file was filled with &lt;code&gt;upstream timed out (110: Connection timed out)&lt;/code&gt; errors. Sad.&lt;/li&gt;
+&lt;li&gt;Second Step: Restarting NGINX. I know it doesn&amp;rsquo;t make sense, but sometimes restarting things solves all the problems. :p It didn&amp;rsquo;t work this time though. :(&lt;/li&gt;
+&lt;li&gt;Third step: &lt;code&gt;ping&lt;/code&gt;ing the gymkhana VM. No response. &lt;code&gt;100% packet loss&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So now I realized that both the Gymkhana and the Reverse Proxy VMs were up and working properly. I could ssh into both of them. But they couldn&amp;rsquo;t ping each other. This didn&amp;rsquo;t make sense. And so I asked Yash.&lt;/p&gt;
+
+&lt;h3 id=&#34;insights-from-samrat&#34;&gt;Insights from Samrat&lt;/h3&gt;
+
+&lt;p&gt;Yash, as always, had an answer. He recalled facing this issue, and quickly explained it - a new docker network had been created which took up the IP range of the reverse proxy server.&lt;/p&gt;
+
+&lt;p&gt;So then I checked docker networks. There was a network with the name &lt;code&gt;ctfd_default&lt;/code&gt;, whose subnet contained the IP address of the Reverse Proxy VM. This network was automatically created when I started the CTFd docker container using docker-compose.&lt;/p&gt;
+
+&lt;p&gt;So whenever the Reverse Proxy VM would make a request to the Gymkhana VM, it would respond back correctly. But now since the IP of the Reverse Proxy VM was contained in the docker network subnet, the response would go to the docker network, and would never actually reach the Reverse Proxy VM. The Reverse Proxy VM would keep waiting, and hence the timeout.&lt;/p&gt;
+
+&lt;h2 id=&#34;resolving-the-issue&#34;&gt;Resolving the issue&lt;/h2&gt;
+
+&lt;p&gt;The issue was resolved by deleting the offending network. I just did &lt;code&gt;docker network rm ctfd_default&lt;/code&gt;, and everything fell back into place.&lt;/p&gt;
+
+&lt;p&gt;There was another problem here though. In the future, any new docker network would take that same subnet by default, unless specified otherwise. And specifiying a different subnet in the docker-compose file for all the projects is a tedious task.&lt;/p&gt;
+
+&lt;p&gt;To fix this, once and for all, I added a &lt;a href=&#34;https://github.com/moby/moby/pull/29376&#34; target=&#34;_blank&#34;&gt;field &lt;code&gt;default-address-pools&lt;/code&gt;&lt;/a&gt; in the &lt;code&gt;/etc/docker/daemon.json&lt;/code&gt; file. Adding this field caused the docker service to crash, because this field requires docker version &amp;gt;=18.09.1, while the Gymkhana VM had 17.09.0. :( Updating &lt;code&gt;docker-ce&lt;/code&gt; fixed everything.&lt;/p&gt;
+
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+
+&lt;p&gt;Student search is up and working. The CTF server is also up and working at &lt;a href=&#34;https://ctf.pclub.in&#34; target=&#34;_blank&#34;&gt;https://ctf.pclub.in&lt;/a&gt;. I also learnt how to generate SSL certificates using &lt;code&gt;certbot&lt;/code&gt;. And now perhaps I know a little more about docker networks :p.&lt;/p&gt;
+
+&lt;p&gt;Also, Yash had &amp;ldquo;&lt;em&gt;intended to write a nice blog post&lt;/em&gt;&amp;rdquo; about this &amp;ldquo;&lt;em&gt;very unique to docker + internal networks issue debugging insight&lt;/em&gt;&amp;rdquo; that he had, but I stole his idea (with permission). I hope he doesn&amp;rsquo;t mind. XD&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>My First Rust Program</title>
