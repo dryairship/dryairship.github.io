@@ -7,10 +7,80 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Fri, 10 Apr 2020 01:18:22 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 25 Apr 2020 19:36:56 +0530</lastBuildDate>
     
 	    <atom:link href="https://dryairship.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Porting TLE Bot to Slack - Part 1</title>
+      <link>https://dryairship.github.io/post/porting-tle-bot-to-slack-part-1/</link>
+      <pubDate>Sat, 25 Apr 2020 19:36:56 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/post/porting-tle-bot-to-slack-part-1/</guid>
+      <description>
+
+&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/cheran-senthil/TLE&#34; target=&#34;_blank&#34;&gt;TLE&lt;/a&gt; is an awesome discord bot for competitive programming. We at &lt;a href=&#34;https://pclub.in&#34; target=&#34;_blank&#34;&gt;PClub&lt;/a&gt;, however, use Slack for our work. But I wanted to somehow use this bot on our Slack workspace. Searching for &amp;ldquo;Slack bot for competitve programming&amp;rdquo; didn&amp;rsquo;t give me any useful results. So I decided to create a port of this bot for Slack.&lt;/p&gt;
+
+&lt;h2 id=&#34;getting-off-on-the-wrong-foot&#34;&gt;Getting off on the wrong foot&lt;/h2&gt;
+
+&lt;p&gt;You must be aware of this amazing repository called &lt;a href=&#34;https://github.com/danistefanovic/build-your-own-x&#34; target=&#34;_blank&#34;&gt;build-your-own-x&lt;/a&gt;. From here, I got a link to &lt;a href=&#34;https://www.fullstackpython.com/blog/build-first-slack-bot-python.html&#34; target=&#34;_blank&#34;&gt;this tutorial&lt;/a&gt; about building a Slack bot in python. This was good, since the original TLE bot was also in python, and this would make porting easy.&lt;/p&gt;
+
+&lt;p&gt;I happily followed the steps, only to get a &lt;code&gt;Failed RTM connect&lt;/code&gt; error. Some digging around revealed that the tutorial I followed was deprecated, and I needed to use the &lt;a href=&#34;https://github.com/slackapi/python-slack-events-api&#34; target=&#34;_blank&#34;&gt;Slack Events API&lt;/a&gt; instead of RTM. Following the steps on the repo, I finally created a Slack bot that could meow back to you.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;meow_bot.png&#34; alt=&#34;Slack bot that meows back&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;trying-to-copy-the-entire-code-at-once-p&#34;&gt;Trying to copy the entire code at once :p&lt;/h2&gt;
+
+&lt;p&gt;Now I just needed to connect the event handlers for appropriate commands to the already existing functions in the Discord bot&amp;rsquo;s code. This was supposed to be easy. However, TLE bot&amp;rsquo;s code uses the &lt;code&gt;discord&lt;/code&gt; library at a lot of places. I found some hacks around it (like creating a custom error class instead of using discord&amp;rsquo;s error class) and removed the files that I didn&amp;rsquo;t need.&lt;/p&gt;
+
+&lt;p&gt;But then there was another bummer. The code had lots (I mean LOTS) of circular dependencies. I don&amp;rsquo;t understand how the bot even works with those! Here&amp;rsquo;s an example: &lt;a href=&#34;https://github.com/cheran-senthil/TLE/blob/master/tle/util/codeforces_common.py&#34; target=&#34;_blank&#34;&gt;tle.util.codeforces_common&lt;/a&gt; imports &lt;a href=&#34;https://github.com/cheran-senthil/TLE/blob/master/tle/util/cache_system2.py&#34; target=&#34;_blank&#34;&gt;tle.util.cache_system2&lt;/a&gt;, which in turn imports &lt;a href=&#34;https://github.com/cheran-senthil/TLE/blob/master/tle/util/codeforces_common.py&#34; target=&#34;_blank&#34;&gt;tle.util.codeforces_common&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;circular_dependencies.png&#34; alt=&#34;Circular dependencies example&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I tried to resolve a few of these by shifting functions across files, but there were just too many! So then I decided to use the files that could be used standalone, and copy the rest of the code one command at a time.&lt;/p&gt;
+
+&lt;h2 id=&#34;sync-vs-async&#34;&gt;Sync vs Async&lt;/h2&gt;
+
+&lt;p&gt;And now comes the main problem. The original TLE bot&amp;rsquo;s code handles things asynchronously. I had never written async code in Python. Initially, I thought it would be similar to Javascript. But nope. It was more complex than I thought.&lt;/p&gt;
+
+&lt;p&gt;After reading a few blogs and some StackOverflow answers, I somehow got it working.&lt;/p&gt;
+
+&lt;h2 id=&#34;step-by-step&#34;&gt;Step by Step&lt;/h2&gt;
+
+&lt;p&gt;First I implemented the &lt;code&gt;fetch&lt;/code&gt; command - it would fetch the details of a Codeforces account and post them to the channel in the raw format. This worked pretty nicely.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;fetch.png&#34; alt=&#34;Fetch command&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then I implemented the &lt;code&gt;rating&lt;/code&gt; command - it would draw the Codeforces rating graph of one or more users. I thought this worked pretty well too, but &amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;rating.png&#34; alt=&#34;Rating command&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Did you see what happened there? It stopped responding. Instead, it raised an exception - &lt;code&gt;RuntimeError: This event loop is already running&lt;/code&gt;. This was because of my poorly written async code.&lt;/p&gt;
+
+&lt;h2 id=&#34;why-is-python-asyncio-so-hard&#34;&gt;Why is python asyncio so hard? 😭😭&lt;/h2&gt;
+
+&lt;p&gt;And then it begain - I started trying everything I could.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I tried sharing the same event loop for every event. Got some exception.&lt;/li&gt;
+&lt;li&gt;I tried creating a new loop for every event. Got some exception.&lt;/li&gt;
+&lt;li&gt;I tried using &lt;code&gt;asyncio.Queue&lt;/code&gt;, but &lt;code&gt;queue.get()&lt;/code&gt; would keep waiting forever (even when the queue has items in it!).&lt;/li&gt;
+&lt;li&gt;I tried creating Tasks in the main event loop - the tasks would never get completed.&lt;/li&gt;
+&lt;li&gt;I tried creating two loops: one for flask, and one for handling commands. Still the commands would go unanswered.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These are the things I remember. I&amp;rsquo;m pretty sure I tried many more.&lt;/p&gt;
+
+&lt;p&gt;Finally I gave up. I need to properly learn how to write async code in python, with a smaller project perhaps - one in which I write all the code.&lt;/p&gt;
+
+&lt;h2 id=&#34;regarding-the-bot&#34;&gt;Regarding the bot&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;ve decided to shift to Go. I&amp;rsquo;ll probably try to use the discord bot&amp;rsquo;s code as a microservice. This is still just an idea, I haven&amp;rsquo;t started out on this. But I believe this should be easier than trying to fix python&amp;rsquo;s asyncio errors :p&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>When I Messed Up the Gymkhana Server</title>

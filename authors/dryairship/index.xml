@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Fri, 10 Apr 2020 01:18:22 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 25 Apr 2020 19:36:56 +0530</lastBuildDate>
     
 	<atom:link href="https://dryairship.github.io/authors/dryairship/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Porting TLE Bot to Slack - Part 1</title>
+      <link>https://dryairship.github.io/post/porting-tle-bot-to-slack-part-1/</link>
+      <pubDate>Sat, 25 Apr 2020 19:36:56 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/post/porting-tle-bot-to-slack-part-1/</guid>
+      <description>I can&amp;rsquo;t deal with python&amp;rsquo;s &lt;code&gt;asyncio&lt;/code&gt;. :(</description>
+    </item>
     
     <item>
       <title>When I Messed Up the Gymkhana Server</title>
