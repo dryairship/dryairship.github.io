@@ -455,19 +455,17 @@ if (!doNotTrack) {
 
     <div class="article-style" itemprop="articleBody">
       <p><em>This series is based on my attempts at exploring machine learning, and the final results of those attempts. It starts straightaway with part N because I do not remember how many times I have tried to do this before, only to leave it for the future. Just as a side note, I&rsquo;m not completely illiterate at ML. However, my proficiency, as of writing this post, is limited to linear regression, which some of my friends do sometimes regard as complete illiteracy.</em></p>
-
-<p>So the endsems are over and my unremitting self is again motivated to proclaim &ldquo;I&rsquo;ll learn ML in these vacations&rdquo;. Having tried my hands at all sorts of online resources, this time I decide to use a physical book as my guide. So I go to the library and pick up this book titled <a href="https://www.amazon.com/Machine-Learning-Constraint-Based-Marco-Ph-D/dp/0081006594" target="_blank">Machine Learning: A constraint-based approach</a> by Professor Marco Gori.</p>
-
+<p>So the endsems are over and my unremitting self is again motivated to proclaim &ldquo;I&rsquo;ll learn ML in these vacations&rdquo;. Having tried my hands at all sorts of online resources, this time I decide to use a physical book as my guide. So I go to the library and pick up this book titled <a href="https://www.amazon.com/Machine-Learning-Constraint-Based-Marco-Ph-D/dp/0081006594">Machine Learning: A constraint-based approach</a> by Professor Marco Gori.</p>
 <p>It is 2 AM, I&rsquo;m on chapter one, and the current topic is why Euclidean distance is not a good metric in higher dimensions. So we&rsquo;re working in the n-dimensional set \( \mathbb{X} \) and the author defines the set of neighbours of a point \(x_{0}\) as :
 $$ \mathcal{N}_R (x_{0}) = \{ x \in \mathbb{X}\,\, |\,\, ||x-x_{0}|| &lt; R\}$$
-where \(R\) is the degree of neighbourhood of \(x_{0}\) (i.e., the radius). We call this the orange. He then brings up the formula for the <a href="https://en.wikipedia.org/wiki/Volume_of_an_n-ball" target="_blank">volume of an n-ball</a> (which I&rsquo;ve never seen before) :
-<a title="Volume of an n-ball"><img alt="Volume of an n-ball" style="filter: invert(1); -webkit-filter: invert(1);" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4247a3f5a3cc59a2dc1b08af20ec7a210db1ca06"></a>
-where \(n\) is the number of dimensions, \(R\) is the radius of the ball, and \(\Gamma\) is the <a href="https://en.wikipedia.org/wiki/Gamma_function" target="_blank">Gamma function</a>.
+where \(R\) is the degree of neighbourhood of \(x_{0}\) (i.e., the radius). We call this the orange. He then brings up the formula for the <a href="https://en.wikipedia.org/wiki/Volume_of_an_n-ball">volume of an n-ball</a> (which I&rsquo;ve never seen before) :
+<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->
+where \(n\) is the number of dimensions, \(R\) is the radius of the ball, and \(\Gamma\) is the <a href="https://en.wikipedia.org/wiki/Gamma_function">Gamma function</a>.
 Trusting the author without verifying the veracity of the formula (as I&rsquo;ve always done), I move on to the definiton of the peel of this orange. We define \(\epsilon &gt; 0\) as the thickness of the peel, which we denote as \(\mathcal{P}_{\epsilon}\). The radius of the pulp, therefore, reduces to \(R-\epsilon\). The volume of the peel is then obtained by subtracting the volume of the pulp from the volume of the orange.
 $$
 \begin{align}
-vol(\mathcal{P}_{\epsilon}) &amp;= vol(\mathcal{N}_R) - vol(\mathcal{N}_{R-\epsilon})\\\<br />
-&amp;= vol(\mathcal{N}_R) \left(1 - \frac{vol(\mathcal{N}_{R-\epsilon})}{vol(\mathcal{N}_R)}\right)\\\<br />
+vol(\mathcal{P}_{\epsilon}) &amp;= vol(\mathcal{N}_R) - vol(\mathcal{N}_{R-\epsilon})\\\\<br>
+&amp;= vol(\mathcal{N}_R) \left(1 - \frac{vol(\mathcal{N}_{R-\epsilon})}{vol(\mathcal{N}_R)}\right)\\\\<br>
 &amp;= vol(\mathcal{N}_R) \left(1 - \left(\frac{R-\epsilon}{R}\right)^{n}\right)
 \end{align}
 $$
@@ -482,10 +480,8 @@ Thus, we get
 $$
 vol(\mathcal{P}_{\epsilon}) = vol(\mathcal{N}_R)
 $$
- and the orange becomes its peel. This is it. This blows my mind. I naively declare this as the pinnacle of mathematical beauty that has ever been unleashed to me, and go to bed, thinking about all the jokes I could make with this.</p>
-
+and the orange becomes its peel. This is it. This blows my mind. I naively declare this as the pinnacle of mathematical beauty that has ever been unleashed to me, and go to bed, thinking about all the jokes I could make with this.</p>
 <p>Did I even bother to check the proof of the formula for the volume of the n-ball? No. I merely verified that it holds for 1, 2 and 3 dimensions. But what if there is some catch in higher dimensions, I wonder as I lie down on my bed. I then lazily conclude that the author must have checked the proof before writing the formula in his book.</p>
-
 <p>Were we discussing about how Euclidean metrics fail in higher dimensions? No. We were discussing about a greedy orange-loving alien who has invented a dimension-changinator and would be wanting to increase the number of dimensions of his orange, and how he would be disappointed to get only the peel if he increases the number of dimensions to very large values.</p>
 
     </div>
@@ -684,7 +680,7 @@ $$
   
 
   <p class="powered-by">
-    &copy; Priydarshi Singh 2020 &middot; 
+    © Priydarshi Singh 2020 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -825,7 +821,7 @@ $$
     
     
     
-    <script src="/js/academic.min.eeda67bb2d1f96265d85659d1edc7a5e.js"></script>
+    <script src="/js/academic.min.f579f291d0f0c7da58aa872f9aba5215.js"></script>
 
   </body>
 </html>

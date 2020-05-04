@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>java on Priydarshi Singh</title>
@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Sat, 04 May 2019 12:30:23 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 03 Nov 2019 03:28:56 +0530</lastBuildDate>
     
 	<atom:link href="https://dryairship.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
     

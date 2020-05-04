@@ -588,95 +588,57 @@ if (!doNotTrack) {
   <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
-      
-
-<h2 id="background">Background</h2>
-
-<p>I am one of the new coordinators of the <a href="http://pclub.in/" target="_blank">Programming Club</a>, and I had been instructed by the outgoing coordinators to deploy a CTF.</p>
-
+      <h2 id="background">Background</h2>
+<p>I am one of the new coordinators of the <a href="http://pclub.in/">Programming Club</a>, and I had been instructed by the outgoing coordinators to deploy a CTF.</p>
 <h3 id="what-i-had-to-do">What I had to do</h3>
-
 <p>For deploying any service we need to configure NGINX on two machines:</p>
-
 <ul>
 <li>The Students&rsquo; Gymkhana VM : The actual service runs here. Configuring NGINX on this machine will make it available to anyone connected to the IITK network.</li>
 <li>The Reverse Proxy VM : This machine has a public facing IP. Configuring NGINX here will forward requests over the internet to our internal network.</li>
 </ul>
-
 <h3 id="what-i-did">What I did</h3>
-
-<p>So I cloned <a href="https://github.com/CTFd/CTFd" target="_blank">CTFd</a>, made some config changes, and used docker-compose to start the service. CTFd was up and working. Now I only needed to configure the Reverse Proxy VM to make it publicly accessible. However, I had not yet been granted access to the Reverse Proxy VM. So I sent a message to the outgoing coordinators requesting for access.</p>
-
+<p>So I cloned <a href="https://github.com/CTFd/CTFd">CTFd</a>, made some config changes, and used docker-compose to start the service. CTFd was up and working. Now I only needed to configure the Reverse Proxy VM to make it publicly accessible. However, I had not yet been granted access to the Reverse Proxy VM. So I sent a message to the outgoing coordinators requesting for access.</p>
 <h2 id="the-movie-starts-here">The movie starts here</h2>
-
-<p>The next morning, at 5:32 AM IST, I received a message from <a href="https://yashsriv.org/" target="_blank">Yash</a>:</p>
-
+<p>The next morning, at 5:32 AM IST, I received a message from <a href="https://yashsriv.org/">Yash</a>:</p>
 <blockquote>
-<p>Why is <a href="https://search.pclub.in" target="_blank">search.pclub.in</a> down?<br />
-&hellip;<br />
+<p>Why is <a href="https://search.pclub.in">search.pclub.in</a> down?<br>
+&hellip;<br>
 I have a monitor up which says this went down 8:30 hours ago.</p>
 </blockquote>
-
 <p>Student Search is one of the most popular projects of PClub. And to think that it went down because I had been toying around on the VM was truly dreadful.</p>
-
 <h3 id="sherlocking-d">Sherlocking :D</h3>
-
 <p>So I tried to do some forensics:</p>
-
 <ul>
 <li>I checked the docker containers. They were running. Good.</li>
 <li>I checked if the service was accessible through the internal network using the IP of the Gymkahna VM. It was. Great.</li>
 <li>I checked NGINX logs. They did not have anything fishy. In fact, new requests over the internet were not being logged. Sad.</li>
 </ul>
-
 <p>Therefore, I concluded that everything was working upto the Gymkhana VM and that the Reverse Proxy VM was to blame. And since I didn&rsquo;t even have access to that VM, it couldn&rsquo;t have been my fault. I breathed a sigh of relief.</p>
-
-<p>Later, <a href="https://yugeshk.github.io/" target="_blank">Yugesh</a> revealed that he could not ssh into the Reverse Proxy VM. This further substantiated the belief that the machine was down.</p>
-
+<p>Later, <a href="https://yugeshk.github.io/">Yugesh</a> revealed that he could not ssh into the Reverse Proxy VM. This further substantiated the belief that the machine was down.</p>
 <h3 id="daedalian-mysteries-lie-ahead">Daedalian mysteries lie ahead</h3>
-
-<p>So I mailed <a href="https://www.iitk.ac.in/ccnew/" target="_blank">CC</a> authorities regarding the issue. The mail was forwarded through 4 nodes and finally the reply that I received was that the machine was working from inside IITK. Okay.</p>
-
+<p>So I mailed <a href="https://www.iitk.ac.in/ccnew/">CC</a> authorities regarding the issue. The mail was forwarded through 4 nodes and finally the reply that I received was that the machine was working from inside IITK. Okay.</p>
 <p>Then I tried <code>ping</code>ing the the Reverse Proxy VM after connecting to IITK proxy. It worked. Great.</p>
-
 <p>Then I <code>ssh</code>ed into the Gymkhana VM and tried to ping the Reverse Proxy VM. It said <code>Destination Host Unreachable</code>. Wait what?</p>
-
 <p>Now this was going over my head (I&rsquo;m just a noob SysAdmin :&lsquo;◖ ). The fact that I was able to ping the Reverse Proxy VM meant that the VM was alive. So I just decided to wait until Yugesh somehow found a way to let me inside that VM.</p>
-
 <h3 id="and-it-happened">And it happened</h3>
-
 <p>2 weeks later, Yugesh found a machine that could ssh into the Reverse Proxy server, and created a user for me on the VM. Now the first task at hand for me was to get Student Search up again.</p>
-
 <h3 id="forensics-once-more">Forensics once more</h3>
-
 <ul>
 <li>First Step: Checking NGINX logs. The error log file was filled with <code>upstream timed out (110: Connection timed out)</code> errors. Sad.</li>
 <li>Second Step: Restarting NGINX. I know it doesn&rsquo;t make sense, but sometimes restarting things solves all the problems. :p It didn&rsquo;t work this time though. :(</li>
 <li>Third step: <code>ping</code>ing the gymkhana VM. No response. <code>100% packet loss</code>.</li>
 </ul>
-
 <p>So now I realized that both the Gymkhana and the Reverse Proxy VMs were up and working properly. I could ssh into both of them. But they couldn&rsquo;t ping each other. This didn&rsquo;t make sense. And so I asked Yash.</p>
-
 <h3 id="insights-from-samrat">Insights from Samrat</h3>
-
 <p>Yash, as always, had an answer. He recalled facing this issue, and quickly explained it - a new docker network had been created which took up the IP range of the reverse proxy server.</p>
-
 <p>So then I checked docker networks. There was a network with the name <code>ctfd_default</code>, whose subnet contained the IP address of the Reverse Proxy VM. This network was automatically created when I started the CTFd docker container using docker-compose.</p>
-
 <p>So whenever the Reverse Proxy VM would make a request to the Gymkhana VM, it would respond back correctly. But now since the IP of the Reverse Proxy VM was contained in the docker network subnet, the response would go to the docker network, and would never actually reach the Reverse Proxy VM. The Reverse Proxy VM would keep waiting, and hence the timeout.</p>
-
 <h2 id="resolving-the-issue">Resolving the issue</h2>
-
 <p>The issue was resolved by deleting the offending network. I just did <code>docker network rm ctfd_default</code>, and everything fell back into place.</p>
-
 <p>There was another problem here though. In the future, any new docker network would take that same subnet by default, unless specified otherwise. And specifiying a different subnet in the docker-compose file for all the projects is a tedious task.</p>
-
-<p>To fix this, once and for all, I added a <a href="https://github.com/moby/moby/pull/29376" target="_blank">field <code>default-address-pools</code></a> in the <code>/etc/docker/daemon.json</code> file. Adding this field caused the docker service to crash, because this field requires docker version &gt;=18.09.1, while the Gymkhana VM had 17.09.0. :( Updating <code>docker-ce</code> fixed everything.</p>
-
+<p>To fix this, once and for all, I added a <a href="https://github.com/moby/moby/pull/29376">field <code>default-address-pools</code></a> in the <code>/etc/docker/daemon.json</code> file. Adding this field caused the docker service to crash, because this field requires docker version &gt;=18.09.1, while the Gymkhana VM had 17.09.0. :( Updating <code>docker-ce</code> fixed everything.</p>
 <h2 id="results">Results</h2>
-
-<p>Student search is up and working. The CTF server is also up and working at <a href="https://ctf.pclub.in" target="_blank">https://ctf.pclub.in</a>. I also learnt how to generate SSL certificates using <code>certbot</code>. And now perhaps I know a little more about docker networks :p.</p>
-
+<p>Student search is up and working. The CTF server is also up and working at <a href="https://ctf.pclub.in">https://ctf.pclub.in</a>. I also learnt how to generate SSL certificates using <code>certbot</code>. And now perhaps I know a little more about docker networks :p.</p>
 <p>Also, Yash had &ldquo;<em>intended to write a nice blog post</em>&rdquo; about this &ldquo;<em>very unique to docker + internal networks issue debugging insight</em>&rdquo; that he had, but I stole his idea (with permission). I hope he doesn&rsquo;t mind. XD</p>
 
     </div>
@@ -889,7 +851,7 @@ I have a monitor up which says this went down 8:30 hours ago.</p>
   
 
   <p class="powered-by">
-    &copy; Priydarshi Singh 2020 &middot; 
+    © Priydarshi Singh 2020 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -1030,7 +992,7 @@ I have a monitor up which says this went down 8:30 hours ago.</p>
     
     
     
-    <script src="/js/academic.min.eeda67bb2d1f96265d85659d1edc7a5e.js"></script>
+    <script src="/js/academic.min.f579f291d0f0c7da58aa872f9aba5215.js"></script>
 
   </body>
 </html>

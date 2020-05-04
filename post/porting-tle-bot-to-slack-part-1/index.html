@@ -584,52 +584,28 @@ if (!doNotTrack) {
   <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
-      
-
-<h2 id="background">Background</h2>
-
-<p><a href="https://github.com/cheran-senthil/TLE" target="_blank">TLE</a> is an awesome discord bot for competitive programming. We at <a href="https://pclub.in" target="_blank">PClub</a>, however, use Slack for our work. But I wanted to somehow use this bot on our Slack workspace. Searching for &ldquo;Slack bot for competitve programming&rdquo; didn&rsquo;t give me any useful results. So I decided to create a port of this bot for Slack.</p>
-
+      <h2 id="background">Background</h2>
+<p><a href="https://github.com/cheran-senthil/TLE">TLE</a> is an awesome discord bot for competitive programming. We at <a href="https://pclub.in">PClub</a>, however, use Slack for our work. But I wanted to somehow use this bot on our Slack workspace. Searching for &ldquo;Slack bot for competitve programming&rdquo; didn&rsquo;t give me any useful results. So I decided to create a port of this bot for Slack.</p>
 <h2 id="getting-off-on-the-wrong-foot">Getting off on the wrong foot</h2>
-
-<p>You must be aware of this amazing repository called <a href="https://github.com/danistefanovic/build-your-own-x" target="_blank">build-your-own-x</a>. From here, I got a link to <a href="https://www.fullstackpython.com/blog/build-first-slack-bot-python.html" target="_blank">this tutorial</a> about building a Slack bot in python. This was good, since the original TLE bot was also in python, and this would make porting easy.</p>
-
-<p>I happily followed the steps, only to get a <code>Failed RTM connect</code> error. Some digging around revealed that the tutorial I followed was deprecated, and I needed to use the <a href="https://github.com/slackapi/python-slack-events-api" target="_blank">Slack Events API</a> instead of RTM. Following the steps on the repo, I finally created a Slack bot that could meow back to you.</p>
-
-<p><img src="meow_bot.png" alt="Slack bot that meows back" /></p>
-
+<p>You must be aware of this amazing repository called <a href="https://github.com/danistefanovic/build-your-own-x">build-your-own-x</a>. From here, I got a link to <a href="https://www.fullstackpython.com/blog/build-first-slack-bot-python.html">this tutorial</a> about building a Slack bot in python. This was good, since the original TLE bot was also in python, and this would make porting easy.</p>
+<p>I happily followed the steps, only to get a <code>Failed RTM connect</code> error. Some digging around revealed that the tutorial I followed was deprecated, and I needed to use the <a href="https://github.com/slackapi/python-slack-events-api">Slack Events API</a> instead of RTM. Following the steps on the repo, I finally created a Slack bot that could meow back to you.</p>
+<p><img src="meow_bot.png" alt="Slack bot that meows back"></p>
 <h2 id="trying-to-copy-the-entire-code-at-once-p">Trying to copy the entire code at once :p</h2>
-
 <p>Now I just needed to connect the event handlers for appropriate commands to the already existing functions in the Discord bot&rsquo;s code. This was supposed to be easy. However, TLE bot&rsquo;s code uses the <code>discord</code> library at a lot of places. I found some hacks around it (like creating a custom error class instead of using discord&rsquo;s error class) and removed the files that I didn&rsquo;t need.</p>
-
-<p>But then there was another bummer. The code had lots (I mean LOTS) of circular dependencies. I don&rsquo;t understand how the bot even works with those! Here&rsquo;s an example: <a href="https://github.com/cheran-senthil/TLE/blob/master/tle/util/codeforces_common.py" target="_blank">tle.util.codeforces_common</a> imports <a href="https://github.com/cheran-senthil/TLE/blob/master/tle/util/cache_system2.py" target="_blank">tle.util.cache_system2</a>, which in turn imports <a href="https://github.com/cheran-senthil/TLE/blob/master/tle/util/codeforces_common.py" target="_blank">tle.util.codeforces_common</a>.</p>
-
-<p><img src="circular_dependencies.png" alt="Circular dependencies example" /></p>
-
+<p>But then there was another bummer. The code had lots (I mean LOTS) of circular dependencies. I don&rsquo;t understand how the bot even works with those! Here&rsquo;s an example: <a href="https://github.com/cheran-senthil/TLE/blob/master/tle/util/codeforces_common.py">tle.util.codeforces_common</a> imports <a href="https://github.com/cheran-senthil/TLE/blob/master/tle/util/cache_system2.py">tle.util.cache_system2</a>, which in turn imports <a href="https://github.com/cheran-senthil/TLE/blob/master/tle/util/codeforces_common.py">tle.util.codeforces_common</a>.</p>
+<p><img src="circular_dependencies.png" alt="Circular dependencies example"></p>
 <p>I tried to resolve a few of these by shifting functions across files, but there were just too many! So then I decided to use the files that could be used standalone, and copy the rest of the code one command at a time.</p>
-
 <h2 id="sync-vs-async">Sync vs Async</h2>
-
 <p>And now comes the main problem. The original TLE bot&rsquo;s code handles things asynchronously. I had never written async code in Python. Initially, I thought it would be similar to Javascript. But nope. It was more complex than I thought.</p>
-
 <p>After reading a few blogs and some StackOverflow answers, I somehow got it working.</p>
-
 <h2 id="step-by-step">Step by Step</h2>
-
 <p>First I implemented the <code>fetch</code> command - it would fetch the details of a Codeforces account and post them to the channel in the raw format. This worked pretty nicely.</p>
-
-<p><img src="fetch.png" alt="Fetch command" /></p>
-
+<p><img src="fetch.png" alt="Fetch command"></p>
 <p>Then I implemented the <code>rating</code> command - it would draw the Codeforces rating graph of one or more users. I thought this worked pretty well too, but &hellip;</p>
-
-<p><img src="rating.png" alt="Rating command" /></p>
-
+<p><img src="rating.png" alt="Rating command"></p>
 <p>Did you see what happened there? It stopped responding. Instead, it raised an exception - <code>RuntimeError: This event loop is already running</code>. This was because of my poorly written async code.</p>
-
-<h2 id="why-is-python-asyncio-so-hard">Why is python asyncio so hard? 😭😭</h2>
-
+<h2 id="why-is-python-asyncio-so-hard-">Why is python asyncio so hard? 😭😭</h2>
 <p>And then it begain - I started trying everything I could.</p>
-
 <ul>
 <li>I tried sharing the same event loop for every event. Got some exception.</li>
 <li>I tried creating a new loop for every event. Got some exception.</li>
@@ -637,13 +613,9 @@ if (!doNotTrack) {
 <li>I tried creating Tasks in the main event loop - the tasks would never get completed.</li>
 <li>I tried creating two loops: one for flask, and one for handling commands. Still the commands would go unanswered.</li>
 </ul>
-
 <p>These are the things I remember. I&rsquo;m pretty sure I tried many more.</p>
-
 <p>Finally I gave up. I need to properly learn how to write async code in python, with a smaller project perhaps - one in which I write all the code.</p>
-
 <h2 id="regarding-the-bot">Regarding the bot</h2>
-
 <p>I&rsquo;ve decided to shift to Go. I&rsquo;ll probably try to use the discord bot&rsquo;s code as a microservice. This is still just an idea, I haven&rsquo;t started out on this. But I believe this should be easier than trying to fix python&rsquo;s asyncio errors :p</p>
 
     </div>
@@ -838,7 +810,7 @@ if (!doNotTrack) {
   
 
   <p class="powered-by">
-    &copy; Priydarshi Singh 2020 &middot; 
+    © Priydarshi Singh 2020 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -979,7 +951,7 @@ if (!doNotTrack) {
     
     
     
-    <script src="/js/academic.min.eeda67bb2d1f96265d85659d1edc7a5e.js"></script>
+    <script src="/js/academic.min.f579f291d0f0c7da58aa872f9aba5215.js"></script>
 
   </body>
 </html>

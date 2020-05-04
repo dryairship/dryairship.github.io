@@ -372,7 +372,7 @@ if (!doNotTrack) {
         <h1 itemprop="name">My First Rust Program</h1>
 
         
-        <p class="page-subtitle">The project is available <a href="https://github.com/dryairship/coins-and-the-devil" target="_blank">here</a>.</p>
+        <p class="page-subtitle">The project is available <a href="https://github.com/dryairship/coins-and-the-devil">here</a>.</p>
         
 
         
@@ -504,7 +504,7 @@ if (!doNotTrack) {
   <h1 itemprop="name">My First Rust Program</h1>
 
   
-  <p class="page-subtitle">The project is available <a href="https://github.com/dryairship/coins-and-the-devil" target="_blank">here</a>.</p>
+  <p class="page-subtitle">The project is available <a href="https://github.com/dryairship/coins-and-the-devil">here</a>.</p>
   
 
   
@@ -588,27 +588,17 @@ if (!doNotTrack) {
   <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
-      <p>Rust has been declared as the most loved programming language consecutively for the past four years in the <a href="https://insights.stackoverflow.com/survey/2019#most-loved-dreaded-and-wanted" target="_blank">StackOverflow Developer Survey</a>. I myself marked Rust as one of the languages I&rsquo;d like to work with in the future, in the 2020 Survey. And due to the COVID-19 vacations, I finally got the time to try it out.</p>
-
-<p>So I installed Rust and read a few pages of <a href="https://doc.rust-lang.org/rust-by-example/index.html" target="_blank">Rust by Example</a>. Then I came across this problem about <a href="https://blog.tanyakhovanova.com/2020/03/a-game-with-the-devil/" target="_blank">a game of coins with the Devil</a>, and decided to implement the game as my first project in Rust.</p>
-
-<p>I believe in learning languages the hard way. I learnt Java by experimenting. I used to copy code that I didn&rsquo;t understand, then modified small parts, observed the changes, and repeated this until I understood the entire code. And I learnt python and C++ by by using them to re-write the same programs that I wrote in Java. This also taught me how to use Google properly. I learnt Go by deciding that I&rsquo;d use it to build my best self project yet (an <a href="https://github.com/dryairship/online-election-manager" target="_blank">online election system</a>), when I hardly knew how to write Hello World in it; and I learnt it not by following some guide, but by searching for &ldquo;how to do X in Go&rdquo;.</p>
-
+      <p>Rust has been declared as the most loved programming language consecutively for the past four years in the <a href="https://insights.stackoverflow.com/survey/2019#most-loved-dreaded-and-wanted">StackOverflow Developer Survey</a>. I myself marked Rust as one of the languages I&rsquo;d like to work with in the future, in the 2020 Survey. And due to the COVID-19 vacations, I finally got the time to try it out.</p>
+<p>So I installed Rust and read a few pages of <a href="https://doc.rust-lang.org/rust-by-example/index.html">Rust by Example</a>. Then I came across this problem about <a href="https://blog.tanyakhovanova.com/2020/03/a-game-with-the-devil/">a game of coins with the Devil</a>, and decided to implement the game as my first project in Rust.</p>
+<p>I believe in learning languages the hard way. I learnt Java by experimenting. I used to copy code that I didn&rsquo;t understand, then modified small parts, observed the changes, and repeated this until I understood the entire code. And I learnt python and C++ by by using them to re-write the same programs that I wrote in Java. This also taught me how to use Google properly. I learnt Go by deciding that I&rsquo;d use it to build my best self project yet (an <a href="https://github.com/dryairship/online-election-manager">online election system</a>), when I hardly knew how to write Hello World in it; and I learnt it not by following some guide, but by searching for &ldquo;how to do X in Go&rdquo;.</p>
 <p>So why should Rust be an exception? I created a new cargo project and started modifying it. I really liked that creating a new project is as simple as doing <code>cargo new project-name</code>.</p>
-
 <p>The first thing that I had to do was to take an integer as an input. I was awfully disappointed that there is no direct way to take an integer input: we first have to input a string and then parse it into an integer.</p>
-
 <p>Java, at one point, used to be my favourite language. And Java libraries use the camelCase/PascalCase for all naming purposes (except for CONSTANTS). Now Go is my favourite language. And Go too uses a similar convention. Therefore, all my life, I&rsquo;ve preferred using the camelCase. And now I&rsquo;m writing code in a language that gives me a warning, asking me to convert camelCase variable names to snake_case. First turn-off. :p</p>
-
-<p>When the input part was ready, I ran it using <code>cargo run</code>. It seemed to take infinity to compile - when I realized that it was in fact waiting for the input. However, I had <code>print!</code>ed a string before asking for the input, which was not displayed. Flushing problem, I recognized. Changing <code>print!</code> to <code>println!</code> did the work, but I still wanted the input to be taken on the same line as the prompt. So I had to add another statement to flush - a rather scary looking statement that required a new Trait to be imported. I didn&rsquo;t really like having to manually flush after <code>print!</code>ing, but there has been a <a href="https://github.com/rust-lang/rust/issues/23818" target="_blank">huge discussion over this</a> and the community believes this is the way it should be. :(</p>
-
-<p>For the next step, I had to create an array of the size that I had just inputted. The error messages told me that I could not use a variable for the size of the array - it had to be a constant. LoL what? I then found that the way to do it is by using a vector. Fair enough. Then I realized that an <code>i32</code> value could not be used as an array/vector index; it had to be a <code>usize</code>.  Reasonable, since array indices should be positive. However, I believe an automatic type conversion should have been implemented (again, the subject of <a href="https://github.com/rust-lang/rust/issues/29010" target="_blank">a huge discussion</a>).</p>
-
+<p>When the input part was ready, I ran it using <code>cargo run</code>. It seemed to take infinity to compile - when I realized that it was in fact waiting for the input. However, I had <code>print!</code>ed a string before asking for the input, which was not displayed. Flushing problem, I recognized. Changing <code>print!</code> to <code>println!</code> did the work, but I still wanted the input to be taken on the same line as the prompt. So I had to add another statement to flush - a rather scary looking statement that required a new Trait to be imported. I didn&rsquo;t really like having to manually flush after <code>print!</code>ing, but there has been a <a href="https://github.com/rust-lang/rust/issues/23818">huge discussion over this</a> and the community believes this is the way it should be. :(</p>
+<p>For the next step, I had to create an array of the size that I had just inputted. The error messages told me that I could not use a variable for the size of the array - it had to be a constant. LoL what? I then found that the way to do it is by using a vector. Fair enough. Then I realized that an <code>i32</code> value could not be used as an array/vector index; it had to be a <code>usize</code>.  Reasonable, since array indices should be positive. However, I believe an automatic type conversion should have been implemented (again, the subject of <a href="https://github.com/rust-lang/rust/issues/29010">a huge discussion</a>).</p>
 <p>I then had to randomly initialize the vector. Turns out, I have to add an <strong>external crate</strong> as a dependency to generate random numbers. Seriously? In my opinion, random number generation is something as fundamental as I/O and should have been present in the standard library of Rust.</p>
-
 <p>At this point, I had a randomly initialized array. I now needed to update it using inputs from the user. I was about to face the most dreaded error any Rust beginner could face : <code>error[E0382]: use of moved value</code>. The concept of this error doesn&rsquo;t even exist in other languages. <em>So I modified the vector in an iteration of the while loop and now I can&rsquo;t use the vector in the while condition? LMAO why?</em> It took me an entire day to figure it out, and I have probably not yet properly understood it. I somehow managed to solve it, but I still don&rsquo;t know if the way I did it is the way it was supposed to be done. I&rsquo;ll need to understand the idea of ownership before I pick up any other project in Rust.</p>
-
-<p>So that was it - an utterly disappointing experience. I once overheard <a href="https://yashsriv.org/" target="_blank">yashsriv</a> saying that anyone denigrating Rust online would be hurled abuses at. So perhaps I should brace for that. The program is available on GitHub at <a href="https://github.com/dryairship/coins-and-the-devil" target="_blank">dryairship/coins-and-the-devil</a>. Do point out any mistakes by creating a GitHub issue or in the comments here.</p>
+<p>So that was it - an utterly disappointing experience. I once overheard <a href="https://yashsriv.org/">yashsriv</a> saying that anyone denigrating Rust online would be hurled abuses at. So perhaps I should brace for that. The program is available on GitHub at <a href="https://github.com/dryairship/coins-and-the-devil">dryairship/coins-and-the-devil</a>. Do point out any mistakes by creating a GitHub issue or in the comments here.</p>
 
     </div>
 
@@ -802,7 +792,7 @@ if (!doNotTrack) {
   
 
   <p class="powered-by">
-    &copy; Priydarshi Singh 2020 &middot; 
+    © Priydarshi Singh 2020 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -943,7 +933,7 @@ if (!doNotTrack) {
     
     
     
-    <script src="/js/academic.min.eeda67bb2d1f96265d85659d1edc7a5e.js"></script>
+    <script src="/js/academic.min.f579f291d0f0c7da58aa872f9aba5215.js"></script>
 
   </body>
 </html>

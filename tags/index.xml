@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Priydarshi Singh</title>
@@ -7,10 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Sat, 25 Apr 2020 19:36:56 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2020 06:57:17 +0530</lastBuildDate>
     
 	<atom:link href="https://dryairship.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>functional-programming</title>
+      <link>https://dryairship.github.io/tags/functional-programming/</link>
+      <pubDate>Mon, 04 May 2020 06:57:17 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/tags/functional-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>haskell</title>
+      <link>https://dryairship.github.io/tags/haskell/</link>
+      <pubDate>Mon, 04 May 2020 06:57:17 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/tags/haskell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming-languages</title>
+      <link>https://dryairship.github.io/tags/programming-languages/</link>
+      <pubDate>Mon, 04 May 2020 06:57:17 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/tags/programming-languages/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>python</title>
@@ -130,6 +157,15 @@
     </item>
     
     <item>
+      <title>java</title>
+      <link>https://dryairship.github.io/tags/java/</link>
+      <pubDate>Sun, 03 Nov 2019 03:28:56 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>javascript</title>
       <link>https://dryairship.github.io/tags/javascript/</link>
       <pubDate>Sun, 03 Nov 2019 03:28:56 +0530</pubDate>
@@ -198,15 +234,6 @@
       <pubDate>Sat, 04 May 2019 12:30:23 +0530</pubDate>
       
       <guid>https://dryairship.github.io/tags/hacking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>java</title>
-      <link>https://dryairship.github.io/tags/java/</link>
-      <pubDate>Sat, 04 May 2019 12:30:23 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/java/</guid>
       <description></description>
     </item>
     

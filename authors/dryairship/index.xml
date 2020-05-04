@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>dryairship on Priydarshi Singh</title>
@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Sat, 25 Apr 2020 19:36:56 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2020 06:57:17 +0530</lastBuildDate>
     
 	<atom:link href="https://dryairship.github.io/authors/dryairship/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Learn Me a Haskell</title>
+      <link>https://dryairship.github.io/post/learn-me-a-haskell/</link>
+      <pubDate>Mon, 04 May 2020 06:57:17 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/post/learn-me-a-haskell/</guid>
+      <description>So I wrote my first Haskell program. And I love it!</description>
+    </item>
     
     <item>
       <title>Porting TLE Bot to Slack - Part 1</title>
@@ -81,7 +90,7 @@
       <pubDate>Fri, 20 Sep 2019 03:44:44 +0530</pubDate>
       
       <guid>https://dryairship.github.io/post/my-first-flight-stalled/</guid>
-      <description>&lt;h3&gt;&lt;strong&gt;stall&lt;/strong&gt;&lt;/h3&gt;&lt;strong&gt;/stɔːl/&lt;/strong&gt;&lt;br/&gt;&lt;sub&gt;verb&lt;/sub&gt;&lt;br/&gt;&lt;em&gt;(of an aircraft)&lt;/em&gt; stop flying and begin to fall because the speed is too low or the angle of attack too large to maintain adequate lift.</description>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
     <item>

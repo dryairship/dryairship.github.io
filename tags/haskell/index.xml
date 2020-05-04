@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>haskell on Priydarshi Singh</title>
+    <link>https://dryairship.github.io/tags/haskell/</link>
+    <description>Recent content in haskell on Priydarshi Singh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
+    <lastBuildDate>Mon, 04 May 2020 06:57:17 +0530</lastBuildDate>
+    
+	<atom:link href="https://dryairship.github.io/tags/haskell/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Learn Me a Haskell</title>
+      <link>https://dryairship.github.io/post/learn-me-a-haskell/</link>
+      <pubDate>Mon, 04 May 2020 06:57:17 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/post/learn-me-a-haskell/</guid>
+      <description>So I wrote my first Haskell program. And I love it!</description>
+    </item>
+    
+  </channel>
+</rss>
