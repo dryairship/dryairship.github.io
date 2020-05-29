@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Priydarshi Singh</title>
+    <link>https://dryairship.github.io/tags/linux/</link>
+    <description>Recent content in linux on Priydarshi Singh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
+    <lastBuildDate>Thu, 28 May 2020 16:40:38 +0530</lastBuildDate>
+    
+	<atom:link href="https://dryairship.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Switching Operating Systems Like Clothes</title>
+      <link>https://dryairship.github.io/post/switching-operating-systems-like-clothes/</link>
+      <pubDate>Thu, 28 May 2020 16:40:38 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/post/switching-operating-systems-like-clothes/</guid>
+      <description>From indavertently erasing Windows to having 4 OSes on my laptop</description>
+    </item>
+    
+  </channel>
+</rss>
