@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gsoc on Priydarshi Singh</title>
+    <link>https://dryairship.github.io/tags/gsoc/</link>
+    <description>Recent content in gsoc on Priydarshi Singh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
+    <lastBuildDate>Mon, 01 Jun 2020 12:33:06 +0530</lastBuildDate>
+    
+	<atom:link href="https://dryairship.github.io/tags/gsoc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GSoC 2020 · Part 1</title>
+      <link>https://dryairship.github.io/post/gsoc-2020-part-1-community-bonding-period/</link>
+      <pubDate>Mon, 01 Jun 2020 12:33:06 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/post/gsoc-2020-part-1-community-bonding-period/</guid>
+      <description>The organization, the project and the Community Bonding Period.</description>
+    </item>
+    
+  </channel>
+</rss>
