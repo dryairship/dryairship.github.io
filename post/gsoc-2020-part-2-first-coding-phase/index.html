@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
@@ -29,10 +27,10 @@
   
     
   
-  <meta name="description" content="Second Year Undergraduate Student">
+  <meta name="description" content="The first phase of coding.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://dryairship.github.io/tags/gsoc/">
+  <link rel="alternate" hreflang="en-us" href="https://dryairship.github.io/post/gsoc-2020-part-2-first-coding-phase/">
 
   
 
@@ -123,9 +121,6 @@
   
 
   
-  <link rel="alternate" href="/tags/gsoc/index.xml" type="application/rss+xml" title="Priydarshi Singh">
-  <link rel="feed" href="/tags/gsoc/index.xml" type="application/rss+xml" title="Priydarshi Singh">
-  
   
   <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
   </script>
@@ -134,7 +129,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://dryairship.github.io/tags/gsoc/">
+  <link rel="canonical" href="https://dryairship.github.io/post/gsoc-2020-part-2-first-coding-phase/">
 
   
   
@@ -146,19 +141,21 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Priydarshi Singh">
-  <meta property="og:url" content="https://dryairship.github.io/tags/gsoc/">
-  <meta property="og:title" content="gsoc | Priydarshi Singh">
-  <meta property="og:description" content="Second Year Undergraduate Student"><meta property="og:image" content="https://dryairship.github.io/img/icon-192.png">
+  <meta property="og:url" content="https://dryairship.github.io/post/gsoc-2020-part-2-first-coding-phase/">
+  <meta property="og:title" content="GSoC 2020 · Part 2 | Priydarshi Singh">
+  <meta property="og:description" content="The first phase of coding."><meta property="og:image" content="https://dryairship.github.io/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2020-07-08T07:33:13&#43;05:30">
+  <meta property="article:published_time" content="2020-07-08T07:33:13&#43;05:30">
+  
+  <meta property="article:modified_time" content="2020-07-08T07:33:13&#43;05:30">
   
 
   
 
   
 
-  <title>gsoc | Priydarshi Singh</title>
+  <title>GSoC 2020 · Part 2 | Priydarshi Singh</title>
   
   
 <script type="application/javascript">
@@ -347,7 +344,9 @@ if (!doNotTrack) {
 </nav>
 
 
+<article class="article" itemscope itemtype="http://schema.org/Article">
 
+  
 
 
 
@@ -363,47 +362,314 @@ if (!doNotTrack) {
   
 
   
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">GSoC 2020 · Part 2</h1>
+
+  
+  <p class="page-subtitle">The first phase of coding.</p>
+  
+
+  
+    
+
+
+
+<meta content="2020-07-08 07:33:13 &#43;0530 IST" itemprop="datePublished">
+<meta content="2020-07-08 07:33:13 &#43;0530 IST" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Wed, Jul 8, 2020</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    3 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/gsoc-2020-part-2-first-coding-phase/#disqus_thread"></a>
+  
+
+  
+
+  
+    
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      <p>It&rsquo;s been one month since the coding period for GSoC started. The first evaluation was completed last week, and I performed poorly :p. Well, I passed, but I feel I could have done more work than I did. This post is a description of a few problems that I faced, and the things that I learnt.</p>
+<h2 id="mixed-signals">Mixed signals</h2>
+<p>I had to use <a href="https://github.com/OpenPrinting/cpdb-libs">cpdb-libs</a> in my project, which depends on <a href="https://lazka.github.io/pgi-docs/GLib-2.0/index.html">GLib 2.0</a>. So to include the <code>&lt;cpdb-libs-frontend.h&gt;</code> header, I needed to compile the file by linking with the <code>gio-unix-2.0</code> package. However, just including the header file gave me a strange looking error message that made no sense to me.
+<img src="glib2-error.png" alt="The error message"></p>
+<p>I found a hacky way around this: First I thought that I could just include the header file in the main project, with no implementation. That would not cause any conflicts, since I wouldn&rsquo;t need to include the cpdb libs header. Later, I would compile the cpp file separately, without Qt. However, this idea failed because the compiler gave me &lsquo;unimplemented function&rsquo; errors.</p>
+<p>Then I decided to make a fake cpp class - it just contained dummy implementations for functions (<code>cout &lt;&lt; &quot;inside function meow()&quot;;</code> :p ). Later, I separately compiled the real cpp file and moved the output file to replace the one created by Qt. I know this sounds like a crazy way to do it, but this actually worked: the functions implemented in the separately compiled file were the ones that were executed when using the Qt library! However, this led to another major problem: if I compile the actual file separate from Qt, I won&rsquo;t be able to use the classes of Qt. :(</p>
+<p>So I asked my mentor Dongxu for help. It turned out that the issue was that <code>glib-2.0/gio/gio.h</code> was using the identifier <code>signals</code>, which caused a conflict with Qt globals. Apparently, this is mentioned in Qt&rsquo;s documentation for <a href="https://doc.qt.io/qt-5/signalsandslots.html#slots">Signals and Slots</a>. The issue was resolved by doing <code>#undef signals</code> before including the <code>&lt;cpdb-libs-frontend.h&gt;</code> header. I also realized that this is probably the reason most of Qt&rsquo;s identifiers begin with the letter Q - otherwise they&rsquo;d cause conflicts all around.</p>
+<h2 id="signals-again">Signals again</h2>
+<p>For using the CPD backends, I had to communicate with the DBus API using a <code>Frontend</code> object. To initialize this object, I needed to pass two functions as callbacks - which would be executed whenever a printer is added or removed. In these functions, I put the code to add/remove the printer from the list of printers which would be used to populate the print dialog box. The problem here was that the dialog box was initialized before the DBus API could enumerate all the printers. Hence, none of the printers would appear in the dialog box.</p>
+<p>While signals were the cause of the last issue, they were the solution to this one. Dongxu told me that this would be solved by using signals and slots, so I learnt about how they worked. Then I used the callback functions to emit a signal, which was received by a slot in the dialog box. The slot was responsible for repopulating the printers in the dialog box. This way, the printers detected after the dialog box was initialized would still be added into the dialog box.</p>
+<h2 id="pimpl">PIMPL</h2>
+<p>Qt quite popularly uses the <a href="https://stackoverflow.com/questions/25250171/how-to-use-the-qts-pimpl-idiom">PIMPL</a> pattern. The Qt Wiki provides a pretty nice <a href="https://wiki.qt.io/D-Pointer">description</a> of why and how it is used. It was really interesting to learn about binary compatibility and how it affects libraries.</p>
+<h2 id="evaluation">Evaluation</h2>
+<p>The first evaluation results were declared on 4th July. My mentor said that he expected significant improvements, on my part, in the fields of time commitment and communication (read, I performed unsatisfactorily in the first month). I&rsquo;ll definitely do better in the second month :D</p>
+<p>Anyway, I received 30% of my GSoC stipend, and I am haaapppppyyy!
+<img src="stipend.png" alt="Stipend mail"></p>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/gsoc/">gsoc</a>
+  
+  <a class="badge badge-light" href="/tags/open-source/">open-source</a>
+  
+</div>
+
+
+
+
+    
+      
+
+
+
+
+
+
   
   
     
   
-<div class="universal-wrapper pt-3">
-  <h1 itemprop="name">gsoc</h1>
-
   
 
+
+
+
+
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
   
+  
+  <img class="portrait mr-3" src="/author/dryairship/avatar_hu62cc97398271f53f903402cc5339b2e8_45029_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+  
+
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/authors/dryairship">Priydarshi Singh</a></h5>
+    <h6 class="card-subtitle">Second Year Undergraduate Student</h6>
+    <p class="card-text" itemprop="description">Security Researcher · Developer · Sport Programmer · SysAdmin</p>
+    <ul class="network-icon" aria-hidden="true">
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      <li>
+        <a itemprop="sameAs" href="mailto:darshi@iitk.ac.in" >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://github.com/dryairship" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://stackoverflow.com/users/4121347/dryairship?tab=profile" target="_blank" rel="noopener">
+          <i class="fab fa-stack-overflow"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://www.linkedin.com/in/dryairship/" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://twitter.com/dryairship" target="_blank" rel="noopener">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://facebook.com/dryairship" target="_blank" rel="noopener">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
 </div>
 
 
 
-<div class="universal-wrapper">
-  
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
+          
+          <li><a href="/post/gsoc-2020-part-1-community-bonding-period/">GSoC 2020 · Part 1</a></li>
+          
+        </ul>
+      </div>
+      
+    
 
-  
-  
-  <div>
-    <h2><a href="/post/gsoc-2020-part-2-first-coding-phase/">GSoC 2020 · Part 2</a></h2>
-    <div class="article-style">
-      
-      The first phase of coding.
-      
-    </div>
+    
+
+    
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "dryairship" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
   </div>
-  
-  <div>
-    <h2><a href="/post/gsoc-2020-part-1-community-bonding-period/">GSoC 2020 · Part 1</a></h2>
-    <div class="article-style">
-      
-      The organization, the project and the Community Bonding Period.
-      
-    </div>
-  </div>
-  
+</article>
 
-  
-
-</div>
 <div class="container">
   <footer class="site-footer">
   
@@ -554,6 +820,4 @@ if (!doNotTrack) {
 
   </body>
 </html>
-
-
 
