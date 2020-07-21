@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Sat, 18 Jul 2020 06:50:40 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jul 2020 05:39:57 +0530</lastBuildDate>
     
 	<atom:link href="https://dryairship.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>pclub</title>
+      <link>https://dryairship.github.io/tags/pclub/</link>
+      <pubDate>Tue, 21 Jul 2020 05:39:57 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/tags/pclub/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>mystery</title>
@@ -99,15 +108,6 @@
       <pubDate>Sat, 25 Apr 2020 19:36:56 +0530</pubDate>
       
       <guid>https://dryairship.github.io/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pclub</title>
-      <link>https://dryairship.github.io/tags/pclub/</link>
-      <pubDate>Fri, 10 Apr 2020 01:18:22 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/pclub/</guid>
       <description></description>
     </item>
     
