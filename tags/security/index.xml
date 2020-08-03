@@ -22,12 +22,21 @@
     </item>
     
     <item>
+      <title>IITKBucks</title>
+      <link>https://dryairship.github.io/project/iitkbucks/</link>
+      <pubDate>Sat, 18 Jul 2020 19:32:10 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/project/iitkbucks/</guid>
+      <description>My client for IITBucks - a custom blockchain based cryptocurrency</description>
+    </item>
+    
+    <item>
       <title>Online Election Manager</title>
       <link>https://dryairship.github.io/project/online-election-manager/</link>
       <pubDate>Sun, 14 Apr 2019 19:32:10 +0530</pubDate>
       
       <guid>https://dryairship.github.io/project/online-election-manager/</guid>
-      <description>A cryptographically secure web portal to manage online elections.</description>
+      <description>A cryptographically secure web portal to manage online elections</description>
     </item>
     
   </channel>

@@ -7,15 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Sun, 03 Nov 2019 03:28:56 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2020 19:32:10 +0530</lastBuildDate>
     
 	<atom:link href="https://dryairship.github.io/tags/development/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>IITKBucks</title>
+      <link>https://dryairship.github.io/project/iitkbucks/</link>
+      <pubDate>Sat, 18 Jul 2020 19:32:10 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/project/iitkbucks/</guid>
+      <description>My client for IITBucks - a custom blockchain based cryptocurrency</description>
+    </item>
+    
+    <item>
+      <title>QuizKitty</title>
+      <link>https://dryairship.github.io/project/quiz-kitty/</link>
+      <pubDate>Fri, 05 Jun 2020 19:32:10 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/project/quiz-kitty/</guid>
+      <description>A messenger bot that can ask you GK questions, built for the Facebook Messaging Hackathon. The project has been deployed and is available to chat on Facebook Messenger at &lt;a href=&#34;https://m.me/quizkitty&#34;&gt;m.me/quizkitty&lt;/a&gt;</description>
+    </item>
+    
+    <item>
       <title>Centralized Inventory and Purchasing</title>
       <link>https://dryairship.github.io/project/centralized-inventory-and-purchasing/</link>
-      <pubDate>Sun, 03 Nov 2019 03:28:56 +0530</pubDate>
+      <pubDate>Wed, 03 Jul 2019 03:28:56 +0530</pubDate>
       
       <guid>https://dryairship.github.io/project/centralized-inventory-and-purchasing/</guid>
       <description>Developed a web app for efficient inventory management across various departments of the NGO Vitraag Vigyaan</description>
@@ -27,7 +45,7 @@
       <pubDate>Sun, 14 Apr 2019 19:32:10 +0530</pubDate>
       
       <guid>https://dryairship.github.io/project/online-election-manager/</guid>
-      <description>A cryptographically secure web portal to manage online elections.</description>
+      <description>A cryptographically secure web portal to manage online elections</description>
     </item>
     
   </channel>

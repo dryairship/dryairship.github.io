@@ -58,6 +58,41 @@
   </url>
   
   <url>
+    <loc>https://dryairship.github.io/tags/blockchain/</loc>
+    <lastmod>2020-07-18T19:32:10+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/tags/cryptocurrency/</loc>
+    <lastmod>2020-07-18T19:32:10+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/tags/development/</loc>
+    <lastmod>2020-07-18T19:32:10+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/tags/golang/</loc>
+    <lastmod>2020-07-18T19:32:10+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/project/iitkbucks/</loc>
+    <lastmod>2020-07-18T19:32:10+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/project/</loc>
+    <lastmod>2020-07-18T19:32:10+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/tags/reactjs/</loc>
+    <lastmod>2020-07-18T19:32:10+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dryairship.github.io/tags/mystery/</loc>
     <lastmod>2020-07-18T06:50:40+05:30</lastmod>
   </url>
@@ -90,6 +125,31 @@
   <url>
     <loc>https://dryairship.github.io/post/internet-data-consumption-at-iitk/</loc>
     <lastmod>2020-06-11T14:38:06+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/tags/chatbot/</loc>
+    <lastmod>2020-06-05T19:32:10+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/tags/facebook/</loc>
+    <lastmod>2020-06-05T19:32:10+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/tags/messenger/</loc>
+    <lastmod>2020-06-05T19:32:10+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/project/quiz-kitty/</loc>
+    <lastmod>2020-06-05T19:32:10+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/tags/redis/</loc>
+    <lastmod>2020-06-05T19:32:10+05:30</lastmod>
   </url>
   
   <url>
@@ -213,51 +273,6 @@
   </url>
   
   <url>
-    <loc>https://dryairship.github.io/project/centralized-inventory-and-purchasing/</loc>
-    <lastmod>2019-11-03T03:28:56+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/tags/development/</loc>
-    <lastmod>2019-11-03T03:28:56+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/tags/express/</loc>
-    <lastmod>2019-11-03T03:28:56+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/tags/inventory-management/</loc>
-    <lastmod>2019-11-03T03:28:56+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/tags/java/</loc>
-    <lastmod>2019-11-03T03:28:56+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/tags/javascript/</loc>
-    <lastmod>2019-11-03T03:28:56+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/tags/nodejs/</loc>
-    <lastmod>2019-11-03T03:28:56+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/project/</loc>
-    <lastmod>2019-11-03T03:28:56+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/tags/reactjs/</loc>
-    <lastmod>2019-11-03T03:28:56+05:30</lastmod>
-  </url>
-  
-  <url>
     <loc>https://dryairship.github.io/tags/aerospace/</loc>
     <lastmod>2019-09-20T03:44:44+05:30</lastmod>
   </url>
@@ -265,6 +280,36 @@
   <url>
     <loc>https://dryairship.github.io/post/my-first-flight-stalled/</loc>
     <lastmod>2019-09-20T03:44:44+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/project/centralized-inventory-and-purchasing/</loc>
+    <lastmod>2019-07-03T03:28:56+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/tags/express/</loc>
+    <lastmod>2019-07-03T03:28:56+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/tags/inventory-management/</loc>
+    <lastmod>2019-07-03T03:28:56+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/tags/java/</loc>
+    <lastmod>2019-07-03T03:28:56+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/tags/javascript/</loc>
+    <lastmod>2019-07-03T03:28:56+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dryairship.github.io/tags/nodejs/</loc>
+    <lastmod>2019-07-03T03:28:56+05:30</lastmod>
   </url>
   
   <url>
@@ -305,11 +350,6 @@
   <url>
     <loc>https://dryairship.github.io/post/meow-world/</loc>
     <lastmod>2019-04-26T23:33:17+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/tags/golang/</loc>
-    <lastmod>2019-04-14T19:32:10+05:30</lastmod>
   </url>
   
   <url>
