@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Mon, 03 Aug 2020 19:30:25 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2020 03:13:04 +0530</lastBuildDate>
     
 	<atom:link href="https://dryairship.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GSoC 2020 · Part 3</title>
+      <link>https://dryairship.github.io/post/gsoc-2020-part-3-second-coding-phase/</link>
+      <pubDate>Thu, 06 Aug 2020 03:13:04 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/post/gsoc-2020-part-3-second-coding-phase/</guid>
+      <description>The second phase of coding.</description>
+    </item>
     
     <item>
       <title>Online Election Manager v/s an Untrusted Server Admin</title>

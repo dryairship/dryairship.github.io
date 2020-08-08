@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Mon, 03 Aug 2020 19:30:25 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2020 03:13:04 +0530</lastBuildDate>
     
 	<atom:link href="https://dryairship.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>gsoc</title>
+      <link>https://dryairship.github.io/tags/gsoc/</link>
+      <pubDate>Thu, 06 Aug 2020 03:13:04 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/tags/gsoc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>open-source</title>
+      <link>https://dryairship.github.io/tags/open-source/</link>
+      <pubDate>Thu, 06 Aug 2020 03:13:04 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/tags/open-source/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>cryptography</title>
@@ -99,24 +117,6 @@
       <pubDate>Sat, 18 Jul 2020 06:50:40 +0530</pubDate>
       
       <guid>https://dryairship.github.io/tags/mystery/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>gsoc</title>
-      <link>https://dryairship.github.io/tags/gsoc/</link>
-      <pubDate>Wed, 08 Jul 2020 07:33:13 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/gsoc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>open-source</title>
-      <link>https://dryairship.github.io/tags/open-source/</link>
-      <pubDate>Wed, 08 Jul 2020 07:33:13 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/open-source/</guid>
       <description></description>
     </item>
     
