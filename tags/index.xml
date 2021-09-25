@@ -7,10 +7,78 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Thu, 06 Aug 2020 03:13:04 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 14 Apr 2021 19:32:10 +0530</lastBuildDate><atom:link href="https://dryairship.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cryptography</title>
+      <link>https://dryairship.github.io/tags/cryptography/</link>
+      <pubDate>Wed, 14 Apr 2021 19:32:10 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/tags/cryptography/</guid>
+      <description></description>
+    </item>
     
-	<atom:link href="https://dryairship.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>development</title>
+      <link>https://dryairship.github.io/tags/development/</link>
+      <pubDate>Wed, 14 Apr 2021 19:32:10 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/tags/development/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>golang</title>
+      <link>https://dryairship.github.io/tags/golang/</link>
+      <pubDate>Wed, 14 Apr 2021 19:32:10 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>security</title>
+      <link>https://dryairship.github.io/tags/security/</link>
+      <pubDate>Wed, 14 Apr 2021 19:32:10 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>chatbot</title>
+      <link>https://dryairship.github.io/tags/chatbot/</link>
+      <pubDate>Sat, 05 Dec 2020 19:32:10 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/tags/chatbot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>facebook</title>
+      <link>https://dryairship.github.io/tags/facebook/</link>
+      <pubDate>Sat, 05 Dec 2020 19:32:10 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/tags/facebook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>messenger</title>
+      <link>https://dryairship.github.io/tags/messenger/</link>
+      <pubDate>Sat, 05 Dec 2020 19:32:10 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/tags/messenger/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>redis</title>
+      <link>https://dryairship.github.io/tags/redis/</link>
+      <pubDate>Sat, 05 Dec 2020 19:32:10 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/tags/redis/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>gsoc</title>
@@ -31,29 +99,11 @@
     </item>
     
     <item>
-      <title>cryptography</title>
-      <link>https://dryairship.github.io/tags/cryptography/</link>
-      <pubDate>Mon, 03 Aug 2020 19:30:25 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/cryptography/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>elections</title>
       <link>https://dryairship.github.io/tags/elections/</link>
       <pubDate>Mon, 03 Aug 2020 19:30:25 +0530</pubDate>
       
       <guid>https://dryairship.github.io/tags/elections/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>security</title>
-      <link>https://dryairship.github.io/tags/security/</link>
-      <pubDate>Mon, 03 Aug 2020 19:30:25 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/security/</guid>
       <description></description>
     </item>
     
@@ -85,24 +135,6 @@
     </item>
     
     <item>
-      <title>development</title>
-      <link>https://dryairship.github.io/tags/development/</link>
-      <pubDate>Sat, 18 Jul 2020 19:32:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>golang</title>
-      <link>https://dryairship.github.io/tags/golang/</link>
-      <pubDate>Sat, 18 Jul 2020 19:32:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>reactjs</title>
       <link>https://dryairship.github.io/tags/reactjs/</link>
       <pubDate>Sat, 18 Jul 2020 19:32:10 +0530</pubDate>
@@ -126,42 +158,6 @@
       <pubDate>Thu, 11 Jun 2020 14:38:06 +0530</pubDate>
       
       <guid>https://dryairship.github.io/tags/iitk/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>chatbot</title>
-      <link>https://dryairship.github.io/tags/chatbot/</link>
-      <pubDate>Fri, 05 Jun 2020 19:32:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/chatbot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>facebook</title>
-      <link>https://dryairship.github.io/tags/facebook/</link>
-      <pubDate>Fri, 05 Jun 2020 19:32:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/facebook/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>messenger</title>
-      <link>https://dryairship.github.io/tags/messenger/</link>
-      <pubDate>Fri, 05 Jun 2020 19:32:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/messenger/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>redis</title>
-      <link>https://dryairship.github.io/tags/redis/</link>
-      <pubDate>Fri, 05 Jun 2020 19:32:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/redis/</guid>
       <description></description>
     </item>
     
@@ -319,15 +315,6 @@
     </item>
     
     <item>
-      <title>java</title>
-      <link>https://dryairship.github.io/tags/java/</link>
-      <pubDate>Wed, 03 Jul 2019 03:28:56 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/java/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>javascript</title>
       <link>https://dryairship.github.io/tags/javascript/</link>
       <pubDate>Wed, 03 Jul 2019 03:28:56 +0530</pubDate>
@@ -369,6 +356,15 @@
       <pubDate>Sat, 04 May 2019 12:30:23 +0530</pubDate>
       
       <guid>https://dryairship.github.io/tags/hacking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>java</title>
+      <link>https://dryairship.github.io/tags/java/</link>
+      <pubDate>Sat, 04 May 2019 12:30:23 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/tags/java/</guid>
       <description></description>
     </item>
     

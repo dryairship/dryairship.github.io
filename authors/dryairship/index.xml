@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Thu, 06 Aug 2020 03:13:04 +0530</lastBuildDate>
-    
-	<atom:link href="https://dryairship.github.io/authors/dryairship/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 06 Aug 2020 03:13:04 +0530</lastBuildDate><atom:link href="https://dryairship.github.io/authors/dryairship/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GSoC 2020 · Part 3</title>
       <link>https://dryairship.github.io/post/gsoc-2020-part-3-second-coding-phase/</link>
@@ -198,8 +194,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dryairship.github.io/author/dryairship/</guid>
-      <description>I am a third year undergraduate student at the Indian Institute Of Technology, Kanpur, majoring in Aerospace Engineering. My academic interests include cyber security and artificial intelligence. I am a skilled developer and have recently started taking an interest in SysAdmin stuff. I am also the Coordinator of the Programming Club of IIT Kanpur.
-For recreation purposes I prefer mind sports like chess, competitive programming or puzzling. I am also an avid quizzer, a swimmer and a budding water-polo goalkeeper.</description>
+      <description>I am a final year undergraduate student at the Indian Institute Of Technology, Kanpur, majoring in Aerospace Engineering, with minors in Algorithms, Theory of Computation, Machine Learning Applications, Industrial &amp;amp; Management Engineering, and Linguistics, and a prospective minor in Computer Systems. Although I am interested in all things related to technology, I am particularly excited about cybersecurity. I am a skilled developer and have some experience in devops. I used to be the Coordinator of the Programming Club of IIT Kanpur.</description>
     </item>
     
   </channel>

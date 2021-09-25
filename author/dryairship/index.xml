@@ -6,10 +6,6 @@
     <description>Recent content on Priydarshi Singh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    
-	<atom:link href="https://dryairship.github.io/author/dryairship/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>&amp;copy; Priydarshi Singh {year}</copyright><atom:link href="https://dryairship.github.io/author/dryairship/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

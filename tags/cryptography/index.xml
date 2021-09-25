@@ -7,10 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Mon, 03 Aug 2020 19:30:25 +0530</lastBuildDate>
-    
-	<atom:link href="https://dryairship.github.io/tags/cryptography/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Wed, 14 Apr 2021 19:32:10 +0530</lastBuildDate><atom:link href="https://dryairship.github.io/tags/cryptography/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Online Election Manager</title>
+      <link>https://dryairship.github.io/project/online-election-manager/</link>
+      <pubDate>Wed, 14 Apr 2021 19:32:10 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/project/online-election-manager/</guid>
+      <description>&lt;p&gt;A cryptographically secure web portal to manage online elections. The software has been used for the following elections at IIT Kanpur:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Students&#39; Senate Office Bearers Elections, 2020&lt;/li&gt;
+&lt;li&gt;Hall 6 (GH) Hall Executive Committee Elections, 2020&lt;/li&gt;
+&lt;li&gt;General Elections, 2021&lt;/li&gt;
+&lt;li&gt;GH1 Hall Executive Committee Elections, 2021&lt;/li&gt;
+&lt;li&gt;Hall 7 Hall Executive Committee Elections, 2021&lt;/li&gt;
+&lt;li&gt;Hall 8 Hall Executive Committee Elections, 2021&lt;/li&gt;
+&lt;li&gt;SBRA Executive Committee Elections, 2021&lt;/li&gt;
+&lt;li&gt;Students&#39; Senate Office Bearers Elections, 2021&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Online Election Manager v/s an Untrusted Server Admin</title>
@@ -28,15 +44,6 @@
       
       <guid>https://dryairship.github.io/project/iitkbucks/</guid>
       <description>My client for IITBucks - a custom blockchain based cryptocurrency</description>
-    </item>
-    
-    <item>
-      <title>Online Election Manager</title>
-      <link>https://dryairship.github.io/project/online-election-manager/</link>
-      <pubDate>Sun, 14 Apr 2019 19:32:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/project/online-election-manager/</guid>
-      <description>A cryptographically secure web portal to manage online elections</description>
     </item>
     
   </channel>

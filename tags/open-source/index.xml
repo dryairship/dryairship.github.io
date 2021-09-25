@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Thu, 06 Aug 2020 03:13:04 +0530</lastBuildDate>
-    
-	<atom:link href="https://dryairship.github.io/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 06 Aug 2020 03:13:04 +0530</lastBuildDate><atom:link href="https://dryairship.github.io/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GSoC 2020 · Part 3</title>
       <link>https://dryairship.github.io/post/gsoc-2020-part-3-second-coding-phase/</link>

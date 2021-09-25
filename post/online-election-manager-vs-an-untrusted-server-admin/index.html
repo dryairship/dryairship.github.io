@@ -170,7 +170,6 @@ if (!doNotTrack) {
 }
 </script>
 
-
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
   <aside class="search-results" id="search">
@@ -589,7 +588,7 @@ if (!doNotTrack) {
 
     <div class="article-style" itemprop="articleBody">
       <p>I built the <a href="https://github.com/dryairship/online-election-manager">Online Election Manager</a> in my first year, as a part of the project track for the course ESC101A. The project was highly appreciated. Various people have starred the GitHub repo (some of whom I highly respect, some I don&rsquo;t even know). Prof. Swaprava Nath mentioned in his comments that it was arguably the best project, and I was given a full score for the project.</p>
-<p>But having a good project to showcase is one thing. Having it deployed and used in the real life in quite another. Today, my application was used, in the <a href="https://students.iitk.ac.in/ss/home/meetings/1st-2020-21/">1st Meeting of the Students’ Senate, 2020-21</a> for the elections for the student members for the various committees and councils of the Students&rsquo; Senate of IIT Kanpur.</p>
+<p>But having a good project to showcase is one thing. Having it deployed and used in the real life in quite another. Today, my application was used, in the <a href="https://students.iitk.ac.in/ss/home/meetings/1st-2020-21/">1st Meeting of the Students’ Senate, 2020-21</a> for the elections for the student members for the various committees and councils of the Students' Senate of IIT Kanpur.</p>
 <p>Though (surprisingly) none of the voters questioned the reliability of the application, I believe a proof should be provided nonetheless. The process used during the elections has been detailed in the <a href="https://github.com/dryairship/online-election-manager/blob/master/report/report.pdf">report</a>, so I recommend you to read that first. The only thing that isn&rsquo;t obvious in the report is the defense against the various tactics that the server admin can use to try to change the results of the elections. In this blog post, I&rsquo;ll mention a few things that server admin can do, and explain why that won&rsquo;t work. Most importantly, you may think that the server admin can run arbitrary code on the server, instead of the claimed code. Well true, but I&rsquo;ll prove that it still maintains the anonymity of the ballots and the veracity of the results.</p>
 <p>First, it is important to understand that I do not claim that the server admin cannot disrupt the elections. Obviously, they can just delete the database, and then we&rsquo;ll not be able to calculate the results. But note that this is an issue in offline elections as well. Paper ballots? Well, someone responsible for transporting the ballots can just burn down all the ballots. EVMs? Someone responsible for transporting them can just destroy the EVMs. Obviously, if something like that happens in the real life, re-elections would be called. The key point, however, is that if something like this happens (destruction of ballots or EVMs), it must be brought to notice. I&rsquo;ll prove below that the server admin cannot modify the database without being caught.</p>
 <h2 id="what-happens-if-the-server-admin-tries-to-modifyadddelete-some-votes">What happens if the server admin tries to modify/add/delete some votes?</h2>
@@ -663,12 +662,12 @@ Yes, and then they will be able to create a map between voters and the votes tha
 <div class="media author-card" itemscope itemtype="http://schema.org/Person">
   
   
-  <img class="portrait mr-3" src="/author/dryairship/avatar_hu62cc97398271f53f903402cc5339b2e8_45029_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+  <img class="portrait mr-3" src="/author/dryairship/avatar_hu6466aae508a80f23eee44b22064a16b4_71878_250x250_fill_lanczos_center_2.png" itemprop="image" alt="Avatar">
   
 
   <div class="media-body">
     <h5 class="card-title" itemprop="name"><a href="/authors/dryairship">Priydarshi Singh</a></h5>
-    <h6 class="card-subtitle">Third Year Undergraduate Student</h6>
+    <h6 class="card-subtitle">Final Year Undergraduate Student</h6>
     <p class="card-text" itemprop="description">Security Researcher · Developer · Sport Programmer · SysAdmin</p>
     <ul class="network-icon" aria-hidden="true">
       
@@ -772,6 +771,21 @@ Yes, and then they will be able to create a map between voters and the votes tha
         </a>
       </li>
       
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="/resume/resume.pdf" >
+          <i class="ai ai-cv"></i>
+        </a>
+      </li>
+      
     </ul>
   </div>
 </div>
@@ -786,8 +800,6 @@ Yes, and then they will be able to create a map between voters and the votes tha
         <ul>
           
           <li><a href="/project/iitkbucks/">IITKBucks</a></li>
-          
-          <li><a href="/project/online-election-manager/">Online Election Manager</a></li>
           
         </ul>
       </div>
@@ -830,7 +842,7 @@ Yes, and then they will be able to create a map between voters and the votes tha
   
 
   <p class="powered-by">
-    © Priydarshi Singh 2020 &middot; 
+    © Priydarshi Singh 2021 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -971,7 +983,7 @@ Yes, and then they will be able to create a map between voters and the votes tha
     
     
     
-    <script src="/js/academic.min.f579f291d0f0c7da58aa872f9aba5215.js"></script>
+    <script src="/js/academic.min.32076193e27096384f727bc21fa4c3ec.js"></script>
 
   </body>
 </html>

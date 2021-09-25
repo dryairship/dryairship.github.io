@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Fri, 26 Apr 2019 23:33:17 +0530</lastBuildDate>
-    
-	<atom:link href="https://dryairship.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 26 Apr 2019 23:33:17 +0530</lastBuildDate><atom:link href="https://dryairship.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Meow, World!</title>
       <link>https://dryairship.github.io/post/meow-world/</link>

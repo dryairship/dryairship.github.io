@@ -170,7 +170,6 @@ if (!doNotTrack) {
 }
 </script>
 
-
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
   <aside class="search-results" id="search">
@@ -596,7 +595,7 @@ Now, the book that I&rsquo;m following also has a section called &ldquo;Hands-on
 <h4 id="the-first-time-it-felt-like-magic">The first time, it felt like magic.</h4>
 <p>I didn&rsquo;t know what we were doing. I didn&rsquo;t know why we were doing that. But it made my laptop start its fan, and apparently, the tests showed that the network had trained well.</p>
 <h4 id="the-second-time-i-was-still-clueless-though-a-little-bit-less-clueless">The second time, I was still clueless. Though a little bit <em>less</em> clueless.</h4>
-<p>I understood how the chosen error function translated to the update equations for the weights and biases. I knew what gradient descent was doing. I understood most of the &lsquo;<em>what</em>&lsquo;s and &lsquo;<em>how</em>&lsquo;s, but the &lsquo;<em>why</em>&rsquo; questions remained unanswered.</p>
+<p>I understood how the chosen error function translated to the update equations for the weights and biases. I knew what gradient descent was doing. I understood most of the &lsquo;<em>what</em>&rsquo;s and &lsquo;<em>how</em>&rsquo;s, but the &lsquo;<em>why</em>&rsquo; questions remained unanswered.</p>
 <h4 id="the-third-time-i-got-overconfident">The third time, I got overconfident.</h4>
 <p>I now (somewhat) understood the implications of the choice of the error function. I also (somewhat) understood why the network was pyramidal in shape. I understood the benefits of one-hot encoding over label encoding. Overall, it felt like I knew what I was doing and why I was doing that. So now it was time for my own theories.</p>
 <h2 id="network-structure">Network Structure</h2>
@@ -618,15 +617,15 @@ The images in the MNIST dataset are of size 28 x 28. Thus the input layer was of
 <table>
 <thead>
 <tr>
-<th align="center"><img src="patterns-expected.png" alt="Expected Patterns"></th>
+<th style="text-align:center"><img src="patterns-expected.png" alt="Expected Patterns"></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">Expected Patterns (shown 6 out of &lt;indeterminate&gt;)</td>
+<td style="text-align:center">Expected Patterns (shown 6 out of &lt;indeterminate&gt;)</td>
 </tr>
 <tr>
-<td align="center">A curve in the top right corner is a feature of the digits 2, 3, 8, 9 and 0. A horizontal line in the upper part is a feature of the digit 7. A curve in the bottom left corner is a feature of the digits 5, 6, 8 and 0. A vertical line is a feature of the digits 1, 4 and 7. I anticipated that the patterns obtained from the weight matrix would look somewhat like these, but was utterly disappointed.</td>
+<td style="text-align:center">A curve in the top right corner is a feature of the digits 2, 3, 8, 9 and 0. A horizontal line in the upper part is a feature of the digit 7. A curve in the bottom left corner is a feature of the digits 5, 6, 8 and 0. A vertical line is a feature of the digits 1, 4 and 7. I anticipated that the patterns obtained from the weight matrix would look somewhat like these, but was utterly disappointed.</td>
 </tr>
 </tbody>
 </table>
@@ -634,15 +633,15 @@ The images in the MNIST dataset are of size 28 x 28. Thus the input layer was of
 <table>
 <thead>
 <tr>
-<th align="center"><img src="patterns-actual.png" alt="Actual Patterns"></th>
+<th style="text-align:center"><img src="patterns-actual.png" alt="Actual Patterns"></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">Actual Patterns (shown 6 out of 100)</td>
+<td style="text-align:center">Actual Patterns (shown 6 out of 100)</td>
 </tr>
 <tr>
-<td align="center"><strong>Noise!</strong> That&rsquo;s noise! Those images do not seem to have any pattern at all! But believe it or not, this is how it works.</td>
+<td style="text-align:center"><strong>Noise!</strong> That&rsquo;s noise! Those images do not seem to have any pattern at all! But believe it or not, this is how it works.</td>
 </tr>
 </tbody>
 </table>
@@ -695,12 +694,12 @@ The images in the MNIST dataset are of size 28 x 28. Thus the input layer was of
 <div class="media author-card" itemscope itemtype="http://schema.org/Person">
   
   
-  <img class="portrait mr-3" src="/author/dryairship/avatar_hu62cc97398271f53f903402cc5339b2e8_45029_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+  <img class="portrait mr-3" src="/author/dryairship/avatar_hu6466aae508a80f23eee44b22064a16b4_71878_250x250_fill_lanczos_center_2.png" itemprop="image" alt="Avatar">
   
 
   <div class="media-body">
     <h5 class="card-title" itemprop="name"><a href="/authors/dryairship">Priydarshi Singh</a></h5>
-    <h6 class="card-subtitle">Third Year Undergraduate Student</h6>
+    <h6 class="card-subtitle">Final Year Undergraduate Student</h6>
     <p class="card-text" itemprop="description">Security Researcher · Developer · Sport Programmer · SysAdmin</p>
     <ul class="network-icon" aria-hidden="true">
       
@@ -804,6 +803,21 @@ The images in the MNIST dataset are of size 28 x 28. Thus the input layer was of
         </a>
       </li>
       
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="/resume/resume.pdf" >
+          <i class="ai ai-cv"></i>
+        </a>
+      </li>
+      
     </ul>
   </div>
 </div>
@@ -860,7 +874,7 @@ The images in the MNIST dataset are of size 28 x 28. Thus the input layer was of
   
 
   <p class="powered-by">
-    © Priydarshi Singh 2020 &middot; 
+    © Priydarshi Singh 2021 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -1001,7 +1015,7 @@ The images in the MNIST dataset are of size 28 x 28. Thus the input layer was of
     
     
     
-    <script src="/js/academic.min.f579f291d0f0c7da58aa872f9aba5215.js"></script>
+    <script src="/js/academic.min.32076193e27096384f727bc21fa4c3ec.js"></script>
 
   </body>
 </html>

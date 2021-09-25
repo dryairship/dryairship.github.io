@@ -1,394 +1,236 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://dryairship.github.io/post/iitkbucks-behind-the-scenes/</loc>
-    <lastmod>2020-08-17T07:40:18+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/post/</loc>
-    <lastmod>2020-08-17T07:40:18+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/</loc>
-    <lastmod>2020-08-17T07:40:18+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/authors/</loc>
-    <lastmod>2020-08-06T03:13:04+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/authors/dryairship/</loc>
-    <lastmod>2020-08-06T03:13:04+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/tags/gsoc/</loc>
-    <lastmod>2020-08-06T03:13:04+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/post/gsoc-2020-part-3-second-coding-phase/</loc>
-    <lastmod>2020-08-06T03:13:04+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/tags/open-source/</loc>
-    <lastmod>2020-08-06T03:13:04+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/tags/</loc>
-    <lastmod>2020-08-06T03:13:04+05:30</lastmod>
-  </url>
-  
   <url>
     <loc>https://dryairship.github.io/tags/cryptography/</loc>
-    <lastmod>2020-08-03T19:30:25+05:30</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-04-14T19:32:10+05:30</lastmod>
+  </url><url>
+    <loc>https://dryairship.github.io/tags/development/</loc>
+    <lastmod>2021-04-14T19:32:10+05:30</lastmod>
+  </url><url>
+    <loc>https://dryairship.github.io/tags/golang/</loc>
+    <lastmod>2021-04-14T19:32:10+05:30</lastmod>
+  </url><url>
+    <loc>https://dryairship.github.io/project/online-election-manager/</loc>
+    <lastmod>2021-04-14T19:32:10+05:30</lastmod>
+  </url><url>
+    <loc>https://dryairship.github.io/</loc>
+    <lastmod>2021-04-14T19:32:10+05:30</lastmod>
+  </url><url>
+    <loc>https://dryairship.github.io/project/</loc>
+    <lastmod>2021-04-14T19:32:10+05:30</lastmod>
+  </url><url>
+    <loc>https://dryairship.github.io/tags/security/</loc>
+    <lastmod>2021-04-14T19:32:10+05:30</lastmod>
+  </url><url>
+    <loc>https://dryairship.github.io/tags/</loc>
+    <lastmod>2021-04-14T19:32:10+05:30</lastmod>
+  </url><url>
+    <loc>https://dryairship.github.io/tags/chatbot/</loc>
+    <lastmod>2020-12-05T19:32:10+05:30</lastmod>
+  </url><url>
+    <loc>https://dryairship.github.io/tags/facebook/</loc>
+    <lastmod>2020-12-05T19:32:10+05:30</lastmod>
+  </url><url>
+    <loc>https://dryairship.github.io/tags/messenger/</loc>
+    <lastmod>2020-12-05T19:32:10+05:30</lastmod>
+  </url><url>
+    <loc>https://dryairship.github.io/project/quiz-kitty/</loc>
+    <lastmod>2020-12-05T19:32:10+05:30</lastmod>
+  </url><url>
+    <loc>https://dryairship.github.io/tags/redis/</loc>
+    <lastmod>2020-12-05T19:32:10+05:30</lastmod>
+  </url><url>
+    <loc>https://dryairship.github.io/post/iitkbucks-behind-the-scenes/</loc>
+    <lastmod>2020-08-17T07:40:18+05:30</lastmod>
+  </url><url>
+    <loc>https://dryairship.github.io/post/</loc>
+    <lastmod>2020-08-17T07:40:18+05:30</lastmod>
+  </url><url>
+    <loc>https://dryairship.github.io/authors/</loc>
+    <lastmod>2020-08-06T03:13:04+05:30</lastmod>
+  </url><url>
+    <loc>https://dryairship.github.io/authors/dryairship/</loc>
+    <lastmod>2020-08-06T03:13:04+05:30</lastmod>
+  </url><url>
+    <loc>https://dryairship.github.io/tags/gsoc/</loc>
+    <lastmod>2020-08-06T03:13:04+05:30</lastmod>
+  </url><url>
+    <loc>https://dryairship.github.io/post/gsoc-2020-part-3-second-coding-phase/</loc>
+    <lastmod>2020-08-06T03:13:04+05:30</lastmod>
+  </url><url>
+    <loc>https://dryairship.github.io/tags/open-source/</loc>
+    <lastmod>2020-08-06T03:13:04+05:30</lastmod>
+  </url><url>
     <loc>https://dryairship.github.io/tags/elections/</loc>
     <lastmod>2020-08-03T19:30:25+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/post/online-election-manager-vs-an-untrusted-server-admin/</loc>
     <lastmod>2020-08-03T19:30:25+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/tags/security/</loc>
-    <lastmod>2020-08-03T19:30:25+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/pclub/</loc>
     <lastmod>2020-07-21T05:39:57+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/post/replies-to-suggestions-for-pclub-projects/</loc>
     <lastmod>2020-07-21T05:39:57+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/blockchain/</loc>
     <lastmod>2020-07-18T19:32:10+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/cryptocurrency/</loc>
     <lastmod>2020-07-18T19:32:10+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/tags/development/</loc>
-    <lastmod>2020-07-18T19:32:10+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/tags/golang/</loc>
-    <lastmod>2020-07-18T19:32:10+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/project/iitkbucks/</loc>
     <lastmod>2020-07-18T19:32:10+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/project/</loc>
-    <lastmod>2020-07-18T19:32:10+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/reactjs/</loc>
     <lastmod>2020-07-18T19:32:10+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/mystery/</loc>
     <lastmod>2020-07-18T06:50:40+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/post/regaining-high-speed-internet-after-exceeding-daily-limit/</loc>
     <lastmod>2020-07-18T06:50:40+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/post/gsoc-2020-part-2-first-coding-phase/</loc>
     <lastmod>2020-07-08T07:33:13+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/iitk/</loc>
     <lastmod>2020-06-11T14:38:06+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/post/internet-data-consumption-at-iitk/</loc>
     <lastmod>2020-06-11T14:38:06+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/tags/chatbot/</loc>
-    <lastmod>2020-06-05T19:32:10+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/tags/facebook/</loc>
-    <lastmod>2020-06-05T19:32:10+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/tags/messenger/</loc>
-    <lastmod>2020-06-05T19:32:10+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/project/quiz-kitty/</loc>
-    <lastmod>2020-06-05T19:32:10+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/tags/redis/</loc>
-    <lastmod>2020-06-05T19:32:10+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/post/gsoc-2020-part-1-community-bonding-period/</loc>
     <lastmod>2020-06-01T12:33:06+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/linux/</loc>
     <lastmod>2020-05-28T16:40:38+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/operating-systems/</loc>
     <lastmod>2020-05-28T16:40:38+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/post/switching-operating-systems-like-clothes/</loc>
     <lastmod>2020-05-28T16:40:38+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/functional-programming/</loc>
     <lastmod>2020-05-04T06:57:17+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/haskell/</loc>
     <lastmod>2020-05-04T06:57:17+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/post/learn-me-a-haskell/</loc>
     <lastmod>2020-05-04T06:57:17+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/programming-languages/</loc>
     <lastmod>2020-05-04T06:57:17+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/post/porting-tle-bot-to-slack-part-1/</loc>
     <lastmod>2020-04-25T19:36:56+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/python/</loc>
     <lastmod>2020-04-25T19:36:56+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/story/</loc>
     <lastmod>2020-04-10T01:18:22+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/sysadmin/</loc>
     <lastmod>2020-04-10T01:18:22+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/post/when-i-messed-up-the-gymkhana-server/</loc>
     <lastmod>2020-04-10T01:18:22+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/post/my-first-rust-program/</loc>
     <lastmod>2020-03-28T04:27:10+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/rust/</loc>
     <lastmod>2020-03-28T04:27:10+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/examinations/</loc>
     <lastmod>2020-03-26T06:59:43+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/quizzing/</loc>
     <lastmod>2020-03-26T06:59:43+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/post/your-guess-might-not-be-as-good-as-mine/</loc>
     <lastmod>2020-03-26T06:59:43+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/post/learning-machine-learning-story-n-1/</loc>
     <lastmod>2019-12-15T06:27:48+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/machine-learning/</loc>
     <lastmod>2019-12-15T06:27:48+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/ml-stories/</loc>
     <lastmod>2019-12-15T06:27:48+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/dryairship/</loc>
     <lastmod>2019-12-03T01:53:04+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/post/dryairship-origins/</loc>
     <lastmod>2019-12-03T01:53:04+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/post/learning-machine-learning-story-n/</loc>
     <lastmod>2019-12-02T17:38:31+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/aerospace/</loc>
     <lastmod>2019-09-20T03:44:44+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/post/my-first-flight-stalled/</loc>
     <lastmod>2019-09-20T03:44:44+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/project/centralized-inventory-and-purchasing/</loc>
     <lastmod>2019-07-03T03:28:56+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/express/</loc>
     <lastmod>2019-07-03T03:28:56+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/inventory-management/</loc>
     <lastmod>2019-07-03T03:28:56+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/tags/java/</loc>
-    <lastmod>2019-07-03T03:28:56+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/javascript/</loc>
     <lastmod>2019-07-03T03:28:56+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/nodejs/</loc>
     <lastmod>2019-07-03T03:28:56+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/foobar/</loc>
     <lastmod>2019-05-04T12:30:23+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/google/</loc>
     <lastmod>2019-05-04T12:30:23+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/hacking/</loc>
     <lastmod>2019-05-04T12:30:23+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/post/how-i-extracted-hidden-test-cases-in-google-foobar/</loc>
     <lastmod>2019-05-04T12:30:23+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dryairship.github.io/tags/java/</loc>
+    <lastmod>2019-05-04T12:30:23+05:30</lastmod>
+  </url><url>
     <loc>https://dryairship.github.io/tags/competitive-programming/</loc>
     <lastmod>2019-05-03T23:00:48+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/post/my-google-foobar-experience/</loc>
     <lastmod>2019-05-03T23:00:48+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/tags/hugo/</loc>
     <lastmod>2019-04-26T23:33:17+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/post/meow-world/</loc>
     <lastmod>2019-04-26T23:33:17+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dryairship.github.io/project/online-election-manager/</loc>
-    <lastmod>2019-04-14T19:32:10+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/author/dryairship/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/author/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/publication_types/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/publication/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dryairship.github.io/talk/</loc>
   </url>
-  
 </urlset>

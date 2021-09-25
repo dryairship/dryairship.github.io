@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Sat, 28 Mar 2020 04:27:10 +0530</lastBuildDate>
-    
-	<atom:link href="https://dryairship.github.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 28 Mar 2020 04:27:10 +0530</lastBuildDate><atom:link href="https://dryairship.github.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Rust Program</title>
       <link>https://dryairship.github.io/post/my-first-rust-program/</link>
