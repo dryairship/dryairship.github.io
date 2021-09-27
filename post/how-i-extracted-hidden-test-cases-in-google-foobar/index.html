@@ -610,7 +610,10 @@ When the function completes its execution, another dialog box pops up which cont
 <p>Recompiling a program in BlueJ resets the Java Virtual Machine. Hence, the static variables are restored to their initial values. This is why I got the correct answer when I ran the program after recompiling it.</p>
 <p>Of course, I solved the issue by simply putting a statement to reset the variable to 0 before performing the calculations. With this modification, my program passed all the test cases.</p>
 <p>The important fact that I learnt here is that Google was calling the <code>answer</code> function on the same instance of JVM for all the test cases.</p>
-<!-- raw HTML omitted -->
+<p><em>So is this a flaw?</em><br>
+<strong>Yes!</strong><br>
+<em>Can we exploit it?</em><br>
+<strong>It wouldn&rsquo;t be a flaw if we couldn&rsquo;t exploit it!</strong></p>
 <h2 id="lost-in-a-maze">Lost in a maze</h2>
 <p>For the 2<!-- raw HTML omitted -->nd<!-- raw HTML omitted --> problem of level 3, I had to find the length of the shortest path from the bottom-right corner to the top-left corner of a boolean matrix. <code>false</code> represented a block where we could move, and <code>true</code> represented a piece of wall. Also, I was allowed to remove at most one wall from the maze.</p>
 <p>I didn&rsquo;t know about BFS/DFS back then. <em>(I didn&rsquo;t know about any standard algorithms, in fact. :'( )</em>  As a result, I coded up a very <em>dirty</em> solution (must&rsquo;ve been DFS, only I didn&rsquo;t know it was called so). And it worked. Well, <strong>almost</strong>! It passed 4/5 test cases.
@@ -628,7 +631,8 @@ I tried hard to find a bug or an edge case that I hadn&rsquo;t considered, but I
 </li>
 </ul>
 <p>Okay, so now I have the data of the previous test case stored in a static variable.</p>
-<!-- raw HTML omitted -->
+<p><em>How do I use it?</em><br>
+<strong>By failing on purpose!</strong></p>
 <blockquote>
 <p>If you want to succeed, double your failure rate. - Thomas Watson</p>
 </blockquote>
@@ -640,7 +644,8 @@ I tried hard to find a bug or an edge case that I hadn&rsquo;t considered, but I
 <p>I repeated the process for the breadth, and then for the entire matrix (<em>except, I didn&rsquo;t&hellip;</em>).</p>
 <h2 id="a-far-more-unheroic-but-faster-way">A far more unheroic, but faster way</h2>
 <p>I had found out almost half the matrix when I realized that instead of obtaining the entire matrix, I could just guess the answer. Since I had to find the length of shortest path, the answer would satisfy:</p>
-<!-- raw HTML omitted -->
+<p><code>length+breadth-1 &lt;= answer &lt; length*breadth</code><br>
+(much less than <code>length*breadth</code> actually)</p>
 <p>So for all the test cases, I would let the program run normally, while for the 4<!-- raw HTML omitted -->th<!-- raw HTML omitted --> test case, I would return a custom value. I started with <code>length+breadth-1</code>, and kept incrementing it until the 4<!-- raw HTML omitted -->th<!-- raw HTML omitted --> test case passed too. (<em>Okay fine, a very despicable way to pass a test case, indeed. This is probably why I didn&rsquo;t whine when I didn&rsquo;t hear from Google - I hadn&rsquo;t completely solved this problem.</em>)</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>The binary conversion method, although a long procedure, could be successfully used to extract hidden test cases from Google FooBar - much more easily for problems which have a few <code>int</code> values as the input. <strong>However, it requires that at least one test case succeeding the failing test case, must pass</strong>.</p>
