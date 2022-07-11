@@ -107,7 +107,7 @@
     <script>
       window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
       ga('create', 'UA-139043216-1', 'auto');
-      
+      ga('set', 'anonymizeIp', true);
       ga('require', 'eventTracker');
       ga('require', 'outboundLinkTracker');
       ga('require', 'urlChangeTracker');
@@ -140,6 +140,9 @@
   
   <meta property="twitter:card" content="summary">
   
+  <meta property="twitter:site" content="@dryairship">
+  <meta property="twitter:creator" content="@dryairship">
+  
   <meta property="og:site_name" content="Priydarshi Singh">
   <meta property="og:url" content="https://dryairship.github.io/project/quiz-kitty/">
   <meta property="og:title" content="QuizKitty | Priydarshi Singh">
@@ -152,6 +155,32 @@
   
 
   
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "hsl(178, 100%, 72%)",
+          "text": "black"
+        },
+        "button": {
+          "background": "black",
+          "text": "hsl(178, 100%, 72%)"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "https://cookies.insites.com"
+      }
+    })});
+</script>
+
 
   
 
@@ -514,13 +543,13 @@ if (!doNotTrack) {
 <div class="media author-card" itemscope itemtype="http://schema.org/Person">
   
   
-  <img class="portrait mr-3" src="/author/dryairship/avatar_hu6466aae508a80f23eee44b22064a16b4_71878_250x250_fill_lanczos_center_2.png" itemprop="image" alt="Avatar">
+  <img class="portrait mr-3" src="/author/dryairship/avatar_hu29b709f87338e3cff28639c8e335493e_82742_250x250_fill_lanczos_center_3.png" itemprop="image" alt="Avatar">
   
 
   <div class="media-body">
     <h5 class="card-title" itemprop="name"><a href="/authors/dryairship">Priydarshi Singh</a></h5>
-    <h6 class="card-subtitle">Final Year Undergraduate Student</h6>
-    <p class="card-text" itemprop="description">Security Researcher · Developer · Sport Programmer · SysAdmin</p>
+    
+    <p class="card-text" itemprop="description">Breaker · Builder · Engineer</p>
     <ul class="network-icon" aria-hidden="true">
       
       
@@ -533,7 +562,7 @@ if (!doNotTrack) {
       
       
       <li>
-        <a itemprop="sameAs" href="mailto:darshi@iitk.ac.in" >
+        <a itemprop="sameAs" href="mailto:dryairship@gmail.com" >
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -626,6 +655,8 @@ if (!doNotTrack) {
       
       
       
+        
+      
       
       
       
@@ -633,8 +664,8 @@ if (!doNotTrack) {
         
       
       <li>
-        <a itemprop="sameAs" href="/resume/resume.pdf" >
-          <i class="ai ai-cv"></i>
+        <a itemprop="sameAs" href="https://instagram.com/dryairship" target="_blank" rel="noopener">
+          <i class="fab fa-instagram"></i>
         </a>
       </li>
       
@@ -670,7 +701,7 @@ if (!doNotTrack) {
   
 
   <p class="powered-by">
-    © Priydarshi Singh 2021 &middot; 
+    © Priydarshi Singh 2022 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -720,6 +751,9 @@ if (!doNotTrack) {
 
     
     
+    
+    <script src="/js/mathjax-config.js"></script>
+    
 
     
     
@@ -737,6 +771,8 @@ if (!doNotTrack) {
       
 
       
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
       
     
 

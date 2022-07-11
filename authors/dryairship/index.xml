@@ -7,7 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Thu, 06 Aug 2020 03:13:04 +0530</lastBuildDate><atom:link href="https://dryairship.github.io/authors/dryairship/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Jul 2022 02:29:29 +0530</lastBuildDate><atom:link href="https://dryairship.github.io/authors/dryairship/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I Completed 5 Minors at IITK</title>
+      <link>https://dryairship.github.io/post/how-i-got-the-5-minors-at-iitk/</link>
+      <pubDate>Mon, 11 Jul 2022 02:29:29 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/post/how-i-got-the-5-minors-at-iitk/</guid>
+      <description>Fun fact: I did 59 credits more than was required for me to graduate.</description>
+    </item>
+    
+    <item>
+      <title>Interview Experience: Palantir</title>
+      <link>https://dryairship.github.io/post/interview-experience-palantir/</link>
+      <pubDate>Fri, 17 Jun 2022 04:49:31 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/post/interview-experience-palantir/</guid>
+      <description>Spoiler: I didn&amp;rsquo;t get the offer.</description>
+    </item>
+    
+    <item>
+      <title>Interview Experience: DevRev</title>
+      <link>https://dryairship.github.io/post/interview-experience-devrev/</link>
+      <pubDate>Mon, 13 Jun 2022 00:41:26 +0530</pubDate>
+      
+      <guid>https://dryairship.github.io/post/interview-experience-devrev/</guid>
+      <description>Spoiler: I got the offer.</description>
+    </item>
+    
     <item>
       <title>GSoC 2020 · Part 3</title>
       <link>https://dryairship.github.io/post/gsoc-2020-part-3-second-coding-phase/</link>
@@ -194,7 +221,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dryairship.github.io/author/dryairship/</guid>
-      <description>I am a final year undergraduate student at the Indian Institute Of Technology, Kanpur, majoring in Aerospace Engineering, with minors in Algorithms, Theory of Computation, Machine Learning Applications, Industrial &amp;amp; Management Engineering, and Linguistics, and a prospective minor in Computer Systems. Although I am interested in all things related to technology, I am particularly excited about cybersecurity. I am a skilled developer and have some experience in devops. I used to be the Coordinator of the Programming Club of IIT Kanpur.</description>
+      <description>Hi, I&amp;rsquo;m Priydarshi. I like to break things, and I like to build things. dryairship is an anagram of my first name, and my username on most online platforms.
+I mostly work with computers, and usually develop exciting software. I also take a special interest in cybersecurity. I am currently working with Foyer, and will soon be joining Optiver. I have previously worked with Amazon, The Linux Foundation, C3i Center and HackCave.</description>
     </item>
     
   </channel>

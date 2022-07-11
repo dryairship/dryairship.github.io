@@ -107,7 +107,7 @@
     <script>
       window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
       ga('create', 'UA-139043216-1', 'auto');
-      
+      ga('set', 'anonymizeIp', true);
       ga('require', 'eventTracker');
       ga('require', 'outboundLinkTracker');
       ga('require', 'urlChangeTracker');
@@ -139,6 +139,9 @@
   
   <meta property="twitter:card" content="summary_large_image">
   
+  <meta property="twitter:site" content="@dryairship">
+  <meta property="twitter:creator" content="@dryairship">
+  
   <meta property="og:site_name" content="Priydarshi Singh">
   <meta property="og:url" content="https://dryairship.github.io/post/learn-me-a-haskell/">
   <meta property="og:title" content="Learn Me a Haskell | Priydarshi Singh">
@@ -151,6 +154,32 @@
   
 
   
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "hsl(178, 100%, 72%)",
+          "text": "black"
+        },
+        "button": {
+          "background": "black",
+          "text": "hsl(178, 100%, 72%)"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "https://cookies.insites.com"
+      }
+    })});
+</script>
+
 
   
 
@@ -359,7 +388,7 @@ if (!doNotTrack) {
 
 
 <div class="article-header d-xl-none">
-  <div class="featured-image" style="background-image: url('/post/learn-me-a-haskell/featured_hu329cc776b1fdf433b30d97547af92631_2499_800x0_resize_lanczos_2.png');"></div>
+  <div class="featured-image" style="background-image: url('/post/learn-me-a-haskell/featured_hu329cc776b1fdf433b30d97547af92631_2499_800x0_resize_lanczos_3.png');"></div>
   
 </div>
 
@@ -492,7 +521,7 @@ if (!doNotTrack) {
     </div>
     <div class="col-6">
       <div class="split-header-image">
-        <img src="/post/learn-me-a-haskell/featured_hu329cc776b1fdf433b30d97547af92631_2499_680x500_fill_q90_lanczos_center_2.png" itemprop="image" alt="">
+        <img src="/post/learn-me-a-haskell/featured_hu329cc776b1fdf433b30d97547af92631_2499_680x500_fill_q90_lanczos_center_3.png" itemprop="image" alt="">
         
       </div>
     </div>
@@ -601,14 +630,14 @@ if (!doNotTrack) {
 <p>I was able to easily build two functions - <code>getSHA256Hash</code> to calculate the SHA256 hash of a string, and <code>isValid</code> to check if the hash is below the target. I now needed to iterate over the nonce values to try to find one that worked.</p>
 <h2 id="running-back-to-imperative-languages">Running back to imperative languages</h2>
 <p>The above task would be pretty simple in an imperative language. I needed something like the following:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">1</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">10000000</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span> { 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">1</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">10000000</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span> { 
     <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">isValid</span>(<span style="color:#a6e22e">getSHA256Hash</span>(<span style="color:#a6e22e">input</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">to_string</span>(<span style="color:#a6e22e">i</span>))) {
         print(<span style="color:#a6e22e">i</span>)
         <span style="color:#66d9ef">break</span>
     }
 }
 </code></pre></div><p>But apparently, Haskell doesn&rsquo;t have loops. However, searching for <em>&ldquo;for loop in haskell&rdquo;</em> led me to the functions <code>forM</code> and <code>forM_</code> of <code>Control.Monad</code>. And I ended up writing some code like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-hs" data-lang="hs"><span style="color:#a6e22e">forM_</span> [<span style="color:#ae81ff">1</span><span style="color:#f92672">..</span><span style="color:#ae81ff">1000000</span>] <span style="color:#f92672">$</span> <span style="color:#a6e22e">\</span>nonce <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">do</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-hs" data-lang="hs"><span style="color:#a6e22e">forM_</span> [<span style="color:#ae81ff">1</span><span style="color:#f92672">..</span><span style="color:#ae81ff">1000000</span>] <span style="color:#f92672">$</span> <span style="color:#a6e22e">\</span>nonce <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">do</span>
     <span style="color:#66d9ef">let</span> hsh <span style="color:#f92672">=</span> getSHA256Hash <span style="color:#f92672">$</span> input <span style="color:#f92672">++</span> show nonce
     <span style="color:#66d9ef">if</span> isValid hsh
         <span style="color:#66d9ef">then</span> putStrLn <span style="color:#f92672">$</span> <span style="color:#e6db74">&#34;Nonce = &#34;</span> <span style="color:#f92672">++</span> show nonce
@@ -616,7 +645,7 @@ if (!doNotTrack) {
 </code></pre></div><p>This worked well. However, since there was no break statement, it wouldn&rsquo;t stop after finding a valid nonce value, and would print as many valid values as it could find, in that range. So I started looking for a <code>break</code> equivalent in Haskell. Dum Dum. I could find nothing.</p>
 <h2 id="eureka">Eureka</h2>
 <p>Instead, somewhere on StackOverflow or Reddit, I found a comment, which asked the OP to change their code to use a recursive function. And at that moment it struck me. It seemed as if everything was crystal clear. I quickly created a recursive function:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-hs" data-lang="hs"><span style="color:#a6e22e">findNonce</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">String</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Integer</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Integer</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-hs" data-lang="hs"><span style="color:#a6e22e">findNonce</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">String</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Integer</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Integer</span>
 <span style="color:#a6e22e">findNonce</span> input currentNonce
     <span style="color:#f92672">|</span> isValid hsh <span style="color:#f92672">=</span> currentNonce
     <span style="color:#f92672">|</span> otherwise <span style="color:#f92672">=</span> findNonce input (currentNonce<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)
@@ -670,13 +699,13 @@ if (!doNotTrack) {
 <div class="media author-card" itemscope itemtype="http://schema.org/Person">
   
   
-  <img class="portrait mr-3" src="/author/dryairship/avatar_hu6466aae508a80f23eee44b22064a16b4_71878_250x250_fill_lanczos_center_2.png" itemprop="image" alt="Avatar">
+  <img class="portrait mr-3" src="/author/dryairship/avatar_hu29b709f87338e3cff28639c8e335493e_82742_250x250_fill_lanczos_center_3.png" itemprop="image" alt="Avatar">
   
 
   <div class="media-body">
     <h5 class="card-title" itemprop="name"><a href="/authors/dryairship">Priydarshi Singh</a></h5>
-    <h6 class="card-subtitle">Final Year Undergraduate Student</h6>
-    <p class="card-text" itemprop="description">Security Researcher · Developer · Sport Programmer · SysAdmin</p>
+    
+    <p class="card-text" itemprop="description">Breaker · Builder · Engineer</p>
     <ul class="network-icon" aria-hidden="true">
       
       
@@ -689,7 +718,7 @@ if (!doNotTrack) {
       
       
       <li>
-        <a itemprop="sameAs" href="mailto:darshi@iitk.ac.in" >
+        <a itemprop="sameAs" href="mailto:dryairship@gmail.com" >
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -782,6 +811,8 @@ if (!doNotTrack) {
       
       
       
+        
+      
       
       
       
@@ -789,8 +820,8 @@ if (!doNotTrack) {
         
       
       <li>
-        <a itemprop="sameAs" href="/resume/resume.pdf" >
-          <i class="ai ai-cv"></i>
+        <a itemprop="sameAs" href="https://instagram.com/dryairship" target="_blank" rel="noopener">
+          <i class="fab fa-instagram"></i>
         </a>
       </li>
       
@@ -840,7 +871,7 @@ if (!doNotTrack) {
   
 
   <p class="powered-by">
-    © Priydarshi Singh 2021 &middot; 
+    © Priydarshi Singh 2022 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -890,6 +921,9 @@ if (!doNotTrack) {
 
     
     
+    
+    <script src="/js/mathjax-config.js"></script>
+    
 
     
     
@@ -907,6 +941,8 @@ if (!doNotTrack) {
       
 
       
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
       
     
 
