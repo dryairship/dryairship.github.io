@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sysadmin on Priydarshi Singh</title>
+    <link>https://dryairship.github.io/tags/sysadmin/</link>
+    <description>Recent content in Sysadmin on Priydarshi Singh</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Apr 2020 01:18:22 +0530</lastBuildDate>
+    <atom:link href="https://dryairship.github.io/tags/sysadmin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>When I Messed Up the Gymkhana Server</title>
+      <link>https://dryairship.github.io/post/when-i-messed-up-the-gymkhana-server/</link>
+      <pubDate>Fri, 10 Apr 2020 01:18:22 +0530</pubDate>
+      <guid>https://dryairship.github.io/post/when-i-messed-up-the-gymkhana-server/</guid>
+      <description>And how I fixed it 391 hours later: Debugging a docker and internal networks overlap issue.</description>
+    </item>
+  </channel>
+</rss>

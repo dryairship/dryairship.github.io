@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hacking on Priydarshi Singh</title>
+    <link>https://dryairship.github.io/tags/hacking/</link>
+    <description>Recent content in Hacking on Priydarshi Singh</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 May 2019 12:30:23 +0530</lastBuildDate>
+    <atom:link href="https://dryairship.github.io/tags/hacking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I Extracted Hidden Test Cases In Google FooBar</title>
+      <link>https://dryairship.github.io/post/how-i-extracted-hidden-test-cases-in-google-foobar/</link>
+      <pubDate>Sat, 04 May 2019 12:30:23 +0530</pubDate>
+      <guid>https://dryairship.github.io/post/how-i-extracted-hidden-test-cases-in-google-foobar/</guid>
+      <description>Description of a now patched flaw that allowed extraction of hidden test cases in Google FooBar.</description>
+    </item>
+  </channel>
+</rss>

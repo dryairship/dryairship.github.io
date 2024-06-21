@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href=/favicon.png type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="/css/font.css" media="all">
+
+
+
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-704Q9LSH8M"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-704Q9LSH8M');
+        }
+      </script>
+    
+  
+
+
+<meta property="og:url" content="https://dryairship.github.io/post/gsoc-2020-part-1-community-bonding-period/">
+  <meta property="og:site_name" content="Priydarshi Singh">
+  <meta property="og:title" content="GSoC 2020 · Part 1">
+  <meta property="og:description" content="The organization, the project and the Community Bonding Period.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2020-06-01T12:33:06+05:30">
+    <meta property="article:modified_time" content="2020-06-01T12:33:06+05:30">
+    <meta property="article:tag" content="Gsoc">
+    <meta property="article:tag" content="Open-Source">
+    <meta property="og:image" content="https://dryairship.github.io/post/gsoc-2020-part-1-community-bonding-period/featured.png">
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://dryairship.github.io/post/gsoc-2020-part-1-community-bonding-period/featured.png">
+  <meta name="twitter:title" content="GSoC 2020 · Part 1">
+  <meta name="twitter:description" content="The organization, the project and the Community Bonding Period.">
+
+
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
+
+
+<link rel="stylesheet" href="/css/theme.css" media="all">
+
+<style>
+    :root {
+        --text-color: #343a40;
+        --text-secondary-color: #6c757d;
+        --background-color: #eaedf0;
+        --secondary-background-color: #64ffda1a;
+        --primary-color: #007bff;
+        --secondary-color: #f8f9fa;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        height: 0px;
+        width: 8px;
+        background-color: var(--background-color);
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 1rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background: #b0b0b0;
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+
+
+<meta name="description" content="">
+<link rel="stylesheet" href="/css/single.css">
+
+
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
+
+
+  
+  
+
+  <title>
+GSoC 2020 · Part 1 | Priydarshi Singh
+
+  </title>
+</head>
+
+<body class="light">
+  
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
+
+
+
+<script>
+    var prevScrollPos = window.pageYOffset;
+    window.addEventListener("scroll", function showHeaderOnScroll() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let currentScrollPos = window.pageYOffset;
+        let resetHeaderStyle = false;
+        let showNavBarOnScrollUp =  false ;
+        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
+        if (showNavBar) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        } else {
+            resetHeaderStyle = true;
+        }
+        if(currentScrollPos === 0) {
+            resetHeaderStyle = true;
+        }
+        if(resetHeaderStyle) {
+            profileHeaderElem.classList.remove("showHeaderOnTop");
+        }
+        prevScrollPos = currentScrollPos;
+    });
+</script>
+
+
+
+<header id="profileHeader">
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            
+            <a class="navbar-brand primary-font text-wrap" href="/">
+                
+                <img src="/dryairship-logo.png" width="120" height="40"
+                    class="d-inline-block align-top">
+                 
+                
+            </a>
+
+            
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#about" aria-label="about">
+                            About
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/post" title="Blog posts">
+                            
+                            Blog
+                        </a>
+                    </li>
+                    
+                    
+
+                    
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content">
+<section id="single">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-12 col-lg-9">
+        <div class="pr-lg-4">
+          <div class="title mb-5">
+            <h1 class="text-center mb-4">GSoC 2020 · Part 1</h1>
+            <div class="text-center">
+              
+              Jun 1, 2020
+
+              
+              <span id="readingTime">
+                min read
+              </span>
+              
+            </div>
+          </div>
+          
+            
+            <div class="featured-image">
+              <img class="img-fluid mx-auto d-block" style="height:300px; width:auto" src="/post/gsoc-2020-part-1-community-bonding-period/featured.jpg" onerror="this.src='\/post\/gsoc-2020-part-1-community-bonding-period\/featured.png';this.onerror='';" alt="GSoC 2020 · Part 1">
+            </div>
+            
+          
+          <article class="page-content  p-2">
+          <p>I was selected for <a href="https://summerofcode.withgoogle.com/">Google Summer Of Code</a> 2020 by <a href="https://openprinting.github.io">Open Printing</a> under The Linux Foundation. <a href="https://summerofcode.withgoogle.com/projects/#6705486251950080">My project</a> is to integrate the Common Print Dialog Backends in Qt. This project will enable Qt developers to leverage the features of CPDB in their applications.</p>
+<h2 id="open-printing">Open Printing</h2>
+<p>OpenPrinting is a free software organization under The Linux Foundation. It works on the development of new printing technologies for Linux and UNIX-like operating systems. <a href="https://en.wikipedia.org/wiki/Foomatic">Foomatic</a>, <a href="https://github.com/OpenPrinting/cups-filters">cups-filters</a> and <a href="https://openprinting.github.io/projects/04-print-dialog/">Common Print Dialog Backends</a> are some of the major projects maintained by this organization.</p>
+<h2 id="common-print-dialog-backends">Common Print Dialog Backends</h2>
+<p>My GSoC project is a part of the Common Print Dialog Backends project of Open Printing. The CPDB aims to separate the development of print dialogs of different GUI toolkits and applications (like GTK, Qt, LibreOffice etc.) and the different print technologies (CUPS, IPP, Google Cloud Print, etc.). This will enable the printing technologies to be developed independently so that the changes in these get implemented in all the applications (that use the CPDB) quickly.</p>
+<p>For this, a print dialog depends on the backends installed on the computer, and uses their DBus API to communicate with them. If the support for a new print technology is desired, only the backend for it needs to be installed, and all the print dialogs that use the CPDB would be updated automatically.</p>
+<h2 id="my-project">My project</h2>
+<p><a href="https://www.qt.io/">Qt</a> is a popular cross-platform application development framework. Applications built using Qt currently use its Qt Print Support framework to provide printing features, which does not use the CPDB. My project aims to integrate the CPDB in Qt.</p>
+<p>The project needs the CPD backends to be installed on the computer that the application is being run. So we&rsquo;ll first check if the backends are installed. If they are, we&rsquo;ll use the backends to provide print support to the application, otherwise we&rsquo;ll use the existing Qt Print Support.</p>
+<h2 id="community-bonding-period">Community Bonding Period</h2>
+<p>The first phase of GSoC is the Community Bonding Period in which we get to know our community and get familiar with their code base and work style. For 2020, this period started on May 4, and lasted till May 31.</p>
+<p>I am actually working for Open Printing, but the code that I would write has to be included in Qt&rsquo;s repositories. Hence, I read about the <a href="https://wiki.qt.io/Qt_Coding_Style">Qt Coding Style</a>, the <a href="https://wiki.qt.io/API_Design_Principles">Qt API Design Principles</a> and the <a href="https://wiki.qt.io/Commit_Policy">Qt Commit Policy</a>. I also created my accounts on Qt and Gerrit.</p>
+<p>We had initally decided to provide the CPDB support as a Qt Add-On. The docs state that for this we need to send out a mail to the Qt development list. So I send out <a href="https://lists.qt-project.org/pipermail/development/2020-May/039522.html">this mail</a> to the list. About a week later, we received <a href="https://lists.qt-project.org/pipermail/development/2020-May/039584.html">a reply</a> from Lars Knoll, who is Qt&rsquo;s Chief Maintainer. He suggested me to integrate the CPDB support directly in Qt Print Support. My mentor (and org-admin) Till was also in favour of an in-built solution. So now I&rsquo;ll be working to integrate CPDB support in Qt Print Support itself, instead of as an Add-On.</p>
+<h2 id="cpdb-libs-on-arch-linux">cpdb-libs on Arch Linux</h2>
+<p>Till had asked me to build and try out a <a href="https://github.com/OpenPrinting/cpdb-libs/tree/master/demo">demo frontend</a> that used the cpdb-libs backend. I realized that this required the corresponding backends to be installed on my computer. The backends are available as the packages <code>cpdb-backend-cups</code>, <code>cpdb-backend-gcp</code> and <code>cpdb-backend-file</code> in Ubuntu&rsquo;s repositories. However, I could not find them in Arch&rsquo;s repositories. I couldn&rsquo;t even find them in the AUR.</p>
+<p>So I decided to submit these packages myself to the AUR. I haven&rsquo;t yet gone through the submission guidelines, but I&rsquo;ll hopefully do that by the end of June.</p>
+<h2 id="coding-period-begins">Coding Period begins!</h2>
+<p>The coding phase starts today, and I&rsquo;m very excited to work on my project!</p>
+<p>I have a friend who once needed to use <a href="https://www.paraview.org/immersive/">ParaView Immersive</a> for a project, so she had to build it from source. Paraview is built using Qt, so she had to install Qt too. I can&rsquo;t wait to get my code merged into Qt&rsquo;s official repositories, and then tell her that I contributed to Qt!</p>
+
+          </article>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-3">
+        <div id="stickySideBar" class="sticky-sidebar">
+          
+          <aside class="toc">
+              <h5>
+                Table Of Contents
+              </h5>
+              <div class="toc-content">
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#open-printing">Open Printing</a></li>
+    <li><a href="#common-print-dialog-backends">Common Print Dialog Backends</a></li>
+    <li><a href="#my-project">My project</a></li>
+    <li><a href="#community-bonding-period">Community Bonding Period</a></li>
+    <li><a href="#cpdb-libs-on-arch-linux">cpdb-libs on Arch Linux</a></li>
+    <li><a href="#coding-period-begins">Coding Period begins!</a></li>
+  </ul>
+</nav>
+              </div>
+          </aside>
+          
+
+          
+          <aside class="tags">
+            <h5>Tags</h5>
+            <ul class="tags-ul list-unstyled list-inline">
+              
+              <li class="list-inline-item"><a href="https://dryairship.github.io/tags/gsoc"
+                target="_blank"
+              >gsoc</a></li>
+              
+              <li class="list-inline-item"><a href="https://dryairship.github.io/tags/open-source"
+                target="_blank"
+              >open-source</a></li>
+              
+            </ul>
+          </aside>
+          
+
+          
+          <aside class="social">
+            <h5>Share this on...</h5>
+            <div class="social-content">
+              <ul class="list-inline">
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fdryairship.github.io%2fpost%2fgsoc-2020-part-1-community-bonding-period%2f">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://twitter.com/share?text=GSoC%202020%20%c2%b7%20Part%201&url=https%3a%2f%2fdryairship.github.io%2fpost%2fgsoc-2020-part-1-community-bonding-period%2f">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=GSoC%202020%20%c2%b7%20Part%201: https%3a%2f%2fdryairship.github.io%2fpost%2fgsoc-2020-part-1-community-bonding-period%2f">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href='mailto:?subject=GSoC%202020%20%c2%b7%20Part%201&amp;body=Check%20out%20this%20site https%3a%2f%2fdryairship.github.io%2fpost%2fgsoc-2020-part-1-community-bonding-period%2f'>
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-9 p-4">
+        <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "dryairship" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+  <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
+    <i class="fas fa-angle-up"></i>
+  </button>
+</section>
+
+
+<div class="progress">
+  <div id="scroll-progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<Script src="/js/scrollProgressBar.js"></script>
+
+
+<script>
+  var topScroll = document.getElementById("topScroll");
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topScroll.style.display = "block";
+    } else {
+      topScroll.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  
+  let stickySideBarElem = document.getElementById("stickySideBar");
+  let stickyNavBar =  true ;
+  if(stickyNavBar) {
+    let headerElem = document.getElementById("profileHeader");
+    let headerHeight = headerElem.offsetHeight + 15;
+    stickySideBarElem.style.top = headerHeight + "px";
+  } else {
+    stickySideBarElem.style.top = "50px";
+  }
+</script>
+
+
+<script src="/js/readingTime.js"></script>
+
+
+
+  </div><footer>
+    
+ 
+ 
+<div class="container py-3" id="recent-posts">
+    
+    
+    <div class="h3 text-center text-secondary py-3">
+        Recent Posts
+    </div>
+    <div class="row justify-content-center">
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/post/how-i-got-the-5-minors-at-iitk/">
+                        <img src="/post/how-i-got-the-5-minors-at-iitk/featured.jpg" onerror="this.src='\/post\/how-i-got-the-5-minors-at-iitk\/featured.png';this.onerror='';" class="card-img-top" alt="How I Completed 5 Minors at IITK">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/post/how-i-got-the-5-minors-at-iitk/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="How I Completed 5 Minors at IITK">How I Completed 5 Minors …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>Fun fact: I did 59 credits more than was required for me to graduate.</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Jul 11, 2022</span>
+                    <a href="/post/how-i-got-the-5-minors-at-iitk/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/post/interview-experience-palantir/">
+                        <img src="/post/interview-experience-palantir/featured.jpg" onerror="this.src='\/post\/interview-experience-palantir\/featured.png';this.onerror='';" class="card-img-top" alt="Interview Experience: Palantir">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/post/interview-experience-palantir/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Interview Experience: Palantir">Interview Experience: …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>Spoiler: I didn&rsquo;t get the offer.</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Jun 17, 2022</span>
+                    <a href="/post/interview-experience-palantir/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/post/interview-experience-devrev/">
+                        <img src="/post/interview-experience-devrev/featured.jpg" onerror="this.src='\/post\/interview-experience-devrev\/featured.png';this.onerror='';" class="card-img-top" alt="Interview Experience: DevRev">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/post/interview-experience-devrev/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Interview Experience: DevRev">Interview Experience: …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>Spoiler: I got the offer.</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Jun 13, 2022</span>
+                    <a href="/post/interview-experience-devrev/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="text-center pt-2">
+    
+
+    
+
+    
+
+    
+
+    
+</div><div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            
+                <div class="pb-2">
+                    <a href="https://dryairship.github.io/" title="Priydarshi Singh">
+                        <img alt="Footer logo" src="/dryairship-logo.png"
+                            height="40px" width="120px">
+                    </a>
+                </div>
+            
+            &copy; 2024  All rights reserved
+            
+        </div>
+    </div>
+</div>
+</footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (document.body.className.includes("light")) {
+        document.body.classList.add('dark');
+        localStorage.setItem("pref-theme", 'dark');
+    }
+</script>
+
+
+
+
+
+
+<!-- MathJax -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js" integrity="sha384-M5jmNxKC9EVnuqeMwRHvFuYUE8Hhp0TgBruj/GZRkYtiMrCRgH7yvv5KY+Owi7TW" crossorigin="anonymous"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\[','\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+             extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+    });
+</script>
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>

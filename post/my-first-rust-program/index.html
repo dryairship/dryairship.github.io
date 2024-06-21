@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href=/favicon.png type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="/css/font.css" media="all">
+
+
+
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-704Q9LSH8M"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-704Q9LSH8M');
+        }
+      </script>
+    
+  
+
+
+<meta property="og:url" content="https://dryairship.github.io/post/my-first-rust-program/">
+  <meta property="og:site_name" content="Priydarshi Singh">
+  <meta property="og:title" content="My First Rust Program">
+  <meta property="og:description" content="I’ve had a Rust sticker on my laptop for over a year now. I thought perhaps I should finally learn the langauge.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2020-03-28T04:27:10+05:30">
+    <meta property="article:modified_time" content="2020-03-28T04:27:10+05:30">
+    <meta property="article:tag" content="Rust">
+    <meta property="og:image" content="https://dryairship.github.io/post/my-first-rust-program/featured.png">
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://dryairship.github.io/post/my-first-rust-program/featured.png">
+  <meta name="twitter:title" content="My First Rust Program">
+  <meta name="twitter:description" content="I’ve had a Rust sticker on my laptop for over a year now. I thought perhaps I should finally learn the langauge.">
+
+
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
+
+
+<link rel="stylesheet" href="/css/theme.css" media="all">
+
+<style>
+    :root {
+        --text-color: #343a40;
+        --text-secondary-color: #6c757d;
+        --background-color: #eaedf0;
+        --secondary-background-color: #64ffda1a;
+        --primary-color: #007bff;
+        --secondary-color: #f8f9fa;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        height: 0px;
+        width: 8px;
+        background-color: var(--background-color);
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 1rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background: #b0b0b0;
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+
+
+<meta name="description" content="">
+<link rel="stylesheet" href="/css/single.css">
+
+
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
+
+
+  
+  
+
+  <title>
+My First Rust Program | Priydarshi Singh
+
+  </title>
+</head>
+
+<body class="light">
+  
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
+
+
+
+<script>
+    var prevScrollPos = window.pageYOffset;
+    window.addEventListener("scroll", function showHeaderOnScroll() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let currentScrollPos = window.pageYOffset;
+        let resetHeaderStyle = false;
+        let showNavBarOnScrollUp =  false ;
+        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
+        if (showNavBar) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        } else {
+            resetHeaderStyle = true;
+        }
+        if(currentScrollPos === 0) {
+            resetHeaderStyle = true;
+        }
+        if(resetHeaderStyle) {
+            profileHeaderElem.classList.remove("showHeaderOnTop");
+        }
+        prevScrollPos = currentScrollPos;
+    });
+</script>
+
+
+
+<header id="profileHeader">
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            
+            <a class="navbar-brand primary-font text-wrap" href="/">
+                
+                <img src="/dryairship-logo.png" width="120" height="40"
+                    class="d-inline-block align-top">
+                 
+                
+            </a>
+
+            
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#about" aria-label="about">
+                            About
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/post" title="Blog posts">
+                            
+                            Blog
+                        </a>
+                    </li>
+                    
+                    
+
+                    
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content">
+<section id="single">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-12 col-lg-9">
+        <div class="pr-lg-4">
+          <div class="title mb-5">
+            <h1 class="text-center mb-4">My First Rust Program</h1>
+            <div class="text-center">
+              
+              Mar 28, 2020
+
+              
+              <span id="readingTime">
+                min read
+              </span>
+              
+            </div>
+          </div>
+          
+            
+            <div class="featured-image">
+              <img class="img-fluid mx-auto d-block" style="height:300px; width:auto" src="/post/my-first-rust-program/featured.jpg" onerror="this.src='\/post\/my-first-rust-program\/featured.png';this.onerror='';" alt="My First Rust Program">
+            </div>
+            
+          
+          <article class="page-content  p-2">
+          <p>Note: The project is available <a href="https://github.com/dryairship/coins-and-the-devil">here</a>.</p>
+<p>Rust has been declared as the most loved programming language consecutively for the past four years in the <a href="https://insights.stackoverflow.com/survey/2019#most-loved-dreaded-and-wanted">StackOverflow Developer Survey</a>. I myself marked Rust as one of the languages I&rsquo;d like to work with in the future, in the 2020 Survey. And due to the COVID-19 vacations, I finally got the time to try it out.</p>
+<p>So I installed Rust and read a few pages of <a href="https://doc.rust-lang.org/rust-by-example/index.html">Rust by Example</a>. Then I came across this problem about <a href="https://blog.tanyakhovanova.com/2020/03/a-game-with-the-devil/">a game of coins with the Devil</a>, and decided to implement the game as my first project in Rust.</p>
+<p>I believe in learning languages the hard way. I learnt Java by experimenting. I used to copy code that I didn&rsquo;t understand, then modified small parts, observed the changes, and repeated this until I understood the entire code. And I learnt python and C++ by by using them to re-write the same programs that I wrote in Java. This also taught me how to use Google properly. I learnt Go by deciding that I&rsquo;d use it to build my best self project yet (an <a href="https://github.com/dryairship/online-election-manager">online election system</a>), when I hardly knew how to write Hello World in it; and I learnt it not by following some guide, but by searching for &ldquo;how to do X in Go&rdquo;.</p>
+<p>So why should Rust be an exception? I created a new cargo project and started modifying it. I really liked that creating a new project is as simple as doing <code>cargo new project-name</code>.</p>
+<p>The first thing that I had to do was to take an integer as an input. I was awfully disappointed that there is no direct way to take an integer input: we first have to input a string and then parse it into an integer.</p>
+<p>Java, at one point, used to be my favourite language. And Java libraries use the camelCase/PascalCase for all naming purposes (except for CONSTANTS). Now Go is my favourite language. And Go too uses a similar convention. Therefore, all my life, I&rsquo;ve preferred using the camelCase. And now I&rsquo;m writing code in a language that gives me a warning, asking me to convert camelCase variable names to snake_case. First turn-off. :p</p>
+<p>When the input part was ready, I ran it using <code>cargo run</code>. It seemed to take infinity to compile - when I realized that it was in fact waiting for the input. However, I had <code>print!</code>ed a string before asking for the input, which was not displayed. Flushing problem, I recognized. Changing <code>print!</code> to <code>println!</code> did the work, but I still wanted the input to be taken on the same line as the prompt. So I had to add another statement to flush - a rather scary looking statement that required a new Trait to be imported. I didn&rsquo;t really like having to manually flush after <code>print!</code>ing, but there has been a <a href="https://github.com/rust-lang/rust/issues/23818">huge discussion over this</a> and the community believes this is the way it should be. :(</p>
+<p>For the next step, I had to create an array of the size that I had just inputted. The error messages told me that I could not use a variable for the size of the array - it had to be a constant. LoL what? I then found that the way to do it is by using a vector. Fair enough. Then I realized that an <code>i32</code> value could not be used as an array/vector index; it had to be a <code>usize</code>.  Reasonable, since array indices should be positive. However, I believe an automatic type conversion should have been implemented (again, the subject of <a href="https://github.com/rust-lang/rust/issues/29010">a huge discussion</a>).</p>
+<p>I then had to randomly initialize the vector. Turns out, I have to add an <strong>external crate</strong> as a dependency to generate random numbers. Seriously? In my opinion, random number generation is something as fundamental as I/O and should have been present in the standard library of Rust.</p>
+<p>At this point, I had a randomly initialized array. I now needed to update it using inputs from the user. I was about to face the most dreaded error any Rust beginner could face : <code>error[E0382]: use of moved value</code>. The concept of this error doesn&rsquo;t even exist in other languages. <em>So I modified the vector in an iteration of the while loop and now I can&rsquo;t use the vector in the while condition? LMAO why?</em> It took me an entire day to figure it out, and I have probably not yet properly understood it. I somehow managed to solve it, but I still don&rsquo;t know if the way I did it is the way it was supposed to be done. I&rsquo;ll need to understand the idea of ownership before I pick up any other project in Rust.</p>
+<p>So that was it - an utterly disappointing experience. I once overheard <a href="https://yashsriv.org/">yashsriv</a> saying that anyone denigrating Rust online would be hurled abuses at. So perhaps I should brace for that. The program is available on GitHub at <a href="https://github.com/dryairship/coins-and-the-devil">dryairship/coins-and-the-devil</a>. Do point out any mistakes by creating a GitHub issue or in the comments here.</p>
+
+          </article>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-3">
+        <div id="stickySideBar" class="sticky-sidebar">
+          
+          <aside class="toc">
+              <h5>
+                Table Of Contents
+              </h5>
+              <div class="toc-content">
+                <nav id="TableOfContents"></nav>
+              </div>
+          </aside>
+          
+
+          
+          <aside class="tags">
+            <h5>Tags</h5>
+            <ul class="tags-ul list-unstyled list-inline">
+              
+              <li class="list-inline-item"><a href="https://dryairship.github.io/tags/rust"
+                target="_blank"
+              >rust</a></li>
+              
+            </ul>
+          </aside>
+          
+
+          
+          <aside class="social">
+            <h5>Share this on...</h5>
+            <div class="social-content">
+              <ul class="list-inline">
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fdryairship.github.io%2fpost%2fmy-first-rust-program%2f">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://twitter.com/share?text=My%20First%20Rust%20Program&url=https%3a%2f%2fdryairship.github.io%2fpost%2fmy-first-rust-program%2f">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=My%20First%20Rust%20Program: https%3a%2f%2fdryairship.github.io%2fpost%2fmy-first-rust-program%2f">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href='mailto:?subject=My%20First%20Rust%20Program&amp;body=Check%20out%20this%20site https%3a%2f%2fdryairship.github.io%2fpost%2fmy-first-rust-program%2f'>
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-9 p-4">
+        <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "dryairship" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+  <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
+    <i class="fas fa-angle-up"></i>
+  </button>
+</section>
+
+
+<div class="progress">
+  <div id="scroll-progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<Script src="/js/scrollProgressBar.js"></script>
+
+
+<script>
+  var topScroll = document.getElementById("topScroll");
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topScroll.style.display = "block";
+    } else {
+      topScroll.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  
+  let stickySideBarElem = document.getElementById("stickySideBar");
+  let stickyNavBar =  true ;
+  if(stickyNavBar) {
+    let headerElem = document.getElementById("profileHeader");
+    let headerHeight = headerElem.offsetHeight + 15;
+    stickySideBarElem.style.top = headerHeight + "px";
+  } else {
+    stickySideBarElem.style.top = "50px";
+  }
+</script>
+
+
+<script src="/js/readingTime.js"></script>
+
+
+
+  </div><footer>
+    
+ 
+ 
+<div class="container py-3" id="recent-posts">
+    
+    
+    <div class="h3 text-center text-secondary py-3">
+        Recent Posts
+    </div>
+    <div class="row justify-content-center">
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/post/how-i-got-the-5-minors-at-iitk/">
+                        <img src="/post/how-i-got-the-5-minors-at-iitk/featured.jpg" onerror="this.src='\/post\/how-i-got-the-5-minors-at-iitk\/featured.png';this.onerror='';" class="card-img-top" alt="How I Completed 5 Minors at IITK">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/post/how-i-got-the-5-minors-at-iitk/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="How I Completed 5 Minors at IITK">How I Completed 5 Minors …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>Fun fact: I did 59 credits more than was required for me to graduate.</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Jul 11, 2022</span>
+                    <a href="/post/how-i-got-the-5-minors-at-iitk/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/post/interview-experience-palantir/">
+                        <img src="/post/interview-experience-palantir/featured.jpg" onerror="this.src='\/post\/interview-experience-palantir\/featured.png';this.onerror='';" class="card-img-top" alt="Interview Experience: Palantir">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/post/interview-experience-palantir/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Interview Experience: Palantir">Interview Experience: …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>Spoiler: I didn&rsquo;t get the offer.</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Jun 17, 2022</span>
+                    <a href="/post/interview-experience-palantir/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/post/interview-experience-devrev/">
+                        <img src="/post/interview-experience-devrev/featured.jpg" onerror="this.src='\/post\/interview-experience-devrev\/featured.png';this.onerror='';" class="card-img-top" alt="Interview Experience: DevRev">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/post/interview-experience-devrev/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Interview Experience: DevRev">Interview Experience: …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>Spoiler: I got the offer.</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Jun 13, 2022</span>
+                    <a href="/post/interview-experience-devrev/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="text-center pt-2">
+    
+
+    
+
+    
+
+    
+
+    
+</div><div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            
+                <div class="pb-2">
+                    <a href="https://dryairship.github.io/" title="Priydarshi Singh">
+                        <img alt="Footer logo" src="/dryairship-logo.png"
+                            height="40px" width="120px">
+                    </a>
+                </div>
+            
+            &copy; 2024  All rights reserved
+            
+        </div>
+    </div>
+</div>
+</footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (document.body.className.includes("light")) {
+        document.body.classList.add('dark');
+        localStorage.setItem("pref-theme", 'dark');
+    }
+</script>
+
+
+
+
+
+
+<!-- MathJax -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js" integrity="sha384-M5jmNxKC9EVnuqeMwRHvFuYUE8Hhp0TgBruj/GZRkYtiMrCRgH7yvv5KY+Owi7TW" crossorigin="anonymous"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\[','\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+             extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+    });
+</script>
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>
