@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>competitive-programming on Priydarshi Singh</title>
-    <link>https://dryairship.github.io/tags/competitive-programming/</link>
-    <description>Recent content in competitive-programming on Priydarshi Singh</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Competitive-Programming on Priydarshi Singh</title>
+    <link>http://localhost:1313/tags/competitive-programming/</link>
+    <description>Recent content in Competitive-Programming on Priydarshi Singh</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Fri, 03 May 2019 23:00:48 +0530</lastBuildDate><atom:link href="https://dryairship.github.io/tags/competitive-programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 May 2019 23:00:48 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/competitive-programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Google FooBar Experience</title>
-      <link>https://dryairship.github.io/post/my-google-foobar-experience/</link>
+      <link>http://localhost:1313/post/my-google-foobar-experience/</link>
       <pubDate>Fri, 03 May 2019 23:00:48 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/my-google-foobar-experience/</guid>
+      <guid>http://localhost:1313/post/my-google-foobar-experience/</guid>
       <description>About Google FooBar, the invitation, the problems and the results.</description>
     </item>
-    
   </channel>
 </rss>

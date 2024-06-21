@@ -1,30 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>reactjs on Priydarshi Singh</title>
-    <link>https://dryairship.github.io/tags/reactjs/</link>
-    <description>Recent content in reactjs on Priydarshi Singh</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Reactjs on Priydarshi Singh</title>
+    <link>http://localhost:1313/tags/reactjs/</link>
+    <description>Recent content in Reactjs on Priydarshi Singh</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Sat, 18 Jul 2020 19:32:10 +0530</lastBuildDate><atom:link href="https://dryairship.github.io/tags/reactjs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Jul 2020 19:32:10 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/reactjs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>IITKBucks</title>
-      <link>https://dryairship.github.io/project/iitkbucks/</link>
+      <link>http://localhost:1313/project/iitkbucks/</link>
       <pubDate>Sat, 18 Jul 2020 19:32:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/project/iitkbucks/</guid>
+      <guid>http://localhost:1313/project/iitkbucks/</guid>
       <description>My client for IITBucks - a custom blockchain based cryptocurrency</description>
     </item>
-    
     <item>
       <title>Centralized Inventory and Purchasing</title>
-      <link>https://dryairship.github.io/project/centralized-inventory-and-purchasing/</link>
+      <link>http://localhost:1313/project/centralized-inventory-and-purchasing/</link>
       <pubDate>Wed, 03 Jul 2019 03:28:56 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/project/centralized-inventory-and-purchasing/</guid>
+      <guid>http://localhost:1313/project/centralized-inventory-and-purchasing/</guid>
       <description>Developed a web app for efficient inventory management across various departments of the NGO Vitraag Vigyaan</description>
     </item>
-    
   </channel>
 </rss>

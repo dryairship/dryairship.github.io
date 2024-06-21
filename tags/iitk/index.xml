@@ -1,39 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>iitk on Priydarshi Singh</title>
-    <link>https://dryairship.github.io/tags/iitk/</link>
-    <description>Recent content in iitk on Priydarshi Singh</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Iitk on Priydarshi Singh</title>
+    <link>http://localhost:1313/tags/iitk/</link>
+    <description>Recent content in Iitk on Priydarshi Singh</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Mon, 11 Jul 2022 02:29:29 +0530</lastBuildDate><atom:link href="https://dryairship.github.io/tags/iitk/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Jul 2022 02:29:29 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/iitk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How I Completed 5 Minors at IITK</title>
-      <link>https://dryairship.github.io/post/how-i-got-the-5-minors-at-iitk/</link>
+      <link>http://localhost:1313/post/how-i-got-the-5-minors-at-iitk/</link>
       <pubDate>Mon, 11 Jul 2022 02:29:29 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/how-i-got-the-5-minors-at-iitk/</guid>
+      <guid>http://localhost:1313/post/how-i-got-the-5-minors-at-iitk/</guid>
       <description>Fun fact: I did 59 credits more than was required for me to graduate.</description>
     </item>
-    
     <item>
       <title>Internet Data Consumption at IITK</title>
-      <link>https://dryairship.github.io/post/internet-data-consumption-at-iitk/</link>
+      <link>http://localhost:1313/post/internet-data-consumption-at-iitk/</link>
       <pubDate>Thu, 11 Jun 2020 14:38:06 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/internet-data-consumption-at-iitk/</guid>
+      <guid>http://localhost:1313/post/internet-data-consumption-at-iitk/</guid>
       <description>You miss the speed, don&amp;rsquo;t you?</description>
     </item>
-    
     <item>
       <title>My First Flight Stalled</title>
-      <link>https://dryairship.github.io/post/my-first-flight-stalled/</link>
+      <link>http://localhost:1313/post/my-first-flight-stalled/</link>
       <pubDate>Fri, 20 Sep 2019 03:44:44 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/my-first-flight-stalled/</guid>
+      <guid>http://localhost:1313/post/my-first-flight-stalled/</guid>
       <description>stall · /stɔːl/ · [verb] · (of an aircraft) stop flying and begin to fall because the speed is too low or the angle of attack too large to maintain adequate lift.</description>
     </item>
-    
   </channel>
 </rss>

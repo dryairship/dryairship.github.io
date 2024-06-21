@@ -2,58 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Priydarshi Singh</title>
-    <link>https://dryairship.github.io/project/</link>
+    <link>http://localhost:1313/project/</link>
     <description>Recent content in Projects on Priydarshi Singh</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Wed, 14 Apr 2021 19:32:10 +0530</lastBuildDate><atom:link href="https://dryairship.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 14 Apr 2021 19:32:10 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Online Election Manager</title>
-      <link>https://dryairship.github.io/project/online-election-manager/</link>
+      <link>http://localhost:1313/project/online-election-manager/</link>
       <pubDate>Wed, 14 Apr 2021 19:32:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/project/online-election-manager/</guid>
-      <description>&lt;p&gt;A cryptographically secure web portal to manage online elections. The software has been used for the following elections at IIT Kanpur:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Students&#39; Senate Office Bearers Elections, 2020&lt;/li&gt;
-&lt;li&gt;Hall 6 (GH) Hall Executive Committee Elections, 2020&lt;/li&gt;
-&lt;li&gt;General Elections, 2021&lt;/li&gt;
-&lt;li&gt;GH1 Hall Executive Committee Elections, 2021&lt;/li&gt;
-&lt;li&gt;Hall 7 Hall Executive Committee Elections, 2021&lt;/li&gt;
-&lt;li&gt;Hall 8 Hall Executive Committee Elections, 2021&lt;/li&gt;
-&lt;li&gt;SBRA Executive Committee Elections, 2021&lt;/li&gt;
-&lt;li&gt;Students&#39; Senate Office Bearers Elections, 2021&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>http://localhost:1313/project/online-election-manager/</guid>
+      <description>&lt;p&gt;A cryptographically secure web portal to manage online elections. The software has been used for the following elections at IIT Kanpur:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Students&amp;rsquo; Senate Office Bearers Elections, 2020&lt;/li&gt;&#xA;&lt;li&gt;Hall 6 (GH) Hall Executive Committee Elections, 2020&lt;/li&gt;&#xA;&lt;li&gt;General Elections, 2021&lt;/li&gt;&#xA;&lt;li&gt;GH1 Hall Executive Committee Elections, 2021&lt;/li&gt;&#xA;&lt;li&gt;Hall 7 Hall Executive Committee Elections, 2021&lt;/li&gt;&#xA;&lt;li&gt;Hall 8 Hall Executive Committee Elections, 2021&lt;/li&gt;&#xA;&lt;li&gt;SBRA Executive Committee Elections, 2021&lt;/li&gt;&#xA;&lt;li&gt;Students&amp;rsquo; Senate Office Bearers Elections, 2021&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title>QuizKitty</title>
-      <link>https://dryairship.github.io/project/quiz-kitty/</link>
+      <link>http://localhost:1313/project/quiz-kitty/</link>
       <pubDate>Sat, 05 Dec 2020 19:32:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/project/quiz-kitty/</guid>
+      <guid>http://localhost:1313/project/quiz-kitty/</guid>
       <description>A messenger bot that can ask you GK questions, built for the Facebook Messaging Hackathon. You can chat with the bot on Facebook Messenger at &lt;a href=&#34;https://m.me/quizkitty&#34;&gt;m.me/quizkitty&lt;/a&gt;</description>
     </item>
-    
     <item>
       <title>IITKBucks</title>
-      <link>https://dryairship.github.io/project/iitkbucks/</link>
+      <link>http://localhost:1313/project/iitkbucks/</link>
       <pubDate>Sat, 18 Jul 2020 19:32:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/project/iitkbucks/</guid>
+      <guid>http://localhost:1313/project/iitkbucks/</guid>
       <description>My client for IITBucks - a custom blockchain based cryptocurrency</description>
     </item>
-    
     <item>
       <title>Centralized Inventory and Purchasing</title>
-      <link>https://dryairship.github.io/project/centralized-inventory-and-purchasing/</link>
+      <link>http://localhost:1313/project/centralized-inventory-and-purchasing/</link>
       <pubDate>Wed, 03 Jul 2019 03:28:56 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/project/centralized-inventory-and-purchasing/</guid>
+      <guid>http://localhost:1313/project/centralized-inventory-and-purchasing/</guid>
       <description>Developed a web app for efficient inventory management across various departments of the NGO Vitraag Vigyaan</description>
     </item>
-    
   </channel>
 </rss>

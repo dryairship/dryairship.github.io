@@ -1,30 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>interviews on Priydarshi Singh</title>
-    <link>https://dryairship.github.io/tags/interviews/</link>
-    <description>Recent content in interviews on Priydarshi Singh</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Interviews on Priydarshi Singh</title>
+    <link>http://localhost:1313/tags/interviews/</link>
+    <description>Recent content in Interviews on Priydarshi Singh</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Fri, 17 Jun 2022 04:49:31 +0530</lastBuildDate><atom:link href="https://dryairship.github.io/tags/interviews/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Jun 2022 04:49:31 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/interviews/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Interview Experience: Palantir</title>
-      <link>https://dryairship.github.io/post/interview-experience-palantir/</link>
+      <link>http://localhost:1313/post/interview-experience-palantir/</link>
       <pubDate>Fri, 17 Jun 2022 04:49:31 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/interview-experience-palantir/</guid>
+      <guid>http://localhost:1313/post/interview-experience-palantir/</guid>
       <description>Spoiler: I didn&amp;rsquo;t get the offer.</description>
     </item>
-    
     <item>
       <title>Interview Experience: DevRev</title>
-      <link>https://dryairship.github.io/post/interview-experience-devrev/</link>
+      <link>http://localhost:1313/post/interview-experience-devrev/</link>
       <pubDate>Mon, 13 Jun 2022 00:41:26 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/interview-experience-devrev/</guid>
+      <guid>http://localhost:1313/post/interview-experience-devrev/</guid>
       <description>Spoiler: I got the offer.</description>
     </item>
-    
   </channel>
 </rss>

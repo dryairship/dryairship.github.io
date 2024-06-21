@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>dryairship on Priydarshi Singh</title>
-    <link>https://dryairship.github.io/tags/dryairship/</link>
-    <description>Recent content in dryairship on Priydarshi Singh</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Dryairship on Priydarshi Singh</title>
+    <link>http://localhost:1313/tags/dryairship/</link>
+    <description>Recent content in Dryairship on Priydarshi Singh</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Tue, 03 Dec 2019 01:53:04 +0530</lastBuildDate><atom:link href="https://dryairship.github.io/tags/dryairship/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Dec 2019 01:53:04 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/dryairship/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>dryairship : Origins</title>
-      <link>https://dryairship.github.io/post/dryairship-origins/</link>
+      <link>http://localhost:1313/post/dryairship-origins/</link>
       <pubDate>Tue, 03 Dec 2019 01:53:04 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/dryairship-origins/</guid>
+      <guid>http://localhost:1313/post/dryairship-origins/</guid>
       <description>An attempt at answering the questions people often ask me regarding my username.</description>
     </item>
-    
   </channel>
 </rss>

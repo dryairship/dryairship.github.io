@@ -2,227 +2,180 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Priydarshi Singh</title>
-    <link>https://dryairship.github.io/post/</link>
+    <link>http://localhost:1313/post/</link>
     <description>Recent content in Posts on Priydarshi Singh</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Mon, 11 Jul 2022 02:29:29 +0530</lastBuildDate><atom:link href="https://dryairship.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Jul 2022 02:29:29 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How I Completed 5 Minors at IITK</title>
-      <link>https://dryairship.github.io/post/how-i-got-the-5-minors-at-iitk/</link>
+      <link>http://localhost:1313/post/how-i-got-the-5-minors-at-iitk/</link>
       <pubDate>Mon, 11 Jul 2022 02:29:29 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/how-i-got-the-5-minors-at-iitk/</guid>
+      <guid>http://localhost:1313/post/how-i-got-the-5-minors-at-iitk/</guid>
       <description>Fun fact: I did 59 credits more than was required for me to graduate.</description>
     </item>
-    
     <item>
       <title>Interview Experience: Palantir</title>
-      <link>https://dryairship.github.io/post/interview-experience-palantir/</link>
+      <link>http://localhost:1313/post/interview-experience-palantir/</link>
       <pubDate>Fri, 17 Jun 2022 04:49:31 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/interview-experience-palantir/</guid>
+      <guid>http://localhost:1313/post/interview-experience-palantir/</guid>
       <description>Spoiler: I didn&amp;rsquo;t get the offer.</description>
     </item>
-    
     <item>
       <title>Interview Experience: DevRev</title>
-      <link>https://dryairship.github.io/post/interview-experience-devrev/</link>
+      <link>http://localhost:1313/post/interview-experience-devrev/</link>
       <pubDate>Mon, 13 Jun 2022 00:41:26 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/interview-experience-devrev/</guid>
+      <guid>http://localhost:1313/post/interview-experience-devrev/</guid>
       <description>Spoiler: I got the offer.</description>
     </item>
-    
     <item>
       <title>IITKBucks: Behind the Scenes (or Codes?)</title>
-      <link>https://dryairship.github.io/post/iitkbucks-behind-the-scenes/</link>
+      <link>http://localhost:1313/post/iitkbucks-behind-the-scenes/</link>
       <pubDate>Mon, 17 Aug 2020 07:40:18 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/iitkbucks-behind-the-scenes/</guid>
+      <guid>http://localhost:1313/post/iitkbucks-behind-the-scenes/</guid>
       <description>Making-of, confessions, and bloopers.</description>
     </item>
-    
     <item>
       <title>GSoC 2020 · Part 3</title>
-      <link>https://dryairship.github.io/post/gsoc-2020-part-3-second-coding-phase/</link>
+      <link>http://localhost:1313/post/gsoc-2020-part-3-second-coding-phase/</link>
       <pubDate>Thu, 06 Aug 2020 03:13:04 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/gsoc-2020-part-3-second-coding-phase/</guid>
+      <guid>http://localhost:1313/post/gsoc-2020-part-3-second-coding-phase/</guid>
       <description>The second phase of coding.</description>
     </item>
-    
     <item>
       <title>Online Election Manager v/s an Untrusted Server Admin</title>
-      <link>https://dryairship.github.io/post/online-election-manager-vs-an-untrusted-server-admin/</link>
+      <link>http://localhost:1313/post/online-election-manager-vs-an-untrusted-server-admin/</link>
       <pubDate>Mon, 03 Aug 2020 19:30:25 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/online-election-manager-vs-an-untrusted-server-admin/</guid>
+      <guid>http://localhost:1313/post/online-election-manager-vs-an-untrusted-server-admin/</guid>
       <description>The defense against internal attacks on the Online Election Manager</description>
     </item>
-    
     <item>
       <title>Replies to Suggestions for PClub Projects</title>
-      <link>https://dryairship.github.io/post/replies-to-suggestions-for-pclub-projects/</link>
+      <link>http://localhost:1313/post/replies-to-suggestions-for-pclub-projects/</link>
       <pubDate>Tue, 21 Jul 2020 05:39:57 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/replies-to-suggestions-for-pclub-projects/</guid>
+      <guid>http://localhost:1313/post/replies-to-suggestions-for-pclub-projects/</guid>
       <description>An analysis of some interesting ideas</description>
     </item>
-    
     <item>
       <title>Regaining High Speed Internet After Exceeding Daily Limit</title>
-      <link>https://dryairship.github.io/post/regaining-high-speed-internet-after-exceeding-daily-limit/</link>
+      <link>http://localhost:1313/post/regaining-high-speed-internet-after-exceeding-daily-limit/</link>
       <pubDate>Sat, 18 Jul 2020 06:50:40 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/regaining-high-speed-internet-after-exceeding-daily-limit/</guid>
+      <guid>http://localhost:1313/post/regaining-high-speed-internet-after-exceeding-daily-limit/</guid>
       <description>Weird Electronics and Magic Tricks</description>
     </item>
-    
     <item>
       <title>GSoC 2020 · Part 2</title>
-      <link>https://dryairship.github.io/post/gsoc-2020-part-2-first-coding-phase/</link>
+      <link>http://localhost:1313/post/gsoc-2020-part-2-first-coding-phase/</link>
       <pubDate>Wed, 08 Jul 2020 07:33:13 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/gsoc-2020-part-2-first-coding-phase/</guid>
+      <guid>http://localhost:1313/post/gsoc-2020-part-2-first-coding-phase/</guid>
       <description>The first phase of coding.</description>
     </item>
-    
     <item>
       <title>Internet Data Consumption at IITK</title>
-      <link>https://dryairship.github.io/post/internet-data-consumption-at-iitk/</link>
+      <link>http://localhost:1313/post/internet-data-consumption-at-iitk/</link>
       <pubDate>Thu, 11 Jun 2020 14:38:06 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/internet-data-consumption-at-iitk/</guid>
+      <guid>http://localhost:1313/post/internet-data-consumption-at-iitk/</guid>
       <description>You miss the speed, don&amp;rsquo;t you?</description>
     </item>
-    
     <item>
       <title>GSoC 2020 · Part 1</title>
-      <link>https://dryairship.github.io/post/gsoc-2020-part-1-community-bonding-period/</link>
+      <link>http://localhost:1313/post/gsoc-2020-part-1-community-bonding-period/</link>
       <pubDate>Mon, 01 Jun 2020 12:33:06 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/gsoc-2020-part-1-community-bonding-period/</guid>
+      <guid>http://localhost:1313/post/gsoc-2020-part-1-community-bonding-period/</guid>
       <description>The organization, the project and the Community Bonding Period.</description>
     </item>
-    
     <item>
       <title>Switching Operating Systems Like Clothes</title>
-      <link>https://dryairship.github.io/post/switching-operating-systems-like-clothes/</link>
+      <link>http://localhost:1313/post/switching-operating-systems-like-clothes/</link>
       <pubDate>Thu, 28 May 2020 16:40:38 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/switching-operating-systems-like-clothes/</guid>
+      <guid>http://localhost:1313/post/switching-operating-systems-like-clothes/</guid>
       <description>From indavertently erasing Windows to having 4 OSes on my laptop.</description>
     </item>
-    
     <item>
       <title>Learn Me a Haskell</title>
-      <link>https://dryairship.github.io/post/learn-me-a-haskell/</link>
+      <link>http://localhost:1313/post/learn-me-a-haskell/</link>
       <pubDate>Mon, 04 May 2020 06:57:17 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/learn-me-a-haskell/</guid>
+      <guid>http://localhost:1313/post/learn-me-a-haskell/</guid>
       <description>So I wrote my first Haskell program. And I love it!</description>
     </item>
-    
     <item>
       <title>Porting TLE Bot to Slack - Part 1</title>
-      <link>https://dryairship.github.io/post/porting-tle-bot-to-slack-part-1/</link>
+      <link>http://localhost:1313/post/porting-tle-bot-to-slack-part-1/</link>
       <pubDate>Sat, 25 Apr 2020 19:36:56 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/porting-tle-bot-to-slack-part-1/</guid>
+      <guid>http://localhost:1313/post/porting-tle-bot-to-slack-part-1/</guid>
       <description>I can&amp;rsquo;t deal with python&amp;rsquo;s &lt;code&gt;asyncio&lt;/code&gt;. :(</description>
     </item>
-    
     <item>
       <title>When I Messed Up the Gymkhana Server</title>
-      <link>https://dryairship.github.io/post/when-i-messed-up-the-gymkhana-server/</link>
+      <link>http://localhost:1313/post/when-i-messed-up-the-gymkhana-server/</link>
       <pubDate>Fri, 10 Apr 2020 01:18:22 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/when-i-messed-up-the-gymkhana-server/</guid>
+      <guid>http://localhost:1313/post/when-i-messed-up-the-gymkhana-server/</guid>
       <description>And how I fixed it 391 hours later: Debugging a docker and internal networks overlap issue.</description>
     </item>
-    
     <item>
       <title>My First Rust Program</title>
-      <link>https://dryairship.github.io/post/my-first-rust-program/</link>
+      <link>http://localhost:1313/post/my-first-rust-program/</link>
       <pubDate>Sat, 28 Mar 2020 04:27:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/my-first-rust-program/</guid>
+      <guid>http://localhost:1313/post/my-first-rust-program/</guid>
       <description>I&amp;rsquo;ve had a Rust sticker on my laptop for over a year now. I thought perhaps I should finally learn the langauge.</description>
     </item>
-    
     <item>
       <title>Your Guess Might Not Be as Good as Mine!</title>
-      <link>https://dryairship.github.io/post/your-guess-might-not-be-as-good-as-mine/</link>
+      <link>http://localhost:1313/post/your-guess-might-not-be-as-good-as-mine/</link>
       <pubDate>Thu, 26 Mar 2020 06:59:43 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/your-guess-might-not-be-as-good-as-mine/</guid>
+      <guid>http://localhost:1313/post/your-guess-might-not-be-as-good-as-mine/</guid>
       <description>A brief analysis of hazarding a guess.</description>
     </item>
-    
     <item>
       <title>Learning Machine Learning : Story #N&#43;1</title>
-      <link>https://dryairship.github.io/post/learning-machine-learning-story-n-1/</link>
+      <link>http://localhost:1313/post/learning-machine-learning-story-n-1/</link>
       <pubDate>Sun, 15 Dec 2019 06:27:48 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/learning-machine-learning-story-n-1/</guid>
+      <guid>http://localhost:1313/post/learning-machine-learning-story-n-1/</guid>
       <description>Visualizing patterns in the MNIST dataset</description>
     </item>
-    
     <item>
       <title>dryairship : Origins</title>
-      <link>https://dryairship.github.io/post/dryairship-origins/</link>
+      <link>http://localhost:1313/post/dryairship-origins/</link>
       <pubDate>Tue, 03 Dec 2019 01:53:04 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/dryairship-origins/</guid>
+      <guid>http://localhost:1313/post/dryairship-origins/</guid>
       <description>An attempt at answering the questions people often ask me regarding my username.</description>
     </item>
-    
     <item>
       <title>Learning Machine Learning : Story #N</title>
-      <link>https://dryairship.github.io/post/learning-machine-learning-story-n/</link>
+      <link>http://localhost:1313/post/learning-machine-learning-story-n/</link>
       <pubDate>Mon, 02 Dec 2019 17:38:31 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/learning-machine-learning-story-n/</guid>
+      <guid>http://localhost:1313/post/learning-machine-learning-story-n/</guid>
       <description>The Orange Without The Pulp</description>
     </item>
-    
     <item>
       <title>My First Flight Stalled</title>
-      <link>https://dryairship.github.io/post/my-first-flight-stalled/</link>
+      <link>http://localhost:1313/post/my-first-flight-stalled/</link>
       <pubDate>Fri, 20 Sep 2019 03:44:44 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/my-first-flight-stalled/</guid>
+      <guid>http://localhost:1313/post/my-first-flight-stalled/</guid>
       <description>stall · /stɔːl/ · [verb] · (of an aircraft) stop flying and begin to fall because the speed is too low or the angle of attack too large to maintain adequate lift.</description>
     </item>
-    
     <item>
       <title>How I Extracted Hidden Test Cases In Google FooBar</title>
-      <link>https://dryairship.github.io/post/how-i-extracted-hidden-test-cases-in-google-foobar/</link>
+      <link>http://localhost:1313/post/how-i-extracted-hidden-test-cases-in-google-foobar/</link>
       <pubDate>Sat, 04 May 2019 12:30:23 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/how-i-extracted-hidden-test-cases-in-google-foobar/</guid>
+      <guid>http://localhost:1313/post/how-i-extracted-hidden-test-cases-in-google-foobar/</guid>
       <description>Description of a now patched flaw that allowed extraction of hidden test cases in Google FooBar.</description>
     </item>
-    
     <item>
       <title>My Google FooBar Experience</title>
-      <link>https://dryairship.github.io/post/my-google-foobar-experience/</link>
+      <link>http://localhost:1313/post/my-google-foobar-experience/</link>
       <pubDate>Fri, 03 May 2019 23:00:48 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/my-google-foobar-experience/</guid>
+      <guid>http://localhost:1313/post/my-google-foobar-experience/</guid>
       <description>About Google FooBar, the invitation, the problems and the results.</description>
     </item>
-    
     <item>
       <title>Meow, World!</title>
-      <link>https://dryairship.github.io/post/meow-world/</link>
+      <link>http://localhost:1313/post/meow-world/</link>
       <pubDate>Fri, 26 Apr 2019 23:33:17 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/meow-world/</guid>
+      <guid>http://localhost:1313/post/meow-world/</guid>
       <description>My first attempt at writing a blog post.</description>
     </item>
-    
   </channel>
 </rss>

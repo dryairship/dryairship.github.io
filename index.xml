@@ -1,61 +1,209 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Priydarshi Singh</title>
-    <link>https://dryairship.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Priydarshi Singh</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
     <lastBuildDate>Mon, 11 Jul 2022 02:29:29 +0530</lastBuildDate>
-    
-	    <atom:link href="https://dryairship.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Posts</title>
-      <link>https://dryairship.github.io/post/</link>
+      <title>How I Completed 5 Minors at IITK</title>
+      <link>http://localhost:1313/post/how-i-got-the-5-minors-at-iitk/</link>
       <pubDate>Mon, 11 Jul 2022 02:29:29 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/</guid>
-      <description></description>
+      <guid>http://localhost:1313/post/how-i-got-the-5-minors-at-iitk/</guid>
+      <description>Fun fact: I did 59 credits more than was required for me to graduate.</description>
     </item>
-    
     <item>
-      <title>Projects</title>
-      <link>https://dryairship.github.io/project/</link>
+      <title>Interview Experience: Palantir</title>
+      <link>http://localhost:1313/post/interview-experience-palantir/</link>
+      <pubDate>Fri, 17 Jun 2022 04:49:31 +0530</pubDate>
+      <guid>http://localhost:1313/post/interview-experience-palantir/</guid>
+      <description>Spoiler: I didn&amp;rsquo;t get the offer.</description>
+    </item>
+    <item>
+      <title>Interview Experience: DevRev</title>
+      <link>http://localhost:1313/post/interview-experience-devrev/</link>
+      <pubDate>Mon, 13 Jun 2022 00:41:26 +0530</pubDate>
+      <guid>http://localhost:1313/post/interview-experience-devrev/</guid>
+      <description>Spoiler: I got the offer.</description>
+    </item>
+    <item>
+      <title>Online Election Manager</title>
+      <link>http://localhost:1313/project/online-election-manager/</link>
       <pubDate>Wed, 14 Apr 2021 19:32:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/project/</guid>
-      <description></description>
+      <guid>http://localhost:1313/project/online-election-manager/</guid>
+      <description>&lt;p&gt;A cryptographically secure web portal to manage online elections. The software has been used for the following elections at IIT Kanpur:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Students&amp;rsquo; Senate Office Bearers Elections, 2020&lt;/li&gt;&#xA;&lt;li&gt;Hall 6 (GH) Hall Executive Committee Elections, 2020&lt;/li&gt;&#xA;&lt;li&gt;General Elections, 2021&lt;/li&gt;&#xA;&lt;li&gt;GH1 Hall Executive Committee Elections, 2021&lt;/li&gt;&#xA;&lt;li&gt;Hall 7 Hall Executive Committee Elections, 2021&lt;/li&gt;&#xA;&lt;li&gt;Hall 8 Hall Executive Committee Elections, 2021&lt;/li&gt;&#xA;&lt;li&gt;SBRA Executive Committee Elections, 2021&lt;/li&gt;&#xA;&lt;li&gt;Students&amp;rsquo; Senate Office Bearers Elections, 2021&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
     <item>
-      <title>Authors</title>
-      <link>https://dryairship.github.io/author/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dryairship.github.io/author/</guid>
-      <description></description>
+      <title>QuizKitty</title>
+      <link>http://localhost:1313/project/quiz-kitty/</link>
+      <pubDate>Sat, 05 Dec 2020 19:32:10 +0530</pubDate>
+      <guid>http://localhost:1313/project/quiz-kitty/</guid>
+      <description>A messenger bot that can ask you GK questions, built for the Facebook Messaging Hackathon. You can chat with the bot on Facebook Messenger at &lt;a href=&#34;https://m.me/quizkitty&#34;&gt;m.me/quizkitty&lt;/a&gt;</description>
     </item>
-    
     <item>
-      <title>Publications</title>
-      <link>https://dryairship.github.io/publication/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dryairship.github.io/publication/</guid>
-      <description></description>
+      <title>IITKBucks: Behind the Scenes (or Codes?)</title>
+      <link>http://localhost:1313/post/iitkbucks-behind-the-scenes/</link>
+      <pubDate>Mon, 17 Aug 2020 07:40:18 +0530</pubDate>
+      <guid>http://localhost:1313/post/iitkbucks-behind-the-scenes/</guid>
+      <description>Making-of, confessions, and bloopers.</description>
     </item>
-    
     <item>
-      <title>Recent &amp; Upcoming Talks</title>
-      <link>https://dryairship.github.io/talk/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dryairship.github.io/talk/</guid>
-      <description></description>
+      <title>GSoC 2020 · Part 3</title>
+      <link>http://localhost:1313/post/gsoc-2020-part-3-second-coding-phase/</link>
+      <pubDate>Thu, 06 Aug 2020 03:13:04 +0530</pubDate>
+      <guid>http://localhost:1313/post/gsoc-2020-part-3-second-coding-phase/</guid>
+      <description>The second phase of coding.</description>
     </item>
-    
+    <item>
+      <title>Online Election Manager v/s an Untrusted Server Admin</title>
+      <link>http://localhost:1313/post/online-election-manager-vs-an-untrusted-server-admin/</link>
+      <pubDate>Mon, 03 Aug 2020 19:30:25 +0530</pubDate>
+      <guid>http://localhost:1313/post/online-election-manager-vs-an-untrusted-server-admin/</guid>
+      <description>The defense against internal attacks on the Online Election Manager</description>
+    </item>
+    <item>
+      <title>Replies to Suggestions for PClub Projects</title>
+      <link>http://localhost:1313/post/replies-to-suggestions-for-pclub-projects/</link>
+      <pubDate>Tue, 21 Jul 2020 05:39:57 +0530</pubDate>
+      <guid>http://localhost:1313/post/replies-to-suggestions-for-pclub-projects/</guid>
+      <description>An analysis of some interesting ideas</description>
+    </item>
+    <item>
+      <title>IITKBucks</title>
+      <link>http://localhost:1313/project/iitkbucks/</link>
+      <pubDate>Sat, 18 Jul 2020 19:32:10 +0530</pubDate>
+      <guid>http://localhost:1313/project/iitkbucks/</guid>
+      <description>My client for IITBucks - a custom blockchain based cryptocurrency</description>
+    </item>
+    <item>
+      <title>Regaining High Speed Internet After Exceeding Daily Limit</title>
+      <link>http://localhost:1313/post/regaining-high-speed-internet-after-exceeding-daily-limit/</link>
+      <pubDate>Sat, 18 Jul 2020 06:50:40 +0530</pubDate>
+      <guid>http://localhost:1313/post/regaining-high-speed-internet-after-exceeding-daily-limit/</guid>
+      <description>Weird Electronics and Magic Tricks</description>
+    </item>
+    <item>
+      <title>GSoC 2020 · Part 2</title>
+      <link>http://localhost:1313/post/gsoc-2020-part-2-first-coding-phase/</link>
+      <pubDate>Wed, 08 Jul 2020 07:33:13 +0530</pubDate>
+      <guid>http://localhost:1313/post/gsoc-2020-part-2-first-coding-phase/</guid>
+      <description>The first phase of coding.</description>
+    </item>
+    <item>
+      <title>Internet Data Consumption at IITK</title>
+      <link>http://localhost:1313/post/internet-data-consumption-at-iitk/</link>
+      <pubDate>Thu, 11 Jun 2020 14:38:06 +0530</pubDate>
+      <guid>http://localhost:1313/post/internet-data-consumption-at-iitk/</guid>
+      <description>You miss the speed, don&amp;rsquo;t you?</description>
+    </item>
+    <item>
+      <title>GSoC 2020 · Part 1</title>
+      <link>http://localhost:1313/post/gsoc-2020-part-1-community-bonding-period/</link>
+      <pubDate>Mon, 01 Jun 2020 12:33:06 +0530</pubDate>
+      <guid>http://localhost:1313/post/gsoc-2020-part-1-community-bonding-period/</guid>
+      <description>The organization, the project and the Community Bonding Period.</description>
+    </item>
+    <item>
+      <title>Switching Operating Systems Like Clothes</title>
+      <link>http://localhost:1313/post/switching-operating-systems-like-clothes/</link>
+      <pubDate>Thu, 28 May 2020 16:40:38 +0530</pubDate>
+      <guid>http://localhost:1313/post/switching-operating-systems-like-clothes/</guid>
+      <description>From indavertently erasing Windows to having 4 OSes on my laptop.</description>
+    </item>
+    <item>
+      <title>Learn Me a Haskell</title>
+      <link>http://localhost:1313/post/learn-me-a-haskell/</link>
+      <pubDate>Mon, 04 May 2020 06:57:17 +0530</pubDate>
+      <guid>http://localhost:1313/post/learn-me-a-haskell/</guid>
+      <description>So I wrote my first Haskell program. And I love it!</description>
+    </item>
+    <item>
+      <title>Porting TLE Bot to Slack - Part 1</title>
+      <link>http://localhost:1313/post/porting-tle-bot-to-slack-part-1/</link>
+      <pubDate>Sat, 25 Apr 2020 19:36:56 +0530</pubDate>
+      <guid>http://localhost:1313/post/porting-tle-bot-to-slack-part-1/</guid>
+      <description>I can&amp;rsquo;t deal with python&amp;rsquo;s &lt;code&gt;asyncio&lt;/code&gt;. :(</description>
+    </item>
+    <item>
+      <title>When I Messed Up the Gymkhana Server</title>
+      <link>http://localhost:1313/post/when-i-messed-up-the-gymkhana-server/</link>
+      <pubDate>Fri, 10 Apr 2020 01:18:22 +0530</pubDate>
+      <guid>http://localhost:1313/post/when-i-messed-up-the-gymkhana-server/</guid>
+      <description>And how I fixed it 391 hours later: Debugging a docker and internal networks overlap issue.</description>
+    </item>
+    <item>
+      <title>My First Rust Program</title>
+      <link>http://localhost:1313/post/my-first-rust-program/</link>
+      <pubDate>Sat, 28 Mar 2020 04:27:10 +0530</pubDate>
+      <guid>http://localhost:1313/post/my-first-rust-program/</guid>
+      <description>I&amp;rsquo;ve had a Rust sticker on my laptop for over a year now. I thought perhaps I should finally learn the langauge.</description>
+    </item>
+    <item>
+      <title>Your Guess Might Not Be as Good as Mine!</title>
+      <link>http://localhost:1313/post/your-guess-might-not-be-as-good-as-mine/</link>
+      <pubDate>Thu, 26 Mar 2020 06:59:43 +0530</pubDate>
+      <guid>http://localhost:1313/post/your-guess-might-not-be-as-good-as-mine/</guid>
+      <description>A brief analysis of hazarding a guess.</description>
+    </item>
+    <item>
+      <title>Learning Machine Learning : Story #N&#43;1</title>
+      <link>http://localhost:1313/post/learning-machine-learning-story-n-1/</link>
+      <pubDate>Sun, 15 Dec 2019 06:27:48 +0530</pubDate>
+      <guid>http://localhost:1313/post/learning-machine-learning-story-n-1/</guid>
+      <description>Visualizing patterns in the MNIST dataset</description>
+    </item>
+    <item>
+      <title>dryairship : Origins</title>
+      <link>http://localhost:1313/post/dryairship-origins/</link>
+      <pubDate>Tue, 03 Dec 2019 01:53:04 +0530</pubDate>
+      <guid>http://localhost:1313/post/dryairship-origins/</guid>
+      <description>An attempt at answering the questions people often ask me regarding my username.</description>
+    </item>
+    <item>
+      <title>Learning Machine Learning : Story #N</title>
+      <link>http://localhost:1313/post/learning-machine-learning-story-n/</link>
+      <pubDate>Mon, 02 Dec 2019 17:38:31 +0530</pubDate>
+      <guid>http://localhost:1313/post/learning-machine-learning-story-n/</guid>
+      <description>The Orange Without The Pulp</description>
+    </item>
+    <item>
+      <title>My First Flight Stalled</title>
+      <link>http://localhost:1313/post/my-first-flight-stalled/</link>
+      <pubDate>Fri, 20 Sep 2019 03:44:44 +0530</pubDate>
+      <guid>http://localhost:1313/post/my-first-flight-stalled/</guid>
+      <description>stall · /stɔːl/ · [verb] · (of an aircraft) stop flying and begin to fall because the speed is too low or the angle of attack too large to maintain adequate lift.</description>
+    </item>
+    <item>
+      <title>Centralized Inventory and Purchasing</title>
+      <link>http://localhost:1313/project/centralized-inventory-and-purchasing/</link>
+      <pubDate>Wed, 03 Jul 2019 03:28:56 +0530</pubDate>
+      <guid>http://localhost:1313/project/centralized-inventory-and-purchasing/</guid>
+      <description>Developed a web app for efficient inventory management across various departments of the NGO Vitraag Vigyaan</description>
+    </item>
+    <item>
+      <title>How I Extracted Hidden Test Cases In Google FooBar</title>
+      <link>http://localhost:1313/post/how-i-extracted-hidden-test-cases-in-google-foobar/</link>
+      <pubDate>Sat, 04 May 2019 12:30:23 +0530</pubDate>
+      <guid>http://localhost:1313/post/how-i-extracted-hidden-test-cases-in-google-foobar/</guid>
+      <description>Description of a now patched flaw that allowed extraction of hidden test cases in Google FooBar.</description>
+    </item>
+    <item>
+      <title>My Google FooBar Experience</title>
+      <link>http://localhost:1313/post/my-google-foobar-experience/</link>
+      <pubDate>Fri, 03 May 2019 23:00:48 +0530</pubDate>
+      <guid>http://localhost:1313/post/my-google-foobar-experience/</guid>
+      <description>About Google FooBar, the invitation, the problems and the results.</description>
+    </item>
+    <item>
+      <title>Meow, World!</title>
+      <link>http://localhost:1313/post/meow-world/</link>
+      <pubDate>Fri, 26 Apr 2019 23:33:17 +0530</pubDate>
+      <guid>http://localhost:1313/post/meow-world/</guid>
+      <description>My first attempt at writing a blog post.</description>
+    </item>
   </channel>
 </rss>

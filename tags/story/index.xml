@@ -1,48 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>story on Priydarshi Singh</title>
-    <link>https://dryairship.github.io/tags/story/</link>
-    <description>Recent content in story on Priydarshi Singh</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Story on Priydarshi Singh</title>
+    <link>http://localhost:1313/tags/story/</link>
+    <description>Recent content in Story on Priydarshi Singh</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Fri, 10 Apr 2020 01:18:22 +0530</lastBuildDate><atom:link href="https://dryairship.github.io/tags/story/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Apr 2020 01:18:22 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/story/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>When I Messed Up the Gymkhana Server</title>
-      <link>https://dryairship.github.io/post/when-i-messed-up-the-gymkhana-server/</link>
+      <link>http://localhost:1313/post/when-i-messed-up-the-gymkhana-server/</link>
       <pubDate>Fri, 10 Apr 2020 01:18:22 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/when-i-messed-up-the-gymkhana-server/</guid>
+      <guid>http://localhost:1313/post/when-i-messed-up-the-gymkhana-server/</guid>
       <description>And how I fixed it 391 hours later: Debugging a docker and internal networks overlap issue.</description>
     </item>
-    
     <item>
       <title>Your Guess Might Not Be as Good as Mine!</title>
-      <link>https://dryairship.github.io/post/your-guess-might-not-be-as-good-as-mine/</link>
+      <link>http://localhost:1313/post/your-guess-might-not-be-as-good-as-mine/</link>
       <pubDate>Thu, 26 Mar 2020 06:59:43 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/your-guess-might-not-be-as-good-as-mine/</guid>
+      <guid>http://localhost:1313/post/your-guess-might-not-be-as-good-as-mine/</guid>
       <description>A brief analysis of hazarding a guess.</description>
     </item>
-    
     <item>
       <title>Learning Machine Learning : Story #N&#43;1</title>
-      <link>https://dryairship.github.io/post/learning-machine-learning-story-n-1/</link>
+      <link>http://localhost:1313/post/learning-machine-learning-story-n-1/</link>
       <pubDate>Sun, 15 Dec 2019 06:27:48 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/learning-machine-learning-story-n-1/</guid>
+      <guid>http://localhost:1313/post/learning-machine-learning-story-n-1/</guid>
       <description>Visualizing patterns in the MNIST dataset</description>
     </item>
-    
     <item>
       <title>Learning Machine Learning : Story #N</title>
-      <link>https://dryairship.github.io/post/learning-machine-learning-story-n/</link>
+      <link>http://localhost:1313/post/learning-machine-learning-story-n/</link>
       <pubDate>Mon, 02 Dec 2019 17:38:31 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/learning-machine-learning-story-n/</guid>
+      <guid>http://localhost:1313/post/learning-machine-learning-story-n/</guid>
       <description>The Orange Without The Pulp</description>
     </item>
-    
   </channel>
 </rss>

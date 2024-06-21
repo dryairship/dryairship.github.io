@@ -1,30 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>pclub on Priydarshi Singh</title>
-    <link>https://dryairship.github.io/tags/pclub/</link>
-    <description>Recent content in pclub on Priydarshi Singh</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Pclub on Priydarshi Singh</title>
+    <link>http://localhost:1313/tags/pclub/</link>
+    <description>Recent content in Pclub on Priydarshi Singh</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Tue, 21 Jul 2020 05:39:57 +0530</lastBuildDate><atom:link href="https://dryairship.github.io/tags/pclub/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Jul 2020 05:39:57 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/pclub/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Replies to Suggestions for PClub Projects</title>
-      <link>https://dryairship.github.io/post/replies-to-suggestions-for-pclub-projects/</link>
+      <link>http://localhost:1313/post/replies-to-suggestions-for-pclub-projects/</link>
       <pubDate>Tue, 21 Jul 2020 05:39:57 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/replies-to-suggestions-for-pclub-projects/</guid>
+      <guid>http://localhost:1313/post/replies-to-suggestions-for-pclub-projects/</guid>
       <description>An analysis of some interesting ideas</description>
     </item>
-    
     <item>
       <title>When I Messed Up the Gymkhana Server</title>
-      <link>https://dryairship.github.io/post/when-i-messed-up-the-gymkhana-server/</link>
+      <link>http://localhost:1313/post/when-i-messed-up-the-gymkhana-server/</link>
       <pubDate>Fri, 10 Apr 2020 01:18:22 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/when-i-messed-up-the-gymkhana-server/</guid>
+      <guid>http://localhost:1313/post/when-i-messed-up-the-gymkhana-server/</guid>
       <description>And how I fixed it 391 hours later: Debugging a docker and internal networks overlap issue.</description>
     </item>
-    
   </channel>
 </rss>

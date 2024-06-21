@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blockchain on Priydarshi Singh</title>
-    <link>https://dryairship.github.io/tags/blockchain/</link>
-    <description>Recent content in blockchain on Priydarshi Singh</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Blockchain on Priydarshi Singh</title>
+    <link>http://localhost:1313/tags/blockchain/</link>
+    <description>Recent content in Blockchain on Priydarshi Singh</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Sat, 18 Jul 2020 19:32:10 +0530</lastBuildDate><atom:link href="https://dryairship.github.io/tags/blockchain/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Jul 2020 19:32:10 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/blockchain/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>IITKBucks</title>
-      <link>https://dryairship.github.io/project/iitkbucks/</link>
+      <link>http://localhost:1313/project/iitkbucks/</link>
       <pubDate>Sat, 18 Jul 2020 19:32:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/project/iitkbucks/</guid>
+      <guid>http://localhost:1313/project/iitkbucks/</guid>
       <description>My client for IITBucks - a custom blockchain based cryptocurrency</description>
     </item>
-    
   </channel>
 </rss>

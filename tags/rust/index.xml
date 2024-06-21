@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>rust on Priydarshi Singh</title>
-    <link>https://dryairship.github.io/tags/rust/</link>
-    <description>Recent content in rust on Priydarshi Singh</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Rust on Priydarshi Singh</title>
+    <link>http://localhost:1313/tags/rust/</link>
+    <description>Recent content in Rust on Priydarshi Singh</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Sat, 28 Mar 2020 04:27:10 +0530</lastBuildDate><atom:link href="https://dryairship.github.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Mar 2020 04:27:10 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Rust Program</title>
-      <link>https://dryairship.github.io/post/my-first-rust-program/</link>
+      <link>http://localhost:1313/post/my-first-rust-program/</link>
       <pubDate>Sat, 28 Mar 2020 04:27:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/my-first-rust-program/</guid>
+      <guid>http://localhost:1313/post/my-first-rust-program/</guid>
       <description>I&amp;rsquo;ve had a Rust sticker on my laptop for over a year now. I thought perhaps I should finally learn the langauge.</description>
     </item>
-    
   </channel>
 </rss>

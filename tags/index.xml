@@ -2,398 +2,313 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Priydarshi Singh</title>
-    <link>https://dryairship.github.io/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Priydarshi Singh</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Mon, 11 Jul 2022 02:29:29 +0530</lastBuildDate><atom:link href="https://dryairship.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Jul 2022 02:29:29 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>iitk</title>
-      <link>https://dryairship.github.io/tags/iitk/</link>
-      <pubDate>Mon, 11 Jul 2022 02:29:29 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/iitk/</guid>
+      <title>Iitk</title>
+      <link>http://localhost:1313/tags/iitk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/iitk/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>interviews</title>
-      <link>https://dryairship.github.io/tags/interviews/</link>
-      <pubDate>Fri, 17 Jun 2022 04:49:31 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/interviews/</guid>
+      <title>Interviews</title>
+      <link>http://localhost:1313/tags/interviews/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/interviews/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>cryptography</title>
-      <link>https://dryairship.github.io/tags/cryptography/</link>
-      <pubDate>Wed, 14 Apr 2021 19:32:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/cryptography/</guid>
+      <title>Cryptography</title>
+      <link>http://localhost:1313/tags/cryptography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cryptography/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>development</title>
-      <link>https://dryairship.github.io/tags/development/</link>
-      <pubDate>Wed, 14 Apr 2021 19:32:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/development/</guid>
+      <title>Development</title>
+      <link>http://localhost:1313/tags/development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/development/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>golang</title>
-      <link>https://dryairship.github.io/tags/golang/</link>
-      <pubDate>Wed, 14 Apr 2021 19:32:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/golang/</guid>
+      <title>Golang</title>
+      <link>http://localhost:1313/tags/golang/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/golang/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>security</title>
-      <link>https://dryairship.github.io/tags/security/</link>
-      <pubDate>Wed, 14 Apr 2021 19:32:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/security/</guid>
+      <title>Security</title>
+      <link>http://localhost:1313/tags/security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/security/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>chatbot</title>
-      <link>https://dryairship.github.io/tags/chatbot/</link>
-      <pubDate>Sat, 05 Dec 2020 19:32:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/chatbot/</guid>
+      <title>Chatbot</title>
+      <link>http://localhost:1313/tags/chatbot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/chatbot/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>facebook</title>
-      <link>https://dryairship.github.io/tags/facebook/</link>
-      <pubDate>Sat, 05 Dec 2020 19:32:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/facebook/</guid>
+      <title>Facebook</title>
+      <link>http://localhost:1313/tags/facebook/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/facebook/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>messenger</title>
-      <link>https://dryairship.github.io/tags/messenger/</link>
-      <pubDate>Sat, 05 Dec 2020 19:32:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/messenger/</guid>
+      <title>Messenger</title>
+      <link>http://localhost:1313/tags/messenger/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/messenger/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>redis</title>
-      <link>https://dryairship.github.io/tags/redis/</link>
-      <pubDate>Sat, 05 Dec 2020 19:32:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/redis/</guid>
+      <title>Redis</title>
+      <link>http://localhost:1313/tags/redis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/redis/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>gsoc</title>
-      <link>https://dryairship.github.io/tags/gsoc/</link>
-      <pubDate>Thu, 06 Aug 2020 03:13:04 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/gsoc/</guid>
+      <title>Gsoc</title>
+      <link>http://localhost:1313/tags/gsoc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/gsoc/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>open-source</title>
-      <link>https://dryairship.github.io/tags/open-source/</link>
-      <pubDate>Thu, 06 Aug 2020 03:13:04 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/open-source/</guid>
+      <title>Open-Source</title>
+      <link>http://localhost:1313/tags/open-source/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/open-source/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>elections</title>
-      <link>https://dryairship.github.io/tags/elections/</link>
-      <pubDate>Mon, 03 Aug 2020 19:30:25 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/elections/</guid>
+      <title>Elections</title>
+      <link>http://localhost:1313/tags/elections/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/elections/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>pclub</title>
-      <link>https://dryairship.github.io/tags/pclub/</link>
-      <pubDate>Tue, 21 Jul 2020 05:39:57 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/pclub/</guid>
+      <title>Pclub</title>
+      <link>http://localhost:1313/tags/pclub/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/pclub/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>blockchain</title>
-      <link>https://dryairship.github.io/tags/blockchain/</link>
-      <pubDate>Sat, 18 Jul 2020 19:32:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/blockchain/</guid>
+      <title>Blockchain</title>
+      <link>http://localhost:1313/tags/blockchain/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/blockchain/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>cryptocurrency</title>
-      <link>https://dryairship.github.io/tags/cryptocurrency/</link>
-      <pubDate>Sat, 18 Jul 2020 19:32:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/cryptocurrency/</guid>
+      <title>Cryptocurrency</title>
+      <link>http://localhost:1313/tags/cryptocurrency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cryptocurrency/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>reactjs</title>
-      <link>https://dryairship.github.io/tags/reactjs/</link>
-      <pubDate>Sat, 18 Jul 2020 19:32:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/reactjs/</guid>
+      <title>Reactjs</title>
+      <link>http://localhost:1313/tags/reactjs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/reactjs/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>mystery</title>
-      <link>https://dryairship.github.io/tags/mystery/</link>
-      <pubDate>Sat, 18 Jul 2020 06:50:40 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/mystery/</guid>
+      <title>Mystery</title>
+      <link>http://localhost:1313/tags/mystery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mystery/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>linux</title>
-      <link>https://dryairship.github.io/tags/linux/</link>
-      <pubDate>Thu, 28 May 2020 16:40:38 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/linux/</guid>
+      <title>Linux</title>
+      <link>http://localhost:1313/tags/linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/linux/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>operating systems</title>
-      <link>https://dryairship.github.io/tags/operating-systems/</link>
-      <pubDate>Thu, 28 May 2020 16:40:38 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/operating-systems/</guid>
+      <title>Operating Systems</title>
+      <link>http://localhost:1313/tags/operating-systems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/operating-systems/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>functional-programming</title>
-      <link>https://dryairship.github.io/tags/functional-programming/</link>
-      <pubDate>Mon, 04 May 2020 06:57:17 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/functional-programming/</guid>
+      <title>Functional-Programming</title>
+      <link>http://localhost:1313/tags/functional-programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/functional-programming/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>haskell</title>
-      <link>https://dryairship.github.io/tags/haskell/</link>
-      <pubDate>Mon, 04 May 2020 06:57:17 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/haskell/</guid>
+      <title>Haskell</title>
+      <link>http://localhost:1313/tags/haskell/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/haskell/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>programming-languages</title>
-      <link>https://dryairship.github.io/tags/programming-languages/</link>
-      <pubDate>Mon, 04 May 2020 06:57:17 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/programming-languages/</guid>
+      <title>Programming-Languages</title>
+      <link>http://localhost:1313/tags/programming-languages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/programming-languages/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>python</title>
-      <link>https://dryairship.github.io/tags/python/</link>
-      <pubDate>Sat, 25 Apr 2020 19:36:56 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/python/</guid>
+      <title>Python</title>
+      <link>http://localhost:1313/tags/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/python/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>story</title>
-      <link>https://dryairship.github.io/tags/story/</link>
-      <pubDate>Fri, 10 Apr 2020 01:18:22 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/story/</guid>
+      <title>Story</title>
+      <link>http://localhost:1313/tags/story/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/story/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>sysadmin</title>
-      <link>https://dryairship.github.io/tags/sysadmin/</link>
-      <pubDate>Fri, 10 Apr 2020 01:18:22 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/sysadmin/</guid>
+      <title>Sysadmin</title>
+      <link>http://localhost:1313/tags/sysadmin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sysadmin/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>rust</title>
-      <link>https://dryairship.github.io/tags/rust/</link>
-      <pubDate>Sat, 28 Mar 2020 04:27:10 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/rust/</guid>
+      <title>Rust</title>
+      <link>http://localhost:1313/tags/rust/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/rust/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>examinations</title>
-      <link>https://dryairship.github.io/tags/examinations/</link>
-      <pubDate>Thu, 26 Mar 2020 06:59:43 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/examinations/</guid>
+      <title>Examinations</title>
+      <link>http://localhost:1313/tags/examinations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/examinations/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>quizzing</title>
-      <link>https://dryairship.github.io/tags/quizzing/</link>
-      <pubDate>Thu, 26 Mar 2020 06:59:43 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/quizzing/</guid>
+      <title>Quizzing</title>
+      <link>http://localhost:1313/tags/quizzing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/quizzing/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>machine-learning</title>
-      <link>https://dryairship.github.io/tags/machine-learning/</link>
-      <pubDate>Sun, 15 Dec 2019 06:27:48 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/machine-learning/</guid>
+      <title>Machine-Learning</title>
+      <link>http://localhost:1313/tags/machine-learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/machine-learning/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>ml-stories</title>
-      <link>https://dryairship.github.io/tags/ml-stories/</link>
-      <pubDate>Sun, 15 Dec 2019 06:27:48 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/ml-stories/</guid>
+      <title>Ml-Stories</title>
+      <link>http://localhost:1313/tags/ml-stories/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ml-stories/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>dryairship</title>
-      <link>https://dryairship.github.io/tags/dryairship/</link>
-      <pubDate>Tue, 03 Dec 2019 01:53:04 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/dryairship/</guid>
+      <title>Dryairship</title>
+      <link>http://localhost:1313/tags/dryairship/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/dryairship/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>aerospace</title>
-      <link>https://dryairship.github.io/tags/aerospace/</link>
-      <pubDate>Fri, 20 Sep 2019 03:44:44 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/aerospace/</guid>
+      <title>Aerospace</title>
+      <link>http://localhost:1313/tags/aerospace/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/aerospace/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>express</title>
-      <link>https://dryairship.github.io/tags/express/</link>
-      <pubDate>Wed, 03 Jul 2019 03:28:56 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/express/</guid>
+      <title>Express</title>
+      <link>http://localhost:1313/tags/express/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/express/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>inventory-management</title>
-      <link>https://dryairship.github.io/tags/inventory-management/</link>
-      <pubDate>Wed, 03 Jul 2019 03:28:56 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/inventory-management/</guid>
+      <title>Inventory-Management</title>
+      <link>http://localhost:1313/tags/inventory-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/inventory-management/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>javascript</title>
-      <link>https://dryairship.github.io/tags/javascript/</link>
-      <pubDate>Wed, 03 Jul 2019 03:28:56 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/javascript/</guid>
+      <title>Javascript</title>
+      <link>http://localhost:1313/tags/javascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/javascript/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>nodejs</title>
-      <link>https://dryairship.github.io/tags/nodejs/</link>
-      <pubDate>Wed, 03 Jul 2019 03:28:56 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/nodejs/</guid>
+      <title>Nodejs</title>
+      <link>http://localhost:1313/tags/nodejs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/nodejs/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>foobar</title>
-      <link>https://dryairship.github.io/tags/foobar/</link>
-      <pubDate>Sat, 04 May 2019 12:30:23 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/foobar/</guid>
+      <title>Foobar</title>
+      <link>http://localhost:1313/tags/foobar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/foobar/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>google</title>
-      <link>https://dryairship.github.io/tags/google/</link>
-      <pubDate>Sat, 04 May 2019 12:30:23 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/google/</guid>
+      <title>Google</title>
+      <link>http://localhost:1313/tags/google/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/google/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>hacking</title>
-      <link>https://dryairship.github.io/tags/hacking/</link>
-      <pubDate>Sat, 04 May 2019 12:30:23 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/hacking/</guid>
+      <title>Hacking</title>
+      <link>http://localhost:1313/tags/hacking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/hacking/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>java</title>
-      <link>https://dryairship.github.io/tags/java/</link>
-      <pubDate>Sat, 04 May 2019 12:30:23 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/java/</guid>
+      <title>Java</title>
+      <link>http://localhost:1313/tags/java/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/java/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>competitive-programming</title>
-      <link>https://dryairship.github.io/tags/competitive-programming/</link>
-      <pubDate>Fri, 03 May 2019 23:00:48 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/competitive-programming/</guid>
+      <title>Competitive-Programming</title>
+      <link>http://localhost:1313/tags/competitive-programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/competitive-programming/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>hugo</title>
-      <link>https://dryairship.github.io/tags/hugo/</link>
-      <pubDate>Fri, 26 Apr 2019 23:33:17 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/tags/hugo/</guid>
+      <title>Hugo</title>
+      <link>http://localhost:1313/tags/hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/hugo/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

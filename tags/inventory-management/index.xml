@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>inventory-management on Priydarshi Singh</title>
-    <link>https://dryairship.github.io/tags/inventory-management/</link>
-    <description>Recent content in inventory-management on Priydarshi Singh</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Inventory-Management on Priydarshi Singh</title>
+    <link>http://localhost:1313/tags/inventory-management/</link>
+    <description>Recent content in Inventory-Management on Priydarshi Singh</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Wed, 03 Jul 2019 03:28:56 +0530</lastBuildDate><atom:link href="https://dryairship.github.io/tags/inventory-management/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Jul 2019 03:28:56 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/inventory-management/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Centralized Inventory and Purchasing</title>
-      <link>https://dryairship.github.io/project/centralized-inventory-and-purchasing/</link>
+      <link>http://localhost:1313/project/centralized-inventory-and-purchasing/</link>
       <pubDate>Wed, 03 Jul 2019 03:28:56 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/project/centralized-inventory-and-purchasing/</guid>
+      <guid>http://localhost:1313/project/centralized-inventory-and-purchasing/</guid>
       <description>Developed a web app for efficient inventory management across various departments of the NGO Vitraag Vigyaan</description>
     </item>
-    
   </channel>
 </rss>

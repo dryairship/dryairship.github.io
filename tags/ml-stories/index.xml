@@ -1,30 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ml-stories on Priydarshi Singh</title>
-    <link>https://dryairship.github.io/tags/ml-stories/</link>
-    <description>Recent content in ml-stories on Priydarshi Singh</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Ml-Stories on Priydarshi Singh</title>
+    <link>http://localhost:1313/tags/ml-stories/</link>
+    <description>Recent content in Ml-Stories on Priydarshi Singh</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Priydarshi Singh {year}</copyright>
-    <lastBuildDate>Sun, 15 Dec 2019 06:27:48 +0530</lastBuildDate><atom:link href="https://dryairship.github.io/tags/ml-stories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Dec 2019 06:27:48 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ml-stories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Learning Machine Learning : Story #N&#43;1</title>
-      <link>https://dryairship.github.io/post/learning-machine-learning-story-n-1/</link>
+      <link>http://localhost:1313/post/learning-machine-learning-story-n-1/</link>
       <pubDate>Sun, 15 Dec 2019 06:27:48 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/learning-machine-learning-story-n-1/</guid>
+      <guid>http://localhost:1313/post/learning-machine-learning-story-n-1/</guid>
       <description>Visualizing patterns in the MNIST dataset</description>
     </item>
-    
     <item>
       <title>Learning Machine Learning : Story #N</title>
-      <link>https://dryairship.github.io/post/learning-machine-learning-story-n/</link>
+      <link>http://localhost:1313/post/learning-machine-learning-story-n/</link>
       <pubDate>Mon, 02 Dec 2019 17:38:31 +0530</pubDate>
-      
-      <guid>https://dryairship.github.io/post/learning-machine-learning-story-n/</guid>
+      <guid>http://localhost:1313/post/learning-machine-learning-story-n/</guid>
       <description>The Orange Without The Pulp</description>
     </item>
-    
   </channel>
 </rss>
