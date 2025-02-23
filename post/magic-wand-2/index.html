@@ -48,17 +48,24 @@
   
 
 
-<meta property="og:url" content="https://dryairship.github.io/tags/cryptography/">
+<meta property="og:url" content="https://dryairship.github.io/post/magic-wand-2/">
   <meta property="og:site_name" content="Priydarshi Singh">
-  <meta property="og:title" content="Cryptography">
-  <meta property="og:description" content="Text about my cool site">
+  <meta property="og:title" content="Building a magic wand: Part 2">
+  <meta property="og:description" content="Never trust anything that can think for itself if you can’t see where it keeps its brain.">
   <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2025-01-19T00:04:15+01:00">
+    <meta property="article:modified_time" content="2025-01-19T00:04:15+01:00">
+    <meta property="article:tag" content="Electronics">
+    <meta property="article:tag" content="Magic-Wand">
+    <meta property="og:image" content="https://dryairship.github.io/post/magic-wand-2/featured.jpg">
 
 
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Cryptography">
-  <meta name="twitter:description" content="Text about my cool site">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://dryairship.github.io/post/magic-wand-2/featured.jpg">
+  <meta name="twitter:title" content="Building a magic wand: Part 2">
+  <meta name="twitter:description" content="Never trust anything that can think for itself if you can’t see where it keeps its brain.">
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -120,15 +127,18 @@
 
 
 
-<meta name="description" content="Cryptography of Priydarshi Singh">
-<link rel="stylesheet" href="/css/list.css" media="all">
+<meta name="description" content="">
+<link rel="stylesheet" href="/css/single.css">
+
+
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
 
 
   
   
 
   <title>
-Cryptography | Priydarshi Singh
+Building a magic wand: Part 2 | Priydarshi Singh
 
   </title>
 </head>
@@ -252,37 +262,209 @@ Cryptography | Priydarshi Singh
     </nav>
 </header>
 <div id="content">
-<div class="container pt-5" id="list-page">
-    <h2 class="text-center pb-2">Cryptography</h2>
-    <div class="row">
-        
-        <div class="col-lg-4 col-md-6 my-3">
-            <div class="card-columns">
-                <div class="card h-100">
-                    
-                    <div class="card-body bg-transparent p-4 shadow-sm">
-                        <a href="/post/online-election-manager-vs-an-untrusted-server-admin/" class="primary-font card-title">
-                            <h5 class="card-title bg-transparent" title="Online Election Manager v/s an Untrusted Server Admin">Online Election Manager v/s an …</h5>
-                        </a>
-                        <div class="card-text secondary-font">
-                            <p>The defense against internal attacks on the Online Election Manager</p>
-                        </div>
-                    </div>
-                    <div class="mt-auto post-footer bg-transparent py-3">
-                        <span class="float-start bg-transparent">Aug 3, 2020</span>
-                        <a href="/post/online-election-manager-vs-an-untrusted-server-admin/" class="float-end btn btn-outline-info btn-sm">Read</a>
-                    </div>
-                </div>
+<section id="single">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-12 col-lg-9">
+        <div class="pr-lg-4">
+          <div class="title mb-5">
+            <h1 class="text-center mb-4">Building a magic wand: Part 2</h1>
+            <div class="text-center">
+              
+              Jan 19, 2025
+
+              
+              <span id="readingTime">
+                min read
+              </span>
+              
             </div>
-        </div>
-        
-        <div class="row justify-content-center">
-            <div class="col-auto m-3">
-                
+          </div>
+          
+            
+            <div class="featured-image">
+              <img class="img-fluid mx-auto d-block" style="height:300px; width:auto" src="/post/magic-wand-2/featured.jpg" onerror="this.src='\/post\/magic-wand-2\/featured.png';this.onerror='';" alt="Building a magic wand: Part 2">
             </div>
+            
+          
+          <article class="page-content  p-2">
+          <p><em>This blog post is part of a series of posts on my attempt to build an electronic magic wand. <a href="/tags/magic-wand/">Click here</a> to view all the posts.</em></p>
+<hr>
+<p>For a proof of concept, I began with building a simple wired wand connected to a breadboard circuit. I used the plastic cover of my tin whistle as a makeshift wand body. I soldered an MPU-6050 sensor with long multicoloured wires and put it inside the wand body, with paper stuffed behind it to hold it in place. I also put a button on the breadboard, which I would hold down when performing some wand movement, to know when to start recording the IMU data.</p>
+<p>I initially wanted to start experimenting with an Arduino Uno, but realized soon that its 2KB RAM was tragically insufficient for my use case. I then used an ESP32 D1 Mini as the microcontroller. It&rsquo;s small enough that it could fit inside the wand&rsquo;s body (which, of course, would be required in the final wand), but I kept it outside for now while I was still experimenting.</p>
+<p><img src="wand_circuit.jpg" alt="Wand Circuit"></p>
+<h3 id="data-collection">Data collection</h3>
+<p>My wand has an inherent orientation directionality because the IMU will always measure the acceleration due to gravity. Due to this, I wanted to record data for analysis in different orientations of the wand. If we say taht the side of the wand where the MPU-6050 is visible as the main face, then I wanted to record data with the face up, face turned left and face turned right.</p>
+<p>I started collecting data by trying out the wand movements for <a href="https://harrypotter.fandom.com/wiki/Unlocking_Charm?file=Alohomora-0.gif"><em>Alohomora</em></a> and <a href="https://harrypotter.fandom.com/wiki/Wand-Lighting_Charm?file=LumosGesture.png"><em>Lumos</em></a>. I took 170 readings in total:</p>
+<ul>
+<li>1 - 50: Alohomora, face up</li>
+<li>51 - 70: Alohomora, face turned left</li>
+<li>71 - 90: Alohomora, turned right</li>
+<li>91 - 110: Lumos, face up</li>
+<li>111 - 130: Lumos, face turned left</li>
+<li>131 - 150: Lumos, face turned right</li>
+<li>151 - 170: Lumos, face turned at some random angle between right and up</li>
+</ul>
+<p>The IMU data was collected at a sampling rate of approx. 100Hz. Each reading comprised 6 values: The x, y &amp; z accelerometer measurements, and the x, y &amp; z gyroscope measurements.</p>
+<p>A sample plot for measurement 117 (Lumos, face turned left):</p>
+<p><img src="measurement_117.png" alt="Measurement 117"></p>
+<h3 id="data-analysis">Data Analysis</h3>
+<p>I started by plotting some rudimentary visualizations. I was excited to see that I could <em>obviously</em> make out the movement in those plots. For example, this is the scatter plot for aY vs aX, for measurements 111 - 130 (Lumos, face turned left), and you can easily see the movement pattern:</p>
+<p><img src="lumos_left_ax_ay.png" alt="Lumos, face turned left, aY vs aX"></p>
+<p>Enthralled, I quickly began with my planned next step: double integrate the accelerations with time to get the 3D position over time. For this, I needed to subtract the effects of gravity from my readings. I could not just subtract 9.8m/s<sup>2</sup> from a fixed axis, because the wand could be in different orientations. I tried 2 different ways to solve this, both of which should work for all wand orientations, but with the assumption that the orientation of the want doesn&rsquo;t change during the spell:</p>
+<ul>
+<li>Possibly, the wand is still at the beginning and the end of the spell. Then, the average of the first and the last readings should give the gravity vector.</li>
+<li>From the whole set of measurements, find out those where the magnitude of the acceleration is close to 9.8m/s<sup>2</sup>. The average of these measurements would give the gravity vector.</li>
+</ul>
+<p>Unfortunately, none of these ideas worked. The minor changes in the orientation of the wand during the spell caused errors large enough that the positions I calculated had no resemblance to the wand movement I had performed. Here is a sample of the position over time for measurement 73 (Alohomora, face turned right):</p>
+<p><img src="wand_position_73.png" alt="Calculated wand position, measurement 73"></p>
+<p>This does not look like Alohomora at all, and my wand certainly didn&rsquo;t move 2 metres while performing the spell.</p>
+<p>The issue was that my calculated gravity vector did not correctly represent gravity during the whole period of performing the spell. Perhaps I needed to use the gyro data to somehow find out when the orientation of the wand changed? But at this point, I was utterly disappointed and decided that it was a problem for later.</p>
+
+          </article>
         </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-3">
+        <div id="stickySideBar" class="sticky-sidebar">
+          
+          <aside class="toc">
+              <h5>
+                Table Of Contents
+              </h5>
+              <div class="toc-content">
+                <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#data-collection">Data collection</a></li>
+        <li><a href="#data-analysis">Data Analysis</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+              </div>
+          </aside>
+          
+
+          
+          <aside class="tags">
+            <h5>Tags</h5>
+            <ul class="tags-ul list-unstyled list-inline">
+              
+              <li class="list-inline-item"><a href="https://dryairship.github.io/tags/electronics"
+                target="_blank"
+              >electronics</a></li>
+              
+              <li class="list-inline-item"><a href="https://dryairship.github.io/tags/magic-wand"
+                target="_blank"
+              >magic-wand</a></li>
+              
+            </ul>
+          </aside>
+          
+
+          
+          <aside class="social">
+            <h5>Share this on...</h5>
+            <div class="social-content">
+              <ul class="list-inline">
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fdryairship.github.io%2fpost%2fmagic-wand-2%2f">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://twitter.com/share?text=Building%20a%20magic%20wand%3a%20Part%202&url=https%3a%2f%2fdryairship.github.io%2fpost%2fmagic-wand-2%2f">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=Building%20a%20magic%20wand%3a%20Part%202: https%3a%2f%2fdryairship.github.io%2fpost%2fmagic-wand-2%2f">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href='mailto:?subject=Building%20a%20magic%20wand%3a%20Part%202&amp;body=Check%20out%20this%20site https%3a%2f%2fdryairship.github.io%2fpost%2fmagic-wand-2%2f'>
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          
+        </div>
+      </div>
     </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-9 p-4">
+        <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "dryairship" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+  <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
+    <i class="fas fa-angle-up"></i>
+  </button>
+</section>
+
+
+<div class="progress">
+  <div id="scroll-progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
+<Script src="/js/scrollProgressBar.js"></script>
+
+
+<script>
+  var topScroll = document.getElementById("topScroll");
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topScroll.style.display = "block";
+    } else {
+      topScroll.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  
+  let stickySideBarElem = document.getElementById("stickySideBar");
+  let stickyNavBar =  true ;
+  if(stickyNavBar) {
+    let headerElem = document.getElementById("profileHeader");
+    let headerHeight = headerElem.offsetHeight + 15;
+    stickySideBarElem.style.top = headerHeight + "px";
+  } else {
+    stickySideBarElem.style.top = "50px";
+  }
+</script>
+
+
+<script src="/js/readingTime.js"></script>
+
+
 
   </div><footer>
     
