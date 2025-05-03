@@ -282,8 +282,11 @@ Building a magic wand: Part 3 | Priydarshi Singh
           </div>
           
             
-            <div class="featured-image">
-              <img class="img-fluid mx-auto d-block" style="height:300px; width:auto" src="/post/magic-wand-3/featured.jpg" onerror="this.src='\/post\/magic-wand-3\/featured.png';this.onerror='';" alt="Building a magic wand: Part 3">
+            <div class="featured-image"><img class="img-fluid mx-auto d-block"
+              style="height:300px; width:auto"
+              src="/post/magic-wand-3/featured.jpg"
+              onerror="this.onerror=function(){this.onerror=null;this.src='\/post\/magic-wand-3\/featured.gif';}; this.src='\/post\/magic-wand-3\/featured.png';"
+              alt="Building a magic wand: Part 3">         
             </div>
             
           
@@ -306,12 +309,12 @@ Building a magic wand: Part 3 | Priydarshi Singh
 <p>In the first image, the wand traces the circular part relatively quickly as compared to the second image. But both the wand movements take the same amount of time. This difference cannot be compensated by stretching or compressing the time period. But we still need to be able to determine that both the wand movements are for the same spell! For example, here are the readings of two wand movements for the same spell in the data that I collected:</p>
 <p><img src="measurements_115_117.png" alt="Measurements 115 and 117"></p>
 <p>Both the measurements have 64 samples each, sampled at 100Hz, so we don&rsquo;t need to stretch or compress any of them. However, the movements don&rsquo;t line up together. Measurement 115 has a peak of <code>aY</code> at around 350ms, but measurement 117 has a trough of <code>aY</code> around the same time. A simple Euclidean distance would show a huge difference between the two!</p>
-<p>Fortunately, there&rsquo;s an algorithm to solve exactly this problem: <a href="https://en.wikipedia.org/wiki/Dynamic_time_warping">Dynamic Time Warping</a>. It effectively distorts the time axis. Instead of stretching/compressing the whole axis, some parts of it are stretched and some are compressed. The following image shows how the <code>aY</code> values of measurements 115 and 117 are compared, first using the raw Euclidean distance, and then using FastDTW (FastDTW is an approximate DTW algorithm that runs in <code>O(n)</code> time instead of <code>O(N^2)</code> of the standard DTW).</p>
+<p>Fortunately, there&rsquo;s an algorithm to solve exactly this problem: <a href="https://en.wikipedia.org/wiki/Dynamic_time_warping">Dynamic Time Warping</a>. It effectively distorts the time axis. Instead of stretching/compressing the whole axis, some parts of it are stretched and some are compressed. The following image shows how the <code>aY</code> values of measurements 115 and 117 are compared, first using the raw Euclidean distance, and then using FastDTW (FastDTW is an approximate DTW algorithm that runs in <code>O(N)</code> time instead of <code>O(N^2)</code> of the standard DTW).</p>
 <p><img src="dtw_effect.png" alt="Effect of DTW"></p>
 <p>The distance between the two measurements is reduced by more than 50% when using DTW.</p>
 <h3 id="next-steps">Next Steps</h3>
 <p>A fun fact about DTW: It&rsquo;s used for speech recognition. This means that I can use the same algorithm to map incantations to spells when I put a microphone in my wand!</p>
-<p>But before I can dream of that, I need to implement the DTW algorithm. I couldn&rsquo;t find any existing DTW libraries for ESP32, so I&rsquo;d have to implement it from scratch. There are many flavours and optimizations for DTW for different use cases. For my wand, I need:</p>
+<p>But before I can dream of that, I need to implement the DTW algorithm. I couldn&rsquo;t find any existing DTW libraries for ESP8266, so I&rsquo;d have to implement it from scratch. There are many flavours and optimizations for DTW for different use cases. For my wand, I need:</p>
 <ul>
 <li>Perfect matching: I never want a movement to match the wrong spell.</li>
 <li>Low memory consumption: Since I need it to run on the wand microcontroller, which only has a few hundred KBs of RAM.</li>
@@ -480,8 +483,32 @@ Building a magic wand: Part 3 | Priydarshi Singh
             <div class="card h-100">
                 
                 <div class="card-header">
+                    <a href="/post/magic-wand-4/">
+                        <img src="/post/magic-wand-4/featured.jpg" onerror="this.onerror=function(){this.onerror=null;this.src='\/post\/magic-wand-4\/featured.gif';}; this.src='\/post\/magic-wand-4\/featured.png';" class="card-img-top" alt="Building a magic wand: Part 4">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/post/magic-wand-4/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Building a magic wand: Part 4">Building a magic wand: Part 4</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>I am a wizard, not a baboon brandishing a stick!</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Apr 20, 2025</span>
+                    <a href="/post/magic-wand-4/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
                     <a href="/post/magic-wand-3/">
-                        <img src="/post/magic-wand-3/featured.jpg" onerror="this.src='\/post\/magic-wand-3\/featured.png';this.onerror='';" class="card-img-top" alt="Building a magic wand: Part 3">
+                        <img src="/post/magic-wand-3/featured.jpg" onerror="this.onerror=function(){this.onerror=null;this.src='\/post\/magic-wand-3\/featured.gif';}; this.src='\/post\/magic-wand-3\/featured.png';" class="card-img-top" alt="Building a magic wand: Part 3">
                     </a>
                 </div>
                 
@@ -505,7 +532,7 @@ Building a magic wand: Part 3 | Priydarshi Singh
                 
                 <div class="card-header">
                     <a href="/post/magic-wand-2/">
-                        <img src="/post/magic-wand-2/featured.jpg" onerror="this.src='\/post\/magic-wand-2\/featured.png';this.onerror='';" class="card-img-top" alt="Building a magic wand: Part 2">
+                        <img src="/post/magic-wand-2/featured.jpg" onerror="this.onerror=function(){this.onerror=null;this.src='\/post\/magic-wand-2\/featured.gif';}; this.src='\/post\/magic-wand-2\/featured.png';" class="card-img-top" alt="Building a magic wand: Part 2">
                     </a>
                 </div>
                 
@@ -520,30 +547,6 @@ Building a magic wand: Part 3 | Priydarshi Singh
                 <div class="mt-auto card-footer">
                     <span class="float-start">Jan 19, 2025</span>
                     <a href="/post/magic-wand-2/" class="float-end btn btn-outline-info btn-sm">Read</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
-                
-                <div class="card-header">
-                    <a href="/post/magic-wand-1/">
-                        <img src="/post/magic-wand-1/featured.jpg" onerror="this.src='\/post\/magic-wand-1\/featured.png';this.onerror='';" class="card-img-top" alt="Building a magic wand: Part 1">
-                    </a>
-                </div>
-                
-                <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/post/magic-wand-1/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Building a magic wand: Part 1">Building a magic wand: Part 1</h5>
-                    </a>
-                    <div class="card-text secondary-font">
-                        <p>Don&rsquo;t let the muggles get you down.</p>
-                    </div>
-                </div>
-                <div class="mt-auto card-footer">
-                    <span class="float-start">Dec 29, 2024</span>
-                    <a href="/post/magic-wand-1/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>

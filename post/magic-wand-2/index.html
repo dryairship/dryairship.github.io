@@ -282,8 +282,11 @@ Building a magic wand: Part 2 | Priydarshi Singh
           </div>
           
             
-            <div class="featured-image">
-              <img class="img-fluid mx-auto d-block" style="height:300px; width:auto" src="/post/magic-wand-2/featured.jpg" onerror="this.src='\/post\/magic-wand-2\/featured.png';this.onerror='';" alt="Building a magic wand: Part 2">
+            <div class="featured-image"><img class="img-fluid mx-auto d-block"
+              style="height:300px; width:auto"
+              src="/post/magic-wand-2/featured.jpg"
+              onerror="this.onerror=function(){this.onerror=null;this.src='\/post\/magic-wand-2\/featured.gif';}; this.src='\/post\/magic-wand-2\/featured.png';"
+              alt="Building a magic wand: Part 2">         
             </div>
             
           
@@ -291,10 +294,10 @@ Building a magic wand: Part 2 | Priydarshi Singh
           <p><em>This blog post is part of a series of posts on my attempt to build an electronic magic wand. <a href="/tags/magic-wand/">Click here</a> to view all the posts.</em></p>
 <hr>
 <p>For a proof of concept, I began with building a simple wired wand connected to a breadboard circuit. I used the plastic cover of my tin whistle as a makeshift wand body. I soldered an MPU-6050 sensor with long multicoloured wires and put it inside the wand body, with paper stuffed behind it to hold it in place. I also put a button on the breadboard, which I would hold down when performing some wand movement, to know when to start recording the IMU data.</p>
-<p>I initially wanted to start experimenting with an Arduino Uno, but realized soon that its 2KB RAM was tragically insufficient for my use case. I then used an ESP32 D1 Mini as the microcontroller. It&rsquo;s small enough that it could fit inside the wand&rsquo;s body (which, of course, would be required in the final wand), but I kept it outside for now while I was still experimenting.</p>
+<p>I initially wanted to start experimenting with an Arduino Uno, but realized soon that its 2KB RAM was tragically insufficient for my use case. I then used a D1 Mini ESP8266 as the microcontroller. It&rsquo;s small enough that it could fit inside the wand&rsquo;s body (which, of course, would be required in the final wand), but I kept it outside for now while I was still experimenting.</p>
 <p><img src="wand_circuit.jpg" alt="Wand Circuit"></p>
 <h3 id="data-collection">Data collection</h3>
-<p>My wand has an inherent orientation directionality because the IMU will always measure the acceleration due to gravity. Due to this, I wanted to record data for analysis in different orientations of the wand. If we say taht the side of the wand where the MPU-6050 is visible as the main face, then I wanted to record data with the face up, face turned left and face turned right.</p>
+<p>My wand has an inherent orientation directionality because the IMU will always measure the acceleration due to gravity. Due to this, I wanted to record data for analysis in different orientations of the wand. If we say that the side of the wand where the MPU-6050 is visible as the main face, then I wanted to record data with the face up, face turned left and face turned right.</p>
 <p>I started collecting data by trying out the wand movements for <a href="https://harrypotter.fandom.com/wiki/Unlocking_Charm?file=Alohomora-0.gif"><em>Alohomora</em></a> and <a href="https://harrypotter.fandom.com/wiki/Wand-Lighting_Charm?file=LumosGesture.png"><em>Lumos</em></a>. I took 170 readings in total:</p>
 <ul>
 <li>1 - 50: Alohomora, face up</li>
@@ -482,8 +485,32 @@ Building a magic wand: Part 2 | Priydarshi Singh
             <div class="card h-100">
                 
                 <div class="card-header">
+                    <a href="/post/magic-wand-4/">
+                        <img src="/post/magic-wand-4/featured.jpg" onerror="this.onerror=function(){this.onerror=null;this.src='\/post\/magic-wand-4\/featured.gif';}; this.src='\/post\/magic-wand-4\/featured.png';" class="card-img-top" alt="Building a magic wand: Part 4">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/post/magic-wand-4/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Building a magic wand: Part 4">Building a magic wand: Part 4</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>I am a wizard, not a baboon brandishing a stick!</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Apr 20, 2025</span>
+                    <a href="/post/magic-wand-4/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
                     <a href="/post/magic-wand-3/">
-                        <img src="/post/magic-wand-3/featured.jpg" onerror="this.src='\/post\/magic-wand-3\/featured.png';this.onerror='';" class="card-img-top" alt="Building a magic wand: Part 3">
+                        <img src="/post/magic-wand-3/featured.jpg" onerror="this.onerror=function(){this.onerror=null;this.src='\/post\/magic-wand-3\/featured.gif';}; this.src='\/post\/magic-wand-3\/featured.png';" class="card-img-top" alt="Building a magic wand: Part 3">
                     </a>
                 </div>
                 
@@ -507,7 +534,7 @@ Building a magic wand: Part 2 | Priydarshi Singh
                 
                 <div class="card-header">
                     <a href="/post/magic-wand-2/">
-                        <img src="/post/magic-wand-2/featured.jpg" onerror="this.src='\/post\/magic-wand-2\/featured.png';this.onerror='';" class="card-img-top" alt="Building a magic wand: Part 2">
+                        <img src="/post/magic-wand-2/featured.jpg" onerror="this.onerror=function(){this.onerror=null;this.src='\/post\/magic-wand-2\/featured.gif';}; this.src='\/post\/magic-wand-2\/featured.png';" class="card-img-top" alt="Building a magic wand: Part 2">
                     </a>
                 </div>
                 
@@ -522,30 +549,6 @@ Building a magic wand: Part 2 | Priydarshi Singh
                 <div class="mt-auto card-footer">
                     <span class="float-start">Jan 19, 2025</span>
                     <a href="/post/magic-wand-2/" class="float-end btn btn-outline-info btn-sm">Read</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
-                
-                <div class="card-header">
-                    <a href="/post/magic-wand-1/">
-                        <img src="/post/magic-wand-1/featured.jpg" onerror="this.src='\/post\/magic-wand-1\/featured.png';this.onerror='';" class="card-img-top" alt="Building a magic wand: Part 1">
-                    </a>
-                </div>
-                
-                <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/post/magic-wand-1/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Building a magic wand: Part 1">Building a magic wand: Part 1</h5>
-                    </a>
-                    <div class="card-text secondary-font">
-                        <p>Don&rsquo;t let the muggles get you down.</p>
-                    </div>
-                </div>
-                <div class="mt-auto card-footer">
-                    <span class="float-start">Dec 29, 2024</span>
-                    <a href="/post/magic-wand-1/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
